@@ -1,0 +1,68 @@
+[
+  {
+    "id": "groceries",
+    "name": "Groceries & Staples",
+    "image": "/images/categories/groceries-staples.jpg",
+    "href": "/categories/groceries"
+  },
+  {
+    "id": "vegetables",
+    "name": "Vegetables & Fruits",
+    "image": "/images/categories/vegetables-fruits.jpg",
+    "href": "/categories/vegetables"
+  },
+  {
+    "id": "dairy",
+    "name": "Dairy & Bakery",
+    "image": "/images/categories/dairy-bakery.jpg",
+    "href": "/categories/dairy"
+  },
+  {
+    "id": "snacks",
+    "name": "Snacks & Foods",
+    "image": "/images/categories/snacks-foods.jpg",
+    "href": "/categories/snacks"
+  },
+  {
+    "id": "beverages",
+    "name": "Beverages",
+    "image": "/images/categories/beverages.jpg",
+    "href": "/categories/beverages"
+  },
+  {
+    "id": "cleaning",
+    "name": "Cleaning & Household",
+    "image": "/images/categories/cleaning-household.jpg",
+    "href": "/categories/cleaning"
+  },
+  {
+    "id": "personalcare",
+    "name": "Personal Care",
+    "image": "/images/categories/personal-care.jpg",
+    "href": "/categories/personalcare"
+  },
+  {
+    "id": "baby",
+    "name": "Baby Essentials",
+    "image": "/images/categories/baby-essentials.jpg",
+    "href": "/categories/baby"
+  },
+  {
+    "id": "kitchen",
+    "name": "Kitchen & Home Needs",
+    "image": "/images/categories/house.jpg",
+    "href": "/categories/kitchen"
+  },
+  {
+    "id": "petcare",
+    "name": "Pet Care",
+    "image": "/images/categories/petscare.jpg",
+    "href": "/categories/petcare"
+  },
+  {
+    "id": "health",
+    "name": "Health",
+    "image": "/images/categories/health.jpg",
+    "href": "/categories/health"
+  }
+]

@@ -1412,12 +1412,5 @@
     "price": 239,
     "image": "/images/New folder/Steam Inhaler.jpg",
     "category": "health"
-  },
-  {
-    "id": "condom",
-    "name": "Durex",
-    "price": 30,
-    "image": "/images/1763885394340-download.jfif",
-    "category": "personalcare"
   }
 ]

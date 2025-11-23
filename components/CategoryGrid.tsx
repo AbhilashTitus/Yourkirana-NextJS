@@ -1,32 +1,54 @@
-import Link from 'next/link';
-import Image from 'next/image';
+"use client";
 
-const categories = [
-    { n: 'Groceries & Staples', img: '/images/categories/groceries-staples.jpg', href: '/categories/groceries' },
-    { n: 'Vegetables & Fruits', img: '/images/categories/vegetables-fruits.jpg', href: '/categories/vegetables' },
-    { n: 'Dairy & Bakery', img: '/images/categories/dairy-bakery.jpg', href: '/categories/dairy' },
-    { n: 'Snacks & Foods', img: '/images/categories/snacks-foods.jpg', href: '/categories/snacks' },
-    { n: 'Beverages', img: '/images/categories/beverages.jpg', href: '/categories/beverages' },
-    { n: 'Cleaning & Household', img: '/images/categories/cleaning-household.jpg', href: '/categories/cleaning' },
-    { n: 'Personal Care', img: '/images/categories/personal-care.jpg', href: '/categories/personalcare' },
-    { n: 'Baby Essentials', img: '/images/categories/baby-essentials.jpg', href: '/categories/baby' },
-    { n: 'Kitchen & Home Needs', img: '/images/categories/house.jpg', href: '/categories/kitchen' },
-    { n: 'Pet Care', img: '/images/categories/petscare.jpg', href: '/categories/petcare' },
-    { n: 'Health', img: '/images/categories/health.jpg', href: '/categories/health' },
-    { n: 'Vehicle Parts', img: '/images/categories/top-automotive-parts-manufacturers.webp', href: '/categories/vehicle-parts' },
-];
+import Link from 'next/link';
+import { useState, useEffect } from 'react';
+
+interface Category {
+    id: string;
+    name: string;
+    image: string;
+    href: string;
+}
 
 export default function CategoryGrid() {
+    const [categories, setCategories] = useState<Category[]>([]);
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        fetchCategories();
+    }, []);
+
+    const fetchCategories = async () => {
+        try {
+            const res = await fetch('/api/categories');
+            const data = await res.json();
+            setCategories(data.categories || []);
+        } catch (error) {
+            console.error('Error fetching categories:', error);
+        } finally {
+            setLoading(false);
+        }
+    };
+
+    if (loading) {
+        return (
+            <div className="grid" id="catGrid">
+                {[...Array(11)].map((_, i) => (
+                    <div key={i} className="cat animate-pulse">
+                        <div className="w-full h-32 bg-gray-200 rounded-lg"></div>
+                        <span className="block h-4 bg-gray-200 rounded mt-2"></span>
+                    </div>
+                ))}
+            </div>
+        );
+    }
+
     return (
         <div className="grid" id="catGrid">
-            {categories.map((c, index) => (
-                <Link key={index} href={c.href} className="cat">
-                    {/* Using standard img tag for now to match legacy behavior exactly, or Next.js Image if we want optimization. 
-              Legacy CSS expects img tag structure. Next.js Image renders an img but with wrapper.
-              Let's use standard img to ensure CSS compatibility for now.
-          */}
-                    <img src={c.img} alt={c.n} />
-                    <span>{c.n}</span>
+            {categories.map((c) => (
+                <Link key={c.id} href={c.href} className="cat">
+                    <img src={c.image} alt={c.name} />
+                    <span>{c.name}</span>
                 </Link>
             ))}
         </div>

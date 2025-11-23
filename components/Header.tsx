@@ -36,7 +36,6 @@ export default function Header() {
                         <Link href="/cart" className="cart-trigger">
                             Cart <span className="cart-badge" style={{ display: totalItems > 0 ? 'inline-flex' : 'none' }}>{totalItems}</span>
                         </Link>
-                        <Link href="/admin" className="nav-btn" style={{ background: 'linear-gradient(135deg, #f59e0b, #d97706)', color: '#fff' }}>Admin</Link>
                         <Link href="/login" className="nav-btn">Login</Link>
                     </nav>
                     <button

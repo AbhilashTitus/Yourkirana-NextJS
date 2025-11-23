@@ -54,7 +54,6 @@ export default function Drawer({ isOpen, onClose }: DrawerProps) {
                 <Link href="/cart" className="cart-trigger" onClick={onClose}>
                     Cart <span className="cart-badge" style={{ display: totalItems > 0 ? 'inline-flex' : 'none' }}>{totalItems}</span>
                 </Link>
-                <Link href="/admin" className="nav-btn" onClick={onClose} style={{ background: 'linear-gradient(135deg, #f59e0b, #d97706)', color: '#fff' }}>Admin</Link>
                 <Link href="/login" className="nav-btn" onClick={onClose}>Login</Link>
             </div>
         </>
