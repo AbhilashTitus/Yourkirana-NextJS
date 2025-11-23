@@ -1,0 +1,1423 @@
+[
+  {
+    "id": "basmati-rice-1kg",
+    "name": "Basmati Rice 1kg",
+    "price": 51,
+    "image": "/images/New folder/Basmati Rice 1kg.jpg",
+    "category": "groceries"
+  },
+  {
+    "id": "sona-masoori-rice-5kg",
+    "name": "Sona Masoori Rice 5kg",
+    "price": 59,
+    "image": "/images/New folder/Sona Masoori Rice 5kg.jpg",
+    "category": "groceries"
+  },
+  {
+    "id": "wheat-atta-5kg",
+    "name": "Wheat Atta 5kg",
+    "price": 69,
+    "image": "/images/New folder/Wheat Atta 5kg.jpg",
+    "category": "groceries"
+  },
+  {
+    "id": "maida-1kg",
+    "name": "Maida 1kg",
+    "price": 79,
+    "image": "/images/New folder/Maida 1kg.jpg",
+    "category": "groceries"
+  },
+  {
+    "id": "suji-1kg",
+    "name": "Suji 1kg",
+    "price": 89,
+    "image": "/images/New folder/Suji 1kg.jpg",
+    "category": "groceries"
+  },
+  {
+    "id": "toor-dal-1kg",
+    "name": "Toor Dal 1kg",
+    "price": 99,
+    "image": "/images/New folder/Toor Dal 1kg.webp",
+    "category": "groceries"
+  },
+  {
+    "id": "chana-dal-1kg",
+    "name": "Chana Dal 1kg",
+    "price": 109,
+    "image": "/images/New folder/Chana Dal 1kg.jpg",
+    "category": "groceries"
+  },
+  {
+    "id": "moong-dal-1kg",
+    "name": "Moong Dal 1kg",
+    "price": 119,
+    "image": "/images/New folder/Moong Dal 1kg.jpg",
+    "category": "groceries"
+  },
+  {
+    "id": "groundnut-oil-1l",
+    "name": "Groundnut Oil 1L",
+    "price": 189,
+    "image": "/images/New folder/Groundnut Oil 1L.jpg",
+    "category": "groceries"
+  },
+  {
+    "id": "ghee-500ml",
+    "name": "Ghee 500ml",
+    "price": 219,
+    "image": "/images/New folder/Ghee 500ml.jpg",
+    "category": "groceries"
+  },
+  {
+    "id": "jaggery-1kg",
+    "name": "Jaggery 1kg",
+    "price": 169,
+    "image": "/images/New folder/Jaggery 1kg.jpg",
+    "category": "groceries"
+  },
+  {
+    "id": "iodized-salt-1kg",
+    "name": "Iodized Salt 1kg",
+    "price": 179,
+    "image": "/images/New folder/Iodized Salt 1kg.webp",
+    "category": "groceries"
+  },
+  {
+    "id": "onion-1kg",
+    "name": "Onion 1kg",
+    "price": 49,
+    "image": "/images/New folder/Onion 1kg.jpg",
+    "category": "vegetables"
+  },
+  {
+    "id": "tomato-1kg",
+    "name": "Tomato 1kg",
+    "price": 59,
+    "image": "/images/New folder/Tomato 1kg.jpg",
+    "category": "vegetables"
+  },
+  {
+    "id": "potato-1kg",
+    "name": "Potato 1kg",
+    "price": 69,
+    "image": "/images/New folder/Potato 1kg.jpg",
+    "category": "vegetables"
+  },
+  {
+    "id": "carrot-500g",
+    "name": "Carrot 500g",
+    "price": 79,
+    "image": "/images/New folder/Carrot 500g.jpg",
+    "category": "vegetables"
+  },
+  {
+    "id": "beans-500g",
+    "name": "Beans 500g",
+    "price": 89,
+    "image": "/images/New folder/Beans 500g.jpg",
+    "category": "vegetables"
+  },
+  {
+    "id": "spinach-1-bunch",
+    "name": "Spinach 1 bunch",
+    "price": 99,
+    "image": "/images/New folder/Spinach 1 bunch.jpg",
+    "category": "vegetables"
+  },
+  {
+    "id": "coriander-1-bunch",
+    "name": "Coriander 1 bunch",
+    "price": 109,
+    "image": "/images/New folder/Coriander 1 bunch.jpg",
+    "category": "vegetables"
+  },
+  {
+    "id": "banana-1-dozen",
+    "name": "Banana 1 dozen",
+    "price": 119,
+    "image": "/images/New folder/Banana 1 dozen.jpg",
+    "category": "vegetables"
+  },
+  {
+    "id": "apple-1kg",
+    "name": "Apple 1kg",
+    "price": 129,
+    "image": "/images/New folder/Apple 1kg.jpg",
+    "category": "vegetables"
+  },
+  {
+    "id": "orange-1kg",
+    "name": "Orange 1kg",
+    "price": 139,
+    "image": "/images/New folder/Orange 1kg.jpg",
+    "category": "vegetables"
+  },
+  {
+    "id": "grapes-500g",
+    "name": "Grapes 500g",
+    "price": 149,
+    "image": "/images/New folder/Grapes 500g.jpg",
+    "category": "vegetables"
+  },
+  {
+    "id": "pomegranate-500g",
+    "name": "Pomegranate 500g",
+    "price": 159,
+    "image": "/images/New folder/Pomegranate 500g.jpg",
+    "category": "vegetables"
+  },
+  {
+    "id": "mango-1kg",
+    "name": "Mango 1kg",
+    "price": 169,
+    "image": "/images/New folder/Mango 1kg.jpg",
+    "category": "vegetables"
+  },
+  {
+    "id": "papaya-1pc",
+    "name": "Papaya 1pc",
+    "price": 179,
+    "image": "/images/New folder/Papaya 1pc.jpg",
+    "category": "vegetables"
+  },
+  {
+    "id": "lemon-6pc",
+    "name": "Lemon 6pc",
+    "price": 189,
+    "image": "/images/New folder/Lemon 6pc.jpg",
+    "category": "vegetables"
+  },
+  {
+    "id": "cucumber-500g",
+    "name": "Cucumber 500g",
+    "price": 199,
+    "image": "/images/New folder/Cucumber 500g.jpg",
+    "category": "vegetables"
+  },
+  {
+    "id": "capsicum-500g",
+    "name": "Capsicum 500g",
+    "price": 209,
+    "image": "/images/New folder/Capsicum 500g.jpg",
+    "category": "vegetables"
+  },
+  {
+    "id": "garlic-250g",
+    "name": "Garlic 250g",
+    "price": 219,
+    "image": "/images/New folder/Garlic 250g.jpg",
+    "category": "vegetables"
+  },
+  {
+    "id": "ginger-250g",
+    "name": "Ginger 250g",
+    "price": 229,
+    "image": "/images/New folder/Ginger 250g.jpg",
+    "category": "vegetables"
+  },
+  {
+    "id": "coconut-1pc",
+    "name": "Coconut 1pc",
+    "price": 239,
+    "image": "/images/New folder/Coconut 1pc.jpg",
+    "category": "vegetables"
+  },
+  {
+    "id": "milk-1l",
+    "name": "Milk 1L",
+    "price": 49,
+    "image": "/images/New folder/Milk 1L.jpg",
+    "category": "dairy"
+  },
+  {
+    "id": "curd-500g",
+    "name": "Curd 500g",
+    "price": 59,
+    "image": "/images/New folder/Curd 500g.jpg",
+    "category": "dairy"
+  },
+  {
+    "id": "paneer-200g",
+    "name": "Paneer 200g",
+    "price": 69,
+    "image": "/images/New folder/Paneer 200g.jpg",
+    "category": "dairy"
+  },
+  {
+    "id": "cheese-slices-200g",
+    "name": "Cheese Slices 200g",
+    "price": 79,
+    "image": "/images/New folder/Cheese Slices 200g.jpg",
+    "category": "dairy"
+  },
+  {
+    "id": "butter-500g",
+    "name": "Butter 500g",
+    "price": 89,
+    "image": "/images/New folder/Butter 500g.jpg",
+    "category": "dairy"
+  },
+  {
+    "id": "brown-bread",
+    "name": "Brown Bread",
+    "price": 99,
+    "image": "/images/New folder/Brown Bread.jpg",
+    "category": "dairy"
+  },
+  {
+    "id": "white-bread",
+    "name": "White Bread",
+    "price": 109,
+    "image": "/images/New folder/White Bread.jpg",
+    "category": "dairy"
+  },
+  {
+    "id": "multigrain-bread",
+    "name": "Multigrain Bread",
+    "price": 119,
+    "image": "/images/New folder/Multigrain Bread.jpg",
+    "category": "dairy"
+  },
+  {
+    "id": "buns-4pc",
+    "name": "Buns 4pc",
+    "price": 129,
+    "image": "/images/New folder/Buns 4pc.jpg",
+    "category": "dairy"
+  },
+  {
+    "id": "yogurt-cup-100g",
+    "name": "Yogurt Cup 100g",
+    "price": 139,
+    "image": "/images/New folder/Yogurt Cup 100g.jpg",
+    "category": "dairy"
+  },
+  {
+    "id": "ghee-500ml-dairy",
+    "name": "Ghee 500ml",
+    "price": 149,
+    "image": "/images/New folder/Ghee 500ml.jpg",
+    "category": "dairy"
+  },
+  {
+    "id": "khoya-250g",
+    "name": "Khoya 250g",
+    "price": 159,
+    "image": "/images/New folder/Khoya 250g.jpg",
+    "category": "dairy"
+  },
+  {
+    "id": "cream-200ml",
+    "name": "Cream 200ml",
+    "price": 169,
+    "image": "/images/New folder/Cream 200ml.jpg",
+    "category": "dairy"
+  },
+  {
+    "id": "buttermilk-1l",
+    "name": "Buttermilk 1L",
+    "price": 179,
+    "image": "/images/New folder/Buttermilk 1L.jpg",
+    "category": "dairy"
+  },
+  {
+    "id": "cupcake-6pc",
+    "name": "Cupcake 6pc",
+    "price": 189,
+    "image": "/images/New folder/Cupcake 6pc.jpg",
+    "category": "dairy"
+  },
+  {
+    "id": "cookies-200g",
+    "name": "Cookies 200g",
+    "price": 199,
+    "image": "/images/New folder/Cookies 200g.jpg",
+    "category": "dairy"
+  },
+  {
+    "id": "rusk-300g",
+    "name": "Rusk 300g",
+    "price": 209,
+    "image": "/images/New folder/Rusk 300g.jpg",
+    "category": "dairy"
+  },
+  {
+    "id": "croissant-2pc",
+    "name": "Croissant 2pc",
+    "price": 219,
+    "image": "/images/New folder/Croissant 2pc.jpg",
+    "category": "dairy"
+  },
+  {
+    "id": "pav-6pc",
+    "name": "Pav 6pc",
+    "price": 229,
+    "image": "/images/New folder/Pav 6pc.jpg",
+    "category": "dairy"
+  },
+  {
+    "id": "brioche-300g",
+    "name": "Brioche 300g",
+    "price": 239,
+    "image": "/images/New folder/Brioche 300g.jpg",
+    "category": "dairy"
+  },
+  {
+    "id": "potato-chips-100g",
+    "name": "Potato Chips 100g",
+    "price": 49,
+    "image": "/images/New folder/Potato Chips 100g.jpg",
+    "category": "snacks"
+  },
+  {
+    "id": "nacho-chips-150g",
+    "name": "Nacho Chips 150g",
+    "price": 59,
+    "image": "/images/New folder/Nacho Chips 150g.jpg",
+    "category": "snacks"
+  },
+  {
+    "id": "masala-peanuts-200g",
+    "name": "Masala Peanuts 200g",
+    "price": 69,
+    "image": "/images/New folder/Masala Peanuts 200g.jpg",
+    "category": "snacks"
+  },
+  {
+    "id": "mixture-200g",
+    "name": "Mixture 200g",
+    "price": 79,
+    "image": "/images/New folder/Mixture 200g.jpg",
+    "category": "snacks"
+  },
+  {
+    "id": "popcorn-100g",
+    "name": "Popcorn 100g",
+    "price": 89,
+    "image": "/images/New folder/Popcorn 100g.jpg",
+    "category": "snacks"
+  },
+  {
+    "id": "instant-noodles-70g",
+    "name": "Instant Noodles 70g",
+    "price": 99,
+    "image": "/images/New folder/Instant Noodles 70g.jpg",
+    "category": "snacks"
+  },
+  {
+    "id": "pasta-500g",
+    "name": "Pasta 500g",
+    "price": 109,
+    "image": "/images/New folder/Pasta 500g.jpg",
+    "category": "snacks"
+  },
+  {
+    "id": "tomato-ketchup-1kg",
+    "name": "Tomato Ketchup 1kg",
+    "price": 119,
+    "image": "/images/New folder/Tomato Ketchup 1kg.jpg",
+    "category": "snacks"
+  },
+  {
+    "id": "mayonnaise-500g",
+    "name": "Mayonnaise 500g",
+    "price": 129,
+    "image": "/images/New folder/Mayonnaise 500g.jpg",
+    "category": "snacks"
+  },
+  {
+    "id": "chutney-200g",
+    "name": "Chutney 200g",
+    "price": 139,
+    "image": "/images/New folder/Chutney 200g.jpg",
+    "category": "snacks"
+  },
+  {
+    "id": "chocolate-bar-50g",
+    "name": "Chocolate Bar 50g",
+    "price": 149,
+    "image": "/images/New folder/Chocolate Bar 50g.jpg",
+    "category": "snacks"
+  },
+  {
+    "id": "dark-chocolate-90g",
+    "name": "Dark Chocolate 90g",
+    "price": 159,
+    "image": "/images/New folder/Dark Chocolate 90g.jpg",
+    "category": "snacks"
+  },
+  {
+    "id": "biscuits-100g",
+    "name": "Biscuits 100g",
+    "price": 169,
+    "image": "/images/New folder/Biscuits 100g.jpg",
+    "category": "snacks"
+  },
+  {
+    "id": "cream-biscuits-120g",
+    "name": "Cream Biscuits 120g",
+    "price": 179,
+    "image": "/images/New folder/Cream Biscuits 120g.jpg",
+    "category": "snacks"
+  },
+  {
+    "id": "energy-bar-50g",
+    "name": "Energy Bar 50g",
+    "price": 189,
+    "image": "/images/New folder/Energy Bar 50g.jpg",
+    "category": "snacks"
+  },
+  {
+    "id": "protein-bar-60g",
+    "name": "Protein Bar 60g",
+    "price": 199,
+    "image": "/images/New folder/Protein Bar 60g.jpg",
+    "category": "snacks"
+  },
+  {
+    "id": "instant-soup-50g",
+    "name": "Instant Soup 50g",
+    "price": 209,
+    "image": "/images/New folder/Instant Soup 50g.jpg",
+    "category": "snacks"
+  },
+  {
+    "id": "sauce-combo-pack",
+    "name": "Sauce Combo Pack",
+    "price": 219,
+    "image": "/images/New folder/Sauce Combo Pack.jpg",
+    "category": "snacks"
+  },
+  {
+    "id": "nutella-350g",
+    "name": "Nutella 350g",
+    "price": 229,
+    "image": "/images/New folder/Nutella 350g.jpg",
+    "category": "snacks"
+  },
+  {
+    "id": "cornflakes-475g",
+    "name": "Cornflakes 475g",
+    "price": 239,
+    "image": "/images/New folder/Cornflakes 475g.jpg",
+    "category": "snacks"
+  },
+  {
+    "id": "soda-750ml",
+    "name": "Soda 750ml",
+    "price": 49,
+    "image": "/images/New folder/Soda 750ml.jpg",
+    "category": "beverages"
+  },
+  {
+    "id": "cola-1.25l",
+    "name": "Cola 1.25L",
+    "price": 59,
+    "image": "/images/New folder/Cola 1.25L.jpg",
+    "category": "beverages"
+  },
+  {
+    "id": "orange-drink-1l",
+    "name": "Orange Drink 1L",
+    "price": 69,
+    "image": "/images/New folder/Orange Drink 1L.jpg",
+    "category": "beverages"
+  },
+  {
+    "id": "lemonade-1l",
+    "name": "Lemonade 1L",
+    "price": 79,
+    "image": "/images/New folder/Lemonade 1L.jpg",
+    "category": "beverages"
+  },
+  {
+    "id": "tonic-water-750ml",
+    "name": "Tonic Water 750ml",
+    "price": 89,
+    "image": "/images/New folder/Tonic Water 750ml.jpg",
+    "category": "beverages"
+  },
+  {
+    "id": "packaged-water-1l",
+    "name": "Packaged Water 1L",
+    "price": 99,
+    "image": "/images/New folder/Packaged Water 1L.jpg",
+    "category": "beverages"
+  },
+  {
+    "id": "coconut-water-200ml",
+    "name": "Coconut Water 200ml",
+    "price": 109,
+    "image": "/images/New folder/Coconut Water 200ml.jpg",
+    "category": "beverages"
+  },
+  {
+    "id": "fruit-juice-1l",
+    "name": "Fruit Juice 1L",
+    "price": 119,
+    "image": "/images/New folder/Fruit Juice 1L.jpg",
+    "category": "beverages"
+  },
+  {
+    "id": "iced-tea-500ml",
+    "name": "Iced Tea 500ml",
+    "price": 129,
+    "image": "/images/New folder/Iced Tea 500ml.jpg",
+    "category": "beverages"
+  },
+  {
+    "id": "green-tea-25-bags",
+    "name": "Green Tea 25 bags",
+    "price": 139,
+    "image": "/images/New folder/Green Tea 25 bags.jpg",
+    "category": "beverages"
+  },
+  {
+    "id": "coffee-200g",
+    "name": "Coffee 200g",
+    "price": 149,
+    "image": "/images/New folder/Coffee 200g.jpg",
+    "category": "beverages"
+  },
+  {
+    "id": "instant-coffee-100g",
+    "name": "Instant Coffee 100g",
+    "price": 159,
+    "image": "/images/New folder/Instant Coffee 100g.jpg",
+    "category": "beverages"
+  },
+  {
+    "id": "milkshake-180ml",
+    "name": "Milkshake 180ml",
+    "price": 169,
+    "image": "/images/New folder/Milkshake 180ml.jpg",
+    "category": "beverages"
+  },
+  {
+    "id": "malted-drink-500g",
+    "name": "Malted Drink 500g",
+    "price": 179,
+    "image": "/images/New folder/Malted Drink 500g.jpg",
+    "category": "beverages"
+  },
+  {
+    "id": "electrolyte-drink-500ml",
+    "name": "Electrolyte Drink 500ml",
+    "price": 189,
+    "image": "/images/New folder/Electrolyte Drink 500ml.jpg",
+    "category": "beverages"
+  },
+  {
+    "id": "energy-drink-250ml",
+    "name": "Energy Drink 250ml",
+    "price": 199,
+    "image": "/images/New folder/Energy Drink 250ml.jpg",
+    "category": "beverages"
+  },
+  {
+    "id": "sparkling-water-750ml",
+    "name": "Sparkling Water 750ml",
+    "price": 209,
+    "image": "/images/New folder/Sparkling Water 750ml.jpg",
+    "category": "beverages"
+  },
+  {
+    "id": "kombucha-330ml",
+    "name": "Kombucha 330ml",
+    "price": 219,
+    "image": "/images/New folder/Kombucha 330ml.jpg",
+    "category": "beverages"
+  },
+  {
+    "id": "lassi-200ml",
+    "name": "Lassi 200ml",
+    "price": 229,
+    "image": "/images/New folder/Lassi 200ml.jpg",
+    "category": "beverages"
+  },
+  {
+    "id": "buttermilk-200ml",
+    "name": "Buttermilk 200ml",
+    "price": 239,
+    "image": "/images/New folder/Buttermilk 200ml.jpg",
+    "category": "beverages"
+  },
+  {
+    "id": "detergent-powder-1kg",
+    "name": "Detergent Powder 1kg",
+    "price": 49,
+    "image": "/images/New folder/Detergent Powder 1kg.jpg",
+    "category": "cleaning"
+  },
+  {
+    "id": "liquid-detergent-1l",
+    "name": "Liquid Detergent 1L",
+    "price": 59,
+    "image": "/images/New folder/Liquid Detergent 1L.jpg",
+    "category": "cleaning"
+  },
+  {
+    "id": "fabric-conditioner-500ml",
+    "name": "Fabric Conditioner 500ml",
+    "price": 69,
+    "image": "/images/New folder/Fabric Conditioner 500ml.jpg",
+    "category": "cleaning"
+  },
+  {
+    "id": "dishwash-liquid-500ml",
+    "name": "Dishwash Liquid 500ml",
+    "price": 79,
+    "image": "/images/New folder/Dishwash Liquid 500ml.jpg",
+    "category": "cleaning"
+  },
+  {
+    "id": "dishwash-bar-200g",
+    "name": "Dishwash Bar 200g",
+    "price": 89,
+    "image": "/images/New folder/Dishwash Bar 200g.jpg",
+    "category": "cleaning"
+  },
+  {
+    "id": "floor-cleaner-1l",
+    "name": "Floor Cleaner 1L",
+    "price": 99,
+    "image": "/images/New folder/Floor Cleaner 1L.jpg",
+    "category": "cleaning"
+  },
+  {
+    "id": "toilet-cleaner-1l",
+    "name": "Toilet Cleaner 1L",
+    "price": 109,
+    "image": "/images/New folder/Toilet Cleaner 1L.jpg",
+    "category": "cleaning"
+  },
+  {
+    "id": "glass-cleaner-500ml",
+    "name": "Glass Cleaner 500ml",
+    "price": 119,
+    "image": "/images/New folder/Glass Cleaner 500ml.jpg",
+    "category": "cleaning"
+  },
+  {
+    "id": "garbage-bags-l",
+    "name": "Garbage Bags L",
+    "price": 129,
+    "image": "/images/New folder/Garbage Bags L.jpg",
+    "category": "cleaning"
+  },
+  {
+    "id": "scrub-pad-3pc",
+    "name": "Scrub Pad 3pc",
+    "price": 139,
+    "image": "/images/New folder/Scrub Pad 3pc.jpg",
+    "category": "cleaning"
+  },
+  {
+    "id": "bucket-15l",
+    "name": "Bucket 15L",
+    "price": 239,
+    "image": "/images/New folder/Bucket 15L.jpg",
+    "category": "cleaning"
+  },
+  {
+    "id": "bath-soap-125g",
+    "name": "Bath Soap 125g",
+    "price": 49,
+    "image": "/images/New folder/Bath Soap 125g.jpg",
+    "category": "personalcare"
+  },
+  {
+    "id": "body-wash-250ml",
+    "name": "Body Wash 250ml",
+    "price": 59,
+    "image": "/images/New folder/Body Wash 250ml.jpg",
+    "category": "personalcare"
+  },
+  {
+    "id": "shampoo-340ml",
+    "name": "Shampoo 340ml",
+    "price": 69,
+    "image": "/images/New folder/Shampoo 340ml.jpg",
+    "category": "personalcare"
+  },
+  {
+    "id": "conditioner-170ml",
+    "name": "Conditioner 170ml",
+    "price": 79,
+    "image": "/images/New folder/Conditioner 170ml.jpg",
+    "category": "personalcare"
+  },
+  {
+    "id": "hair-oil-200ml",
+    "name": "Hair Oil 200ml",
+    "price": 89,
+    "image": "/images/New folder/Hair Oil 200ml.jpg",
+    "category": "personalcare"
+  },
+  {
+    "id": "face-wash-100ml",
+    "name": "Face Wash 100ml",
+    "price": 99,
+    "image": "/images/New folder/Face Wash 100ml.png",
+    "category": "personalcare"
+  },
+  {
+    "id": "face-cream-50g",
+    "name": "Face Cream 50g",
+    "price": 109,
+    "image": "/images/New folder/Face Cream 50g.jpg",
+    "category": "personalcare"
+  },
+  {
+    "id": "moisturizer-200ml",
+    "name": "Moisturizer 200ml",
+    "price": 119,
+    "image": "/images/New folder/Moisturizer 200ml.jpg",
+    "category": "personalcare"
+  },
+  {
+    "id": "sunscreen-50ml",
+    "name": "Sunscreen 50ml",
+    "price": 129,
+    "image": "/images/New folder/Sunscreen 50ml.jpg",
+    "category": "personalcare"
+  },
+  {
+    "id": "toothpaste-150g",
+    "name": "Toothpaste 150g",
+    "price": 139,
+    "image": "/images/New folder/Toothpaste 150g 🪥.jpg",
+    "category": "personalcare"
+  },
+  {
+    "id": "toothbrush-2pc",
+    "name": "Toothbrush 2pc",
+    "price": 149,
+    "image": "/images/New folder/Toothbrush 2pc.jpg",
+    "category": "personalcare"
+  },
+  {
+    "id": "mouthwash-250ml",
+    "name": "Mouthwash 250ml",
+    "price": 159,
+    "image": "/images/New folder/Mouthwash 250ml.webp",
+    "category": "personalcare"
+  },
+  {
+    "id": "deodorant-150ml",
+    "name": "Deodorant 150ml",
+    "price": 169,
+    "image": "/images/New folder/Deodorant 150ml.jpg",
+    "category": "personalcare"
+  },
+  {
+    "id": "shaving-foam-200g",
+    "name": "Shaving Foam 200g",
+    "price": 179,
+    "image": "/images/New folder/Shaving Foam 200g.jpg",
+    "category": "personalcare"
+  },
+  {
+    "id": "razor-4pc",
+    "name": "Razor 4pc",
+    "price": 189,
+    "image": "/images/New folder/Razor 4pc.jpg",
+    "category": "personalcare"
+  },
+  {
+    "id": "sanitary-pads-20pc",
+    "name": "Sanitary Pads 20pc",
+    "price": 199,
+    "image": "/images/New folder/Sanitary Pads 20pc.jpg",
+    "category": "personalcare"
+  },
+  {
+    "id": "wet-wipes-20pc",
+    "name": "Wet Wipes 20pc",
+    "price": 209,
+    "image": "/images/New folder/Wet Wipes 20pc.jpg",
+    "category": "personalcare"
+  },
+  {
+    "id": "handwash-250ml",
+    "name": "Handwash 250ml",
+    "price": 219,
+    "image": "/images/New folder/Handwash 250ml 🫧.jpg",
+    "category": "personalcare"
+  },
+  {
+    "id": "nail-cutter",
+    "name": "Nail Cutter",
+    "price": 229,
+    "image": "/images/New folder/Nail Cutter.jpg",
+    "category": "personalcare"
+  },
+  {
+    "id": "cotton-buds-100pc",
+    "name": "Cotton Buds 100pc",
+    "price": 239,
+    "image": "/images/New folder/Cotton Buds 100pc.jpg",
+    "category": "personalcare"
+  },
+  {
+    "id": "diapers-small-20pc",
+    "name": "Diapers Small 20pc",
+    "price": 49,
+    "image": "/images/New folder/Diapers Small 20pc.jpg",
+    "category": "baby"
+  },
+  {
+    "id": "diapers-medium-20pc",
+    "name": "Diapers Medium 20pc",
+    "price": 59,
+    "image": "/images/New folder/Diapers Medium 20pc.jpg",
+    "category": "baby"
+  },
+  {
+    "id": "diapers-large-20pc",
+    "name": "Diapers Large 20pc",
+    "price": 69,
+    "image": "/images/New folder/Diapers Large 20pc.jpg",
+    "category": "baby"
+  },
+  {
+    "id": "baby-wipes-72pc",
+    "name": "Baby Wipes 72pc",
+    "price": 79,
+    "image": "/images/New folder/Baby Wipes 72pc.jpg",
+    "category": "baby"
+  },
+  {
+    "id": "baby-soap-75g",
+    "name": "Baby Soap 75g",
+    "price": 89,
+    "image": "/images/New folder/Baby Soap 75g.jpg",
+    "category": "baby"
+  },
+  {
+    "id": "baby-shampoo-200ml",
+    "name": "Baby Shampoo 200ml",
+    "price": 99,
+    "image": "/images/New folder/Baby Shampoo 200ml.jpg",
+    "category": "baby"
+  },
+  {
+    "id": "baby-lotion-200ml",
+    "name": "Baby Lotion 200ml",
+    "price": 109,
+    "image": "/images/New folder/Baby Lotion 200ml.jpg",
+    "category": "baby"
+  },
+  {
+    "id": "baby-oil-100ml",
+    "name": "Baby Oil 100ml",
+    "price": 119,
+    "image": "/images/New folder/Baby Oil 100ml.jpg",
+    "category": "baby"
+  },
+  {
+    "id": "baby-powder-200g",
+    "name": "Baby Powder 200g",
+    "price": 129,
+    "image": "/images/New folder/Baby Powder 200g.jpg",
+    "category": "baby"
+  },
+  {
+    "id": "feeding-bottle-250ml",
+    "name": "Feeding Bottle 250ml",
+    "price": 139,
+    "image": "/images/New folder/Feeding Bottle 250ml.jpg",
+    "category": "baby"
+  },
+  {
+    "id": "teether",
+    "name": "Teether",
+    "price": 149,
+    "image": "/images/New folder/Teether.jpg",
+    "category": "baby"
+  },
+  {
+    "id": "rattle",
+    "name": "Rattle",
+    "price": 159,
+    "image": "/images/New folder/Rattle.jpg",
+    "category": "baby"
+  },
+  {
+    "id": "sipper-cup",
+    "name": "Sipper Cup",
+    "price": 169,
+    "image": "/images/New folder/Sipper Cup.jpg",
+    "category": "baby"
+  },
+  {
+    "id": "rice-cereal-300g",
+    "name": "Rice Cereal 300g",
+    "price": 179,
+    "image": "/images/New folder/Rice Cereal 300g.jpg",
+    "category": "baby"
+  },
+  {
+    "id": "fruit-puree-100g",
+    "name": "Fruit Puree 100g",
+    "price": 189,
+    "image": "/images/New folder/Fruit Puree 100g.jpg",
+    "category": "baby"
+  },
+  {
+    "id": "baby-blanket",
+    "name": "Baby Blanket",
+    "price": 199,
+    "image": "/images/New folder/Baby Blanket.jpg",
+    "category": "baby"
+  },
+  {
+    "id": "baby-detergent-500ml",
+    "name": "Baby Detergent 500ml",
+    "price": 209,
+    "image": "/images/New folder/Baby Detergent 500ml.jpg",
+    "category": "baby"
+  },
+  {
+    "id": "diaper-rash-cream",
+    "name": "Diaper Rash Cream",
+    "price": 219,
+    "image": "/images/New folder/Diaper Rash Cream.jpg",
+    "category": "baby"
+  },
+  {
+    "id": "nail-scissors",
+    "name": "Nail Scissors",
+    "price": 229,
+    "image": "/images/New folder/Nail Scissors.jpg",
+    "category": "baby"
+  },
+  {
+    "id": "pressure-cooker-3l",
+    "name": "Pressure Cooker 3L",
+    "price": 49,
+    "image": "/images/New folder/Pressure Cooker 3L.jpg",
+    "category": "kitchen"
+  },
+  {
+    "id": "fry-pan-24cm",
+    "name": "Fry Pan 24cm",
+    "price": 59,
+    "image": "/images/New folder/Fry Pan 24cm.jpg",
+    "category": "kitchen"
+  },
+  {
+    "id": "kadhai-2l",
+    "name": "Kadhai 2L",
+    "price": 69,
+    "image": "/images/New folder/Kadhai 2L.jpg",
+    "category": "kitchen"
+  },
+  {
+    "id": "spatula-set-3pc",
+    "name": "Spatula Set 3pc",
+    "price": 79,
+    "image": "/images/New folder/Spatula Set 3pc.jpg",
+    "category": "kitchen"
+  },
+  {
+    "id": "knife-set-3pc",
+    "name": "Knife Set 3pc",
+    "price": 89,
+    "image": "/images/New folder/Knife Set 3pc.jpg",
+    "category": "kitchen"
+  },
+  {
+    "id": "chopping-board",
+    "name": "Chopping Board",
+    "price": 99,
+    "image": "/images/New folder/Chopping Board.jpg",
+    "category": "kitchen"
+  },
+  {
+    "id": "steel-plates-6pc",
+    "name": "Steel Plates 6pc",
+    "price": 109,
+    "image": "/images/New folder/Steel Plates 6pc.jpg",
+    "category": "kitchen"
+  },
+  {
+    "id": "glass-set-6pc",
+    "name": "Glass Set 6pc",
+    "price": 119,
+    "image": "/images/New folder/Glass Set 6pc.jpg",
+    "category": "kitchen"
+  },
+  {
+    "id": "storage-jar-1l",
+    "name": "Storage Jar 1L",
+    "price": 129,
+    "image": "/images/New folder/Storage Jar 1L.jpg",
+    "category": "kitchen"
+  },
+  {
+    "id": "lunch-box-2pc",
+    "name": "Lunch Box 2pc",
+    "price": 139,
+    "image": "/images/New folder/Lunch Box 2pc.jpg",
+    "category": "kitchen"
+  },
+  {
+    "id": "water-bottle-1l",
+    "name": "Water Bottle 1L",
+    "price": 149,
+    "image": "/images/New folder/Water Bottle 1L.jpg",
+    "category": "kitchen"
+  },
+  {
+    "id": "towel-set-2pc",
+    "name": "Towel Set 2pc",
+    "price": 159,
+    "image": "/images/New folder/Towel Set 2pc.jpg",
+    "category": "kitchen"
+  },
+  {
+    "id": "doormat",
+    "name": "Doormat",
+    "price": 169,
+    "image": "/images/New folder/Doormat.jpg",
+    "category": "kitchen"
+  },
+  {
+    "id": "led-bulb-9w",
+    "name": "LED Bulb 9W",
+    "price": 179,
+    "image": "/images/New folder/LED Bulb 9W.jpg",
+    "category": "kitchen"
+  },
+  {
+    "id": "extension-board",
+    "name": "Extension Board",
+    "price": 189,
+    "image": "/images/New folder/Extension Board.jpg",
+    "category": "kitchen"
+  },
+  {
+    "id": "cloth-hangers-12pc",
+    "name": "Cloth Hangers 12pc",
+    "price": 199,
+    "image": "/images/New folder/Cloth Hangers 12pc.jpg",
+    "category": "kitchen"
+  },
+  {
+    "id": "laundry-basket",
+    "name": "Laundry Basket",
+    "price": 209,
+    "image": "/images/New folder/Laundry Basket.jpg",
+    "category": "kitchen"
+  },
+  {
+    "id": "measuring-cups",
+    "name": "Measuring Cups",
+    "price": 219,
+    "image": "/images/New folder/Measuring Cups.jpg",
+    "category": "kitchen"
+  },
+  {
+    "id": "whisk",
+    "name": "Whisk",
+    "price": 229,
+    "image": "/images/New folder/Whisk.jpg",
+    "category": "kitchen"
+  },
+  {
+    "id": "strainer",
+    "name": "Strainer",
+    "price": 239,
+    "image": "/images/New folder/Strainer.jpg",
+    "category": "kitchen"
+  },
+  {
+    "id": "dog-food-1kg",
+    "name": "Dog Food 1kg",
+    "price": 49,
+    "image": "/images/New folder/Dog Food 1kg.jpg",
+    "category": "petcare"
+  },
+  {
+    "id": "cat-food-1kg",
+    "name": "Cat Food 1kg",
+    "price": 59,
+    "image": "/images/New folder/Cat Food 1kg.jpg",
+    "category": "petcare"
+  },
+  {
+    "id": "bird-feed-1kg",
+    "name": "Bird Feed 1kg",
+    "price": 69,
+    "image": "/images/New folder/Bird Feed 1kg.jpg",
+    "category": "petcare"
+  },
+  {
+    "id": "fish-food-200g",
+    "name": "Fish Food 200g",
+    "price": 79,
+    "image": "/images/New folder/Fish Food 200g.jpg",
+    "category": "petcare"
+  },
+  {
+    "id": "pet-shampoo-250ml",
+    "name": "Pet Shampoo 250ml",
+    "price": 89,
+    "image": "/images/New folder/Pet Shampoo 250ml.jpg",
+    "category": "petcare"
+  },
+  {
+    "id": "pet-conditioner-250ml",
+    "name": "Pet Conditioner 250ml",
+    "price": 99,
+    "image": "/images/New folder/Pet Conditioner 250ml.jpg",
+    "category": "petcare"
+  },
+  {
+    "id": "pet-treats-500g",
+    "name": "Pet Treats 500g",
+    "price": 109,
+    "image": "/images/New folder/Pet Treats 500g.jpg",
+    "category": "petcare"
+  },
+  {
+    "id": "cat-litter-5kg",
+    "name": "Cat Litter 5kg",
+    "price": 119,
+    "image": "/images/New folder/Cat Litter 5kg 🪣.jpg",
+    "category": "petcare"
+  },
+  {
+    "id": "litter-scoop",
+    "name": "Litter Scoop",
+    "price": 129,
+    "image": "/images/New folder/Litter Scoop.jpg",
+    "category": "petcare"
+  },
+  {
+    "id": "pet-bowl-set",
+    "name": "Pet Bowl Set",
+    "price": 139,
+    "image": "/images/New folder/Pet Bowl Set.jpg",
+    "category": "petcare"
+  },
+  {
+    "id": "leash-and-collar",
+    "name": "Leash & Collar",
+    "price": 149,
+    "image": "/images/New folder/Leash & Collar.jpg",
+    "category": "petcare"
+  },
+  {
+    "id": "pet-towel",
+    "name": "Pet Towel",
+    "price": 159,
+    "image": "/images/New folder/Pet Towel.jpg",
+    "category": "petcare"
+  },
+  {
+    "id": "flea-comb",
+    "name": "Flea Comb",
+    "price": 169,
+    "image": "/images/New folder/Flea Comb 🪮.jpg",
+    "category": "petcare"
+  },
+  {
+    "id": "pet-vitamins",
+    "name": "Pet Vitamins",
+    "price": 179,
+    "image": "/images/New folder/Pet Vitamins.jpg",
+    "category": "petcare"
+  },
+  {
+    "id": "poop-bags-4-rolls",
+    "name": "Poop Bags 4 rolls",
+    "price": 189,
+    "image": "/images/New folder/Poop Bags 4 rolls.jpg",
+    "category": "petcare"
+  },
+  {
+    "id": "pet-wipes-50pc",
+    "name": "Pet Wipes 50pc",
+    "price": 199,
+    "image": "/images/New folder/Pet Wipes 50pc.jpg",
+    "category": "petcare"
+  },
+  {
+    "id": "chew-toy",
+    "name": "Chew Toy",
+    "price": 209,
+    "image": "/images/New folder/Chew Toy.jpg",
+    "category": "petcare"
+  },
+  {
+    "id": "catnip-50g",
+    "name": "Catnip 50g",
+    "price": 219,
+    "image": "/images/New folder/Catnip 50g.jpg",
+    "category": "petcare"
+  },
+  {
+    "id": "scratching-pad",
+    "name": "Scratching Pad",
+    "price": 229,
+    "image": "/images/New folder/Scratching Pad.jpg",
+    "category": "petcare"
+  },
+  {
+    "id": "pet-bed-small",
+    "name": "Pet Bed Small",
+    "price": 239,
+    "image": "/images/New folder/Pet Bed Small.jpg",
+    "category": "petcare"
+  },
+  {
+    "id": "vitamin-c-60-tablets",
+    "name": "Vitamin C 60 tablets",
+    "price": 49,
+    "image": "/images/New folder/Vitamin C 60 tablets.jpg",
+    "category": "health"
+  },
+  {
+    "id": "multivitamin-30-tablets",
+    "name": "Multivitamin 30 tablets",
+    "price": 59,
+    "image": "/images/New folder/Multivitamin 30 tablets.jpg",
+    "category": "health"
+  },
+  {
+    "id": "protein-powder-1kg",
+    "name": "Protein Powder 1kg",
+    "price": 69,
+    "image": "/images/New folder/Protein Powder 1kg.jpg",
+    "category": "health"
+  },
+  {
+    "id": "ors-200ml",
+    "name": "ORS 200ml",
+    "price": 79,
+    "image": "/images/New folder/ORS 200ml.jpg",
+    "category": "health"
+  },
+  {
+    "id": "electrolyte-sachets-5pc",
+    "name": "Electrolyte Sachets 5pc",
+    "price": 89,
+    "image": "/images/New folder/Electrolyte Sachets 5pc.jpg",
+    "category": "health"
+  },
+  {
+    "id": "bandages-10pc",
+    "name": "Bandages 10pc",
+    "price": 99,
+    "image": "/images/New folder/Bandages 10pc.jpg",
+    "category": "health"
+  },
+  {
+    "id": "first-aid-kit",
+    "name": "First Aid Kit",
+    "price": 109,
+    "image": "/images/New folder/First Aid Kit.jpg",
+    "category": "health"
+  },
+  {
+    "id": "thermometer",
+    "name": "Thermometer",
+    "price": 119,
+    "image": "/images/New folder/Thermometer.jpg",
+    "category": "health"
+  },
+  {
+    "id": "pulse-oximeter",
+    "name": "Pulse Oximeter",
+    "price": 129,
+    "image": "/images/New folder/Pulse Oximeter.jpg",
+    "category": "health"
+  },
+  {
+    "id": "hand-sanitizer-500ml",
+    "name": "Hand Sanitizer 500ml",
+    "price": 139,
+    "image": "/images/New folder/Hand Sanitizer 500ml.jpg",
+    "category": "health"
+  },
+  {
+    "id": "n95-mask-5pc",
+    "name": "N95 Mask 5pc",
+    "price": 149,
+    "image": "/images/New folder/N95 Mask 5pc.jpg",
+    "category": "health"
+  },
+  {
+    "id": "pain-relief-spray",
+    "name": "Pain Relief Spray",
+    "price": 159,
+    "image": "/images/New folder/Pain Relief Spray.png",
+    "category": "health"
+  },
+  {
+    "id": "cold-and-flu-syrup",
+    "name": "Cold & Flu Syrup",
+    "price": 169,
+    "image": "/images/New folder/Cold & Flu Syrup.jpg",
+    "category": "health"
+  },
+  {
+    "id": "cough-drops-50g",
+    "name": "Cough Drops 50g",
+    "price": 179,
+    "image": "/images/New folder/Cough Drops 50g.jpg",
+    "category": "health"
+  },
+  {
+    "id": "herbal-tea-100g",
+    "name": "Herbal Tea 100g",
+    "price": 189,
+    "image": "/images/New folder/Herbal Tea 100g.jpg",
+    "category": "health"
+  },
+  {
+    "id": "green-tea-100g",
+    "name": "Green Tea 100g",
+    "price": 199,
+    "image": "/images/New folder/Green Tea 100g.jpg",
+    "category": "health"
+  },
+  {
+    "id": "apple-cider-vinegar-500ml",
+    "name": "Apple Cider Vinegar 500ml",
+    "price": 209,
+    "image": "/images/New folder/Apple Cider Vinegar 500ml.jpg",
+    "category": "health"
+  },
+  {
+    "id": "chyawanprash-1kg",
+    "name": "Chyawanprash 1kg",
+    "price": 219,
+    "image": "/images/New folder/Chyawanprash 1kg.jpg",
+    "category": "health"
+  },
+  {
+    "id": "ayurvedic-oil-100ml",
+    "name": "Ayurvedic Oil 100ml",
+    "price": 229,
+    "image": "/images/New folder/Ayurvedic Oil 100ml.jpg",
+    "category": "health"
+  },
+  {
+    "id": "steam-inhaler",
+    "name": "Steam Inhaler",
+    "price": 239,
+    "image": "/images/New folder/Steam Inhaler.jpg",
+    "category": "health"
+  },
+  {
+    "id": "condom",
+    "name": "Durex",
+    "price": 30,
+    "image": "/images/1763885394340-download.jfif",
+    "category": "personalcare"
+  }
+]

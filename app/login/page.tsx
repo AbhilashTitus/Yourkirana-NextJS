@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 export default function LoginPage() {
     return (
         <main>
@@ -25,6 +27,11 @@ export default function LoginPage() {
                             <button type="submit" className="btn btn-submit btn-primary">
                                 <span>Login</span> <span>→</span>
                             </button>
+                            <div style={{ marginTop: '1rem', textAlign: 'center' }}>
+                                <Link href="/signup" className="text-sm text-primary hover:underline">
+                                    Don&apos;t have an account? Sign up
+                                </Link>
+                            </div>
                         </form>
                     </div>
                 </div>
