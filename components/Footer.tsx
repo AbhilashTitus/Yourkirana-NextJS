@@ -29,6 +29,9 @@ export default function Footer() {
                         <li><Link href="/terms">Terms & Conditions</Link></li>
                         <li><Link href="/privacy">Privacy Policy</Link></li>
                         <li><Link href="/refund">Refund Policy</Link></li>
+                        <li><Link href="/shipping">Shipping Policy</Link></li>
+                        <li><Link href="/delivery">Delivery Policy</Link></li>
+                        <li><Link href="/cancellation">Cancellation Policy</Link></li>
                     </ul>
                 </div>
 
@@ -46,6 +49,6 @@ export default function Footer() {
             <div className="footer-bottom">
                 © 2025 YourKirana • Equispark Trading Private Limited • New Delhi
             </div>
-        </footer>
+        </footer >
     );
 }
