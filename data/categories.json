@@ -2,67 +2,85 @@
   {
     "id": "groceries",
     "name": "Groceries & Staples",
-    "image": "/images/categories/groceries-staples.jpg",
+    "image": "/images/1763938785850-Gemini_Generated_Image_kzs5jukzs5jukzs5.png",
     "href": "/categories/groceries"
   },
   {
     "id": "vegetables",
     "name": "Vegetables & Fruits",
-    "image": "/images/categories/vegetables-fruits.jpg",
+    "image": "/images/1763938857071-Gemini_Generated_Image_69c89l69c89l69c8.png",
     "href": "/categories/vegetables"
   },
   {
     "id": "dairy",
     "name": "Dairy & Bakery",
-    "image": "/images/categories/dairy-bakery.jpg",
+    "image": "/images/1763938915722-Gemini_Generated_Image_q3ux67q3ux67q3ux.png",
     "href": "/categories/dairy"
   },
   {
     "id": "snacks",
     "name": "Snacks & Foods",
-    "image": "/images/categories/snacks-foods.jpg",
+    "image": "/images/1763938983194-Gemini_Generated_Image_lmxlkilmxlkilmxl.png",
     "href": "/categories/snacks"
   },
   {
     "id": "beverages",
     "name": "Beverages",
-    "image": "/images/categories/beverages.jpg",
+    "image": "/images/1763939230451-Gemini_Generated_Image_ea922xea922xea92.png",
     "href": "/categories/beverages"
   },
   {
     "id": "cleaning",
     "name": "Cleaning & Household",
-    "image": "/images/categories/cleaning-household.jpg",
+    "image": "/images/1763939282630-Gemini_Generated_Image_wmqrt6wmqrt6wmqr.png",
     "href": "/categories/cleaning"
   },
   {
     "id": "personalcare",
     "name": "Personal Care",
-    "image": "/images/categories/personal-care.jpg",
+    "image": "/images/1763939338070-Gemini_Generated_Image_nfoh4znfoh4znfoh.png",
     "href": "/categories/personalcare"
   },
   {
     "id": "baby",
     "name": "Baby Essentials",
-    "image": "/images/categories/baby-essentials.jpg",
+    "image": "/images/1763939429767-Gemini_Generated_Image_pr48d7pr48d7pr48.png",
     "href": "/categories/baby"
   },
   {
     "id": "kitchen",
     "name": "Kitchen & Home Needs",
-    "image": "/images/categories/house.jpg",
+    "image": "/images/1763939581181-Gemini_Generated_Image_o1h0avo1h0avo1h0.png",
     "href": "/categories/kitchen"
   },
   {
     "id": "petcare",
     "name": "Pet Care",
-    "image": "/images/categories/petscare.jpg",
+    "image": "/images/1763939760102-Gemini_Generated_Image_yqpt2tyqpt2tyqpt.png",
     "href": "/categories/petcare"
   },
   {
     "id": "health",
     "name": "Health",
-    "image": "/images/categories/health.jpg",
+    "image": "/images/1763939877128-Gemini_Generated_Image_pndmvepndmvepndm.png",
     "href": "/categories/health"
+  },
+  {
+    "id": "dry-fruits",
+    "name": "Dry Fruits",
+    "image": "/images/1763940133778-Gemini_Generated_Image_jifq19jifq19jifq.png",
+    "href": "/categories/dry-fruits"
+  },
+  {
+    "id": "spices",
+    "name": "Spices",
+    "image": "/images/1763940269333-Gemini_Generated_Image_vcjqbqvcjqbqvcjq.png",
+    "href": "/categories/spices"
+  },
+  {
+    "id": "pickle",
+    "name": "Pickles",
+    "image": "/images/1763940397383-Gemini_Generated_Image_e41t1he41t1he41t.png",
+    "href": "/categories/pickle"
   }
 ]

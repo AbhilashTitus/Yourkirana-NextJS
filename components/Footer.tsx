@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import React from 'react';
 
 export default function Footer() {
     return (
@@ -37,13 +38,13 @@ export default function Footer() {
                         <li><Link href="/contact">Contact Us</Link></li>
                         <li><a href="mailto:support@yourkirana.in">support@yourkirana.in</a></li>
                         <li><a href="tel:+919999999999">+91 99999 99999</a></li>
-                        <li>Bangalore, India</li>
+                        <li>New Delhi, India</li>
                     </ul>
                 </div>
             </div>
 
             <div className="footer-bottom">
-                © 2025 YourKirana | Nexora Solutions Private Limited • Bangalore
+                © 2025 YourKirana • Equispark Trading Private Limited • New Delhi
             </div>
         </footer>
     );

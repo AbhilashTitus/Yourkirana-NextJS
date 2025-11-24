@@ -78,7 +78,7 @@
   },
   {
     "id": "iodized-salt-1kg",
-    "name": "Iodized Salt 1kg",
+    "name": "Tata Iodized Salt 1kg",
     "price": 179,
     "image": "/images/New folder/Iodized Salt 1kg.webp",
     "category": "groceries"
@@ -505,28 +505,28 @@
   },
   {
     "id": "soda-750ml",
-    "name": "Soda 750ml",
+    "name": "Limca Soda 750ml",
     "price": 49,
     "image": "/images/New folder/Soda 750ml.jpg",
     "category": "beverages"
   },
   {
     "id": "cola-1.25l",
-    "name": "Cola 1.25L",
+    "name": "Cocacola 1.25L",
     "price": 59,
     "image": "/images/New folder/Cola 1.25L.jpg",
     "category": "beverages"
   },
   {
     "id": "orange-drink-1l",
-    "name": "Orange Drink 1L",
+    "name": "Minute Made Orange  1L",
     "price": 69,
     "image": "/images/New folder/Orange Drink 1L.jpg",
     "category": "beverages"
   },
   {
     "id": "lemonade-1l",
-    "name": "Lemonade 1L",
+    "name": "Shweppes Lemonade 1L",
     "price": 79,
     "image": "/images/New folder/Lemonade 1L.jpg",
     "category": "beverages"
@@ -547,70 +547,70 @@
   },
   {
     "id": "coconut-water-200ml",
-    "name": "Coconut Water 200ml",
+    "name": "Storia Coconut Water 200ml",
     "price": 109,
     "image": "/images/New folder/Coconut Water 200ml.jpg",
     "category": "beverages"
   },
   {
     "id": "fruit-juice-1l",
-    "name": "Fruit Juice 1L",
+    "name": "Raw Fruit Juice 1L",
     "price": 119,
     "image": "/images/New folder/Fruit Juice 1L.jpg",
     "category": "beverages"
   },
   {
     "id": "iced-tea-500ml",
-    "name": "Iced Tea 500ml",
+    "name": "Lipton Iced Tea 500ml",
     "price": 129,
     "image": "/images/New folder/Iced Tea 500ml.jpg",
     "category": "beverages"
   },
   {
     "id": "green-tea-25-bags",
-    "name": "Green Tea 25 bags",
+    "name": "Chai Craft Green Tea 25 bags",
     "price": 139,
     "image": "/images/New folder/Green Tea 25 bags.jpg",
     "category": "beverages"
   },
   {
     "id": "coffee-200g",
-    "name": "Coffee 200g",
+    "name": "Nescafe Coffee 200g",
     "price": 149,
     "image": "/images/New folder/Coffee 200g.jpg",
     "category": "beverages"
   },
   {
     "id": "instant-coffee-100g",
-    "name": "Instant Coffee 100g",
+    "name": "Bru Instant Coffee 100g",
     "price": 159,
     "image": "/images/New folder/Instant Coffee 100g.jpg",
     "category": "beverages"
   },
   {
     "id": "milkshake-180ml",
-    "name": "Milkshake 180ml",
+    "name": "Sunfeast Milkshake 180ml",
     "price": 169,
     "image": "/images/New folder/Milkshake 180ml.jpg",
     "category": "beverages"
   },
   {
     "id": "malted-drink-500g",
-    "name": "Malted Drink 500g",
+    "name": "Horlicks 500g",
     "price": 179,
     "image": "/images/New folder/Malted Drink 500g.jpg",
     "category": "beverages"
   },
   {
     "id": "electrolyte-drink-500ml",
-    "name": "Electrolyte Drink 500ml",
+    "name": "Prime Drink 500ml",
     "price": 189,
     "image": "/images/New folder/Electrolyte Drink 500ml.jpg",
     "category": "beverages"
   },
   {
     "id": "energy-drink-250ml",
-    "name": "Energy Drink 250ml",
+    "name": "Redbull 250ml",
     "price": 199,
     "image": "/images/New folder/Energy Drink 250ml.jpg",
     "category": "beverages"
@@ -624,21 +624,21 @@
   },
   {
     "id": "kombucha-330ml",
-    "name": "Kombucha 330ml",
+    "name": "Remley Kombucha 330ml",
     "price": 219,
     "image": "/images/New folder/Kombucha 330ml.jpg",
     "category": "beverages"
   },
   {
     "id": "lassi-200ml",
-    "name": "Lassi 200ml",
+    "name": "Amul Lassi 200ml",
     "price": 229,
     "image": "/images/New folder/Lassi 200ml.jpg",
     "category": "beverages"
   },
   {
     "id": "buttermilk-200ml",
-    "name": "Buttermilk 200ml",
+    "name": "Amul Buttermilk 200ml",
     "price": 239,
     "image": "/images/New folder/Buttermilk 200ml.jpg",
     "category": "beverages"
@@ -1412,5 +1412,26 @@
     "price": 239,
     "image": "/images/New folder/Steam Inhaler.jpg",
     "category": "health"
+  },
+  {
+    "id": "cashew",
+    "name": "Cashewnut",
+    "price": 180,
+    "image": "/images/1763941402055-images.jfif",
+    "category": "dry-fruits"
+  },
+  {
+    "id": "turmeric",
+    "name": "Turmeric",
+    "price": 200,
+    "image": "/images/1763941484116-download.jfif",
+    "category": "spices"
+  },
+  {
+    "id": "pickles",
+    "name": "Pickles",
+    "price": 250,
+    "image": "/images/1763941581448-images__1_.jfif",
+    "category": "pickle"
   }
 ]

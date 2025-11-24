@@ -78,9 +78,9 @@ export default function ContactPage() {
                                         Address
                                     </h4>
                                     <p style={{ color: '#667085', marginLeft: '30px', lineHeight: '1.8' }}>
-                                        Nexora Solutions Private Limited<br />
-                                        Bangalore, Karnataka<br />
-                                        India - 560001
+                                        Equispark Trading Private Limited<br />
+                                        NO PVT 319, KH 4/25, GF, ST- 19 BLK - <br />D COLONY, Burari, North Delhi <br />
+                                        India - 110084
                                     </p>
                                 </div>
 

@@ -22,7 +22,7 @@ export default function PrivacyPage() {
                     <div className="feature-card" style={{ maxWidth: '900px', margin: 'auto' }}>
 
                         <p style={{ marginBottom: '20px', lineHeight: '1.8' }}>
-                            Nexora Solutions Private Limited ("we", "our", or "YourKirana") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our platform. This policy is in compliance with the Information Technology Act, 2000, the Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules, 2011, and the Digital Personal Data Protection Act, 2023.
+                            Equispark Trading Private Limited ("we", "our", or "YourKirana") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our platform. This policy is in compliance with the Information Technology Act, 2000, the Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules, 2011, and the Digital Personal Data Protection Act, 2023.
                         </p>
 
                         <h2 style={{ marginTop: '30px' }}>2. Information We Collect</h2>
@@ -129,7 +129,7 @@ export default function PrivacyPage() {
                         <p style={{ marginBottom: '20px', lineHeight: '1.8' }}>
                             <strong>Name:</strong> [To be updated]<br />
                             <strong>Email:</strong> grievance@yourkirana.in<br />
-                            <strong>Address:</strong> Nexora Solutions Private Limited, Bangalore, Karnataka, India<br />
+                            <strong>Address:</strong> Equispark Trading Private Limited, New Delhi, Karnataka, India<br />
                             <strong>Response Time:</strong> Within 30 days of receiving the complaint
                         </p>
 
@@ -138,7 +138,7 @@ export default function PrivacyPage() {
                             For any questions about this Privacy Policy, please contact us at:<br />
                             Email: privacy@yourkirana.in<br />
                             Phone: +91 99999 99999<br />
-                            Address: Nexora Solutions Private Limited, Bangalore, Karnataka, India
+                            Address: Equispark Trading Private Limited, New Delhi, Karnataka, India
                         </p>
                     </div>
                 </div>

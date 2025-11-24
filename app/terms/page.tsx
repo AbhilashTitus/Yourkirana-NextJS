@@ -22,7 +22,7 @@ export default function TermsPage() {
                     <div className="feature-card" style={{ maxWidth: '900px', margin: 'auto' }}>
 
                         <p style={{ marginBottom: '20px', lineHeight: '1.8' }}>
-                            By accessing and using YourKirana platform operated by Nexora Solutions Private Limited, you accept and agree to be bound by the terms and provisions of this agreement. This agreement is in accordance with the Information Technology Act, 2000 and rules thereunder as applicable and the amended provisions pertaining to electronic records in various statutes as amended by the Information Technology Act, 2000.
+                            By accessing and using YourKirana platform operated by Equispark Trading Private Limited, you accept and agree to be bound by the terms and provisions of this agreement. This agreement is in accordance with the Information Technology Act, 2000 and rules thereunder as applicable and the amended provisions pertaining to electronic records in various statutes as amended by the Information Technology Act, 2000.
                         </p>
 
                         <h2 style={{ marginTop: '30px' }}>2. User Eligibility</h2>
@@ -62,17 +62,17 @@ export default function TermsPage() {
 
                         <h2 style={{ marginTop: '30px' }}>9. Intellectual Property</h2>
                         <p style={{ marginBottom: '20px', lineHeight: '1.8' }}>
-                            All content on this platform, including but not limited to text, graphics, logos, images, and software, is the property of Nexora Solutions Private Limited or its content suppliers and is protected by Indian and international copyright laws. Unauthorized use of any content may violate copyright, trademark, and other laws.
+                            All content on this platform, including but not limited to text, graphics, logos, images, and software, is the property of Equispark Trading Private Limited or its content suppliers and is protected by Indian and international copyright laws. Unauthorized use of any content may violate copyright, trademark, and other laws.
                         </p>
 
                         <h2 style={{ marginTop: '30px' }}>10. Limitation of Liability</h2>
                         <p style={{ marginBottom: '20px', lineHeight: '1.8' }}>
-                            To the maximum extent permitted by law, Nexora Solutions Private Limited shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or related to your use of the platform. Our total liability shall not exceed the amount paid by you for the specific product or service giving rise to the claim.
+                            To the maximum extent permitted by law, Equispark Trading Private Limited shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or related to your use of the platform. Our total liability shall not exceed the amount paid by you for the specific product or service giving rise to the claim.
                         </p>
 
                         <h2 style={{ marginTop: '30px' }}>11. Governing Law and Jurisdiction</h2>
                         <p style={{ marginBottom: '20px', lineHeight: '1.8' }}>
-                            These terms shall be governed by and construed in accordance with the laws of India. Any disputes arising from these terms shall be subject to the exclusive jurisdiction of the courts in Bangalore, Karnataka, India.
+                            These terms shall be governed by and construed in accordance with the laws of India. Any disputes arising from these terms shall be subject to the exclusive jurisdiction of the courts in New Delhi, Karnataka, India.
                         </p>
 
                         <h2 style={{ marginTop: '30px' }}>12. Modifications to Terms</h2>
@@ -84,7 +84,7 @@ export default function TermsPage() {
                         <p style={{ marginBottom: '20px', lineHeight: '1.8' }}>
                             For any questions regarding these terms, please contact us at:<br />
                             Email: legal@yourkirana.in<br />
-                            Address: Nexora Solutions Private Limited, Bangalore, Karnataka, India
+                            Address: Equispark Trading Private Limited, New Delhi, Karnataka, India
                         </p>
                     </div>
                 </div>

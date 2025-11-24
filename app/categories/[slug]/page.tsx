@@ -1,7 +1,7 @@
 "use client";
 
 import { useParams } from 'next/navigation';
-import { categories } from '@/data/products';
+
 import { useCart } from '@/context/CartContext';
 import { notFound } from 'next/navigation';
 import { useState, useEffect } from 'react';
@@ -23,29 +23,41 @@ export default function CategoryPage() {
     const [products, setProducts] = useState<Product[]>([]);
     const [filteredProducts, setFilteredProducts] = useState<Product[]>([]);
     const [loading, setLoading] = useState(true);
+    const [category, setCategory] = useState<any>(null);
+    const [categoryLoading, setCategoryLoading] = useState(true);
 
-    const category = categories.find((c) => c.id === slug);
-
-    if (!category) {
-        notFound();
-    }
-
-    // Fetch products from API
+    // Fetch category and products
     useEffect(() => {
-        const fetchProducts = async () => {
+        const fetchData = async () => {
             try {
-                const res = await fetch(`/api/products?category=${slug}`);
-                const data = await res.json();
-                setProducts(data.products || []);
-                setFilteredProducts(data.products || []);
+                // Fetch categories to find the current one
+                const catRes = await fetch('/api/categories');
+                const catData = await catRes.json();
+                const currentCategory = catData.categories.find((c: any) => c.id === slug);
+
+                if (!currentCategory) {
+                    setCategory(null);
+                    setCategoryLoading(false);
+                    return;
+                }
+
+                setCategory(currentCategory);
+                setCategoryLoading(false);
+
+                // Fetch products for this category
+                const prodRes = await fetch(`/api/products?category=${slug}`);
+                const prodData = await prodRes.json();
+                setProducts(prodData.products || []);
+                setFilteredProducts(prodData.products || []);
             } catch (error) {
-                console.error('Error fetching products:', error);
+                console.error('Error fetching data:', error);
             } finally {
                 setLoading(false);
+                setCategoryLoading(false);
             }
         };
 
-        fetchProducts();
+        fetchData();
     }, [slug]);
 
     const minPrice = products.length > 0 ? Math.min(...products.map(p => p.price)) : 0;
@@ -56,17 +68,20 @@ export default function CategoryPage() {
         setFilteredProducts(filtered);
     };
 
-    if (loading) {
+    if (categoryLoading || loading) {
         return (
             <main>
                 <section className="section">
                     <div className="container">
-                        <h2>{category.name}</h2>
-                        <div className="text-center py-20">Loading products...</div>
+                        <div className="text-center py-20">Loading...</div>
                     </div>
                 </section>
             </main>
         );
+    }
+
+    if (!category) {
+        return notFound();
     }
 
     return (
@@ -131,7 +146,7 @@ export default function CategoryPage() {
 
                     {filteredProducts.length === 0 && (
                         <div className="text-center py-20 text-gray-500">
-                            No products found in this price range.
+                            No products found in this category.
                         </div>
                     )}
                 </div>
