@@ -43,10 +43,10 @@ export default function AboutPage() {
                         <h2 style={{ marginTop: '30px' }}>Company Information</h2>
                         <ul style={{ lineHeight: '2', marginLeft: '20px' }}>
                             <li><strong>Legal Name:</strong> Equispark Trading Private Limited</li>
-                            <li><strong>Registered Office:</strong> New Delhi, Karnataka, India</li>
-                            <li><strong>Year of Establishment:</strong> 2024</li>
+                            <li><strong>Registered Office:</strong> New Delhi, India</li>
+                            {/* <li><strong>Year of Establishment:</strong> 2024</li>
                             <li><strong>GSTIN:</strong> [To be updated]</li>
-                            <li><strong>CIN:</strong> [To be updated]</li>
+                            <li><strong>CIN:</strong> [To be updated]</li> */}
                         </ul>
 
                         <h2 style={{ marginTop: '30px' }}>Why Choose Us</h2>
