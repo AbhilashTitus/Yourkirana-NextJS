@@ -1,6 +1,7 @@
 "use client";
 
 import React, { createContext, useContext, useEffect, useState } from 'react';
+import { useToast } from './ToastContext';
 
 export interface CartItem {
   name: string;
@@ -25,6 +26,7 @@ const CartContext = createContext<CartContextType | undefined>(undefined);
 export const CartProvider = ({ children }: { children: React.ReactNode }) => {
   const [cart, setCart] = useState<CartItem[]>([]);
   const [isCartOpen, setIsCartOpen] = useState(false);
+  const { showToast } = useToast();
 
   // Load cart from localStorage
   useEffect(() => {
@@ -54,7 +56,8 @@ export const CartProvider = ({ children }: { children: React.ReactNode }) => {
         return [...prevCart, { name, price, quantity: 1 }];
       }
     });
-    // Optional: Show toast notification here
+    // Show toast notification
+    showToast(`${name} added to cart!`, 'success');
   };
 
   const removeFromCart = (name: string) => {

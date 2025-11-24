@@ -1,0 +1,18 @@
+/* Header polish */
+.header {
+  box-shadow: 0 8px 24px rgba(16, 24, 40, .04)
+}
+
+.nav a {
+  transition: background .2s ease, color .2s ease
+}
+
+.nav a:not(.nav-btn).active,
+.nav a:not(.nav-btn):focus {
+  outline: none;
+  background: var(--bg-soft)
+}
+
+.cart-btn {
+  position: relative
+}

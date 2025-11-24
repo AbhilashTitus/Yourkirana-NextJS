@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import { Lexend } from "next/font/google";
 import "./globals.css";
+import { ToastProvider } from "@/context/ToastContext";
 import { CartProvider } from "@/context/CartContext";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const lexend = Lexend({
   subsets: ["latin"],
@@ -24,11 +26,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={lexend.className}>
-        <CartProvider>
-          <Header />
-          {children}
-          <Footer />
-        </CartProvider>
+        <ToastProvider>
+          <CartProvider>
+            <ScrollToTop />
+            <Header />
+            {children}
+            <Footer />
+          </CartProvider>
+        </ToastProvider>
       </body>
     </html>
   );
