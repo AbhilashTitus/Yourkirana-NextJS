@@ -1,37 +1,37 @@
 [
   {
     "id": "basmati-rice-1kg",
-    "name": "Basmati Rice 1kg",
+    "name": "Daawat Basmati Rice 1kg",
     "price": 51,
-    "image": "/images/New folder/Basmati Rice 1kg.jpg",
+    "image": "/images/1763988154279-2357.jpg",
     "category": "groceries"
   },
   {
     "id": "sona-masoori-rice-5kg",
-    "name": "Sona Masoori Rice 5kg",
+    "name": "India Gate Sona Masoori Rice 5kg",
     "price": 59,
-    "image": "/images/New folder/Sona Masoori Rice 5kg.jpg",
+    "image": "/images/1763988239028-India_Gate_Sona_Masoori_Rice_5kg_-500px_c191bf4c-51e0-479a-9674-8da1caf6692d.webp",
     "category": "groceries"
   },
   {
     "id": "wheat-atta-5kg",
-    "name": "Wheat Atta 5kg",
+    "name": "Aashirvaad Wheat Atta 5kg",
     "price": 69,
-    "image": "/images/New folder/Wheat Atta 5kg.jpg",
+    "image": "/images/1763988326673-126906_10-aashirvaad-atta-whole-wheat.webp",
     "category": "groceries"
   },
   {
     "id": "maida-1kg",
-    "name": "Maida 1kg",
+    "name": "Patanjali Maida 1kg",
     "price": 79,
-    "image": "/images/New folder/Maida 1kg.jpg",
+    "image": "/images/1763988410200-1690017979Maida1Kg1.png",
     "category": "groceries"
   },
   {
     "id": "suji-1kg",
-    "name": "Suji 1kg",
+    "name": "Patanjali Suji 1kg",
     "price": 89,
-    "image": "/images/New folder/Suji 1kg.jpg",
+    "image": "/images/1763989143737-1735561479sooji1kg1.png",
     "category": "groceries"
   },
   {
@@ -64,7 +64,7 @@
   },
   {
     "id": "ghee-500ml",
-    "name": "Ghee 500ml",
+    "name": "Sapins Ghee 500ml",
     "price": 219,
     "image": "/images/New folder/Ghee 500ml.jpg",
     "category": "groceries"
@@ -85,42 +85,42 @@
   },
   {
     "id": "onion-1kg",
-    "name": "Onion 1kg",
+    "name": "Organic Onion 1kg",
     "price": 49,
-    "image": "/images/New folder/Onion 1kg.jpg",
+    "image": "/images/1763987609551-onion-packing-net-500x500.webp",
     "category": "vegetables"
   },
   {
     "id": "tomato-1kg",
-    "name": "Tomato 1kg",
+    "name": "Organic Tomato 1kg",
     "price": 59,
-    "image": "/images/New folder/Tomato 1kg.jpg",
+    "image": "/images/1763987689223-istockphoto-177003557-612x612.jpg",
     "category": "vegetables"
   },
   {
     "id": "potato-1kg",
-    "name": "Potato 1kg",
+    "name": "Organic Potato 1kg",
     "price": 69,
     "image": "/images/New folder/Potato 1kg.jpg",
     "category": "vegetables"
   },
   {
     "id": "carrot-500g",
-    "name": "Carrot 500g",
+    "name": "Organic Carrot 1 Kg",
     "price": 79,
-    "image": "/images/New folder/Carrot 500g.jpg",
+    "image": "/images/1763987782617-a-vibrant-bundle-of-fresh-organic-orange-carrots-with-lush-green-tops-tied-with-natural-twine-perfect-for-healthy-recipes-and-farm-fresh-concepts-png.png",
     "category": "vegetables"
   },
   {
     "id": "beans-500g",
-    "name": "Beans 500g",
+    "name": "Organic Beans 500g",
     "price": 89,
     "image": "/images/New folder/Beans 500g.jpg",
     "category": "vegetables"
   },
   {
     "id": "spinach-1-bunch",
-    "name": "Spinach 1 bunch",
+    "name": "Organic Spinach 1 bunch",
     "price": 99,
     "image": "/images/New folder/Spinach 1 bunch.jpg",
     "category": "vegetables"
@@ -141,16 +141,16 @@
   },
   {
     "id": "apple-1kg",
-    "name": "Apple 1kg",
+    "name": "Organic Apple 1kg",
     "price": 129,
-    "image": "/images/New folder/Apple 1kg.jpg",
+    "image": "/images/1763987873725-apple-basket-iga00338-500x500.webp",
     "category": "vegetables"
   },
   {
     "id": "orange-1kg",
-    "name": "Orange 1kg",
+    "name": "Organic Orange 1kg",
     "price": 139,
-    "image": "/images/New folder/Orange 1kg.jpg",
+    "image": "/images/1763987995619-n1905fruit04.jpg",
     "category": "vegetables"
   },
   {
@@ -162,16 +162,16 @@
   },
   {
     "id": "pomegranate-500g",
-    "name": "Pomegranate 500g",
+    "name": "Natural Pomegranate 500g",
     "price": 159,
-    "image": "/images/New folder/Pomegranate 500g.jpg",
+    "image": "/images/1763988974331-isolated-bunch-pomegranate-white-background-isolated-bunch-pomegranate-white-background-279705611.webp",
     "category": "vegetables"
   },
   {
     "id": "mango-1kg",
-    "name": "Mango 1kg",
+    "name": "Natural Mango 1kg",
     "price": 169,
-    "image": "/images/New folder/Mango 1kg.jpg",
+    "image": "/images/1763989068803-360_F_1626003392_Kcs3cHgTGvPWvgsCaddp0AK59yaz1CnX.jpg",
     "category": "vegetables"
   },
   {
@@ -183,9 +183,9 @@
   },
   {
     "id": "lemon-6pc",
-    "name": "Lemon 6pc",
+    "name": "Lemon 1 kg",
     "price": 189,
-    "image": "/images/New folder/Lemon 6pc.jpg",
+    "image": "/images/1763989008179-istockphoto-956192380-612x612.jpg",
     "category": "vegetables"
   },
   {
@@ -218,9 +218,9 @@
   },
   {
     "id": "coconut-1pc",
-    "name": "Coconut 1pc",
+    "name": "Coconut 5 Kg",
     "price": 239,
-    "image": "/images/New folder/Coconut 1pc.jpg",
+    "image": "/images/1763988068785-platone-husked-coconut-pack-3-organic-coconut-pooja-coconut-nariyal-product-images-orvdb2ugu5a-p605893953-1-202310291947.jpg",
     "category": "vegetables"
   },
   {
@@ -365,16 +365,16 @@
   },
   {
     "id": "potato-chips-100g",
-    "name": "Lays Chips 100g",
+    "name": "Lays Chips Combo 100g",
     "price": 49,
-    "image": "/images/1763959369884-lay-s-classic-salted-potato-chips-32-g-quick-pantry.jpg",
+    "image": "/images/1763989395111-4LaysPotatoChipsAssortedFlavoursCombo1450421944.jpg",
     "category": "snacks"
   },
   {
     "id": "nacho-chips-150g",
-    "name": "Nacho Chips 150g",
+    "name": "Nacho Chips Combo 150g",
     "price": 59,
-    "image": "/images/New folder/Nacho Chips 150g.jpg",
+    "image": "/images/1763989466464-cdc73c81-74fc-473d-b1a5-60c035bc3086.webp",
     "category": "snacks"
   },
   {
@@ -393,16 +393,16 @@
   },
   {
     "id": "popcorn-100g",
-    "name": "Act 2 Popcorn 100g",
+    "name": "Act 2 Popcorn Combo 100g",
     "price": 89,
-    "image": "/images/1763959417481-ca315fda-9996-4d93-a499-42d1ca4aacf6.webp",
+    "image": "/images/1763989516650-images.jfif",
     "category": "snacks"
   },
   {
     "id": "instant-noodles-70g",
-    "name": "Maggie Noodles 70g",
+    "name": "Maggie Noodles Combo 70g",
     "price": 25,
-    "image": "/images/1763959477482-maggi-1-500x500.webp",
+    "image": "/images/1763989561657-MaggiVegImage-4fd3e.jpg",
     "category": "snacks"
   },
   {
@@ -435,30 +435,30 @@
   },
   {
     "id": "chocolate-bar-50g",
-    "name": "Cadbury Dairy Milk Chocolate Bar 50g",
+    "name": "Cadbury Dairy Milk Combo Pack 50g",
     "price": 149,
-    "image": "/images/1763959788806-cadbury-dairy-milk-chocolate-bar-50-g-quick-pantry.jpg",
+    "image": "/images/1763989736524-619XPjMyesL.jpg",
     "category": "snacks"
   },
   {
     "id": "dark-chocolate-90g",
-    "name": "Amul Dark Chocolate 90g",
+    "name": "Amul Dark Chocolate Combo 90g",
     "price": 159,
-    "image": "/images/1763959841995--original-imahdh5p2jg3z2zh.webp",
+    "image": "/images/1763989801948-450-combo-of-3-dark-chocolates-bars-019-bars-3-x-150-g-3-amul-original-imagcmd6zhsnhg4s.webp",
     "category": "snacks"
   },
   {
     "id": "biscuits-100g",
     "name": "Britannia NutriChoice Biscuits 100g",
     "price": 169,
-    "image": "/images/1763959950439-71i3nPVLClL.jpg",
+    "image": "/images/1763989871326-cc5f38fe-df21-4add-9672-0e3ad78df1c6.webp",
     "category": "snacks"
   },
   {
     "id": "cream-biscuits-120g",
-    "name": "Oreo Cream Biscuits 120g",
+    "name": "Oreo Cream Biscuits Combo 120g",
     "price": 179,
-    "image": "/images/New folder/Cream Biscuits 120g.jpg",
+    "image": "/images/1763989919161-4f2b924a-321e-4116-bffb-a4816cd7ad65.webp",
     "category": "snacks"
   },
   {
@@ -505,16 +505,16 @@
   },
   {
     "id": "soda-750ml",
-    "name": "Limca Soda 750ml",
+    "name": "Limca Soda Combo Pack 750ml",
     "price": 49,
-    "image": "/images/New folder/Soda 750ml.jpg",
+    "image": "/images/1763990095858-images__1_.jfif",
     "category": "beverages"
   },
   {
     "id": "cola-1.25l",
-    "name": "Cocacola 1.25L",
+    "name": "Cocacola Combo Pack 1.25L",
     "price": 59,
-    "image": "/images/New folder/Cola 1.25L.jpg",
+    "image": "/images/1763990052640-74bc227305598943b4a1cbc3d2ffdc38.png",
     "category": "beverages"
   },
   {
@@ -540,9 +540,9 @@
   },
   {
     "id": "packaged-water-1l",
-    "name": "Packaged Water 1L",
+    "name": "Bisleri Water 1L",
     "price": 99,
-    "image": "/images/New folder/Packaged Water 1L.jpg",
+    "image": "/images/1763990234880-bisleri-mineral-water-filtered-refined-for-domestic-industrial-purpose-094.jpg",
     "category": "beverages"
   },
   {
@@ -554,16 +554,16 @@
   },
   {
     "id": "fruit-juice-1l",
-    "name": "Raw Fruit Juice 1L",
+    "name": "Raw Fruit Juice Combo 1L",
     "price": 119,
-    "image": "/images/New folder/Fruit Juice 1L.jpg",
+    "image": "/images/1763990154460-0eee5068-ea22-4997-833a-f5a311e7f1d4.webp",
     "category": "beverages"
   },
   {
     "id": "iced-tea-500ml",
-    "name": "Lipton Iced Tea 500ml",
+    "name": "Lipton Iced Tea Combo Pack 500ml",
     "price": 129,
-    "image": "/images/New folder/Iced Tea 500ml.jpg",
+    "image": "/images/1763990279407-images__2_.jfif",
     "category": "beverages"
   },
   {
@@ -596,23 +596,23 @@
   },
   {
     "id": "malted-drink-500g",
-    "name": "Horlicks 500g",
+    "name": "Horlicks Combo Pack 500g",
     "price": 179,
-    "image": "/images/New folder/Malted Drink 500g.jpg",
+    "image": "/images/1763990339977-71vG7MVUH4L.jpg_BO30_255_255_255_UF900_850_SR1910_1000_0_C_QL100_.jpg",
     "category": "beverages"
   },
   {
     "id": "electrolyte-drink-500ml",
-    "name": "Prime Drink 500ml",
+    "name": "Prime Drink Combo 500ml",
     "price": 189,
-    "image": "/images/New folder/Electrolyte Drink 500ml.jpg",
+    "image": "/images/1763990383811-613BsdSoFeL.jpg",
     "category": "beverages"
   },
   {
     "id": "energy-drink-250ml",
-    "name": "Redbull 250ml",
+    "name": "Redbull Combo Pack 250ml",
     "price": 199,
-    "image": "/images/New folder/Energy Drink 250ml.jpg",
+    "image": "/images/1763990449725-Red-Bull-Energy-Drink_-Mixed-Fruit-250ml-_Pack-of-24_-_-Energy-Drink-with-Caffeine-and-Taurine-for-Boosted-Energy-Luckystore-59852861_1080x.webp",
     "category": "beverages"
   },
   {
@@ -995,14 +995,14 @@
   },
   {
     "id": "pressure-cooker-3l",
-    "name": "Pressure Cooker 3L",
+    "name": "Preethi Pressure Cooker 3L",
     "price": 49,
     "image": "/images/New folder/Pressure Cooker 3L.jpg",
     "category": "kitchen"
   },
   {
     "id": "fry-pan-24cm",
-    "name": "Fry Pan 24cm",
+    "name": "Prestige Delux Fry Pan 24cm",
     "price": 59,
     "image": "/images/New folder/Fry Pan 24cm.jpg",
     "category": "kitchen"
@@ -1025,7 +1025,7 @@
     "id": "knife-set-3pc",
     "name": "Knife Set 3pc",
     "price": 89,
-    "image": "/images/New folder/Knife Set 3pc.jpg",
+    "image": "/images/1763988600402-71E_Y1oHn8L.jpg",
     "category": "kitchen"
   },
   {
@@ -1051,9 +1051,9 @@
   },
   {
     "id": "storage-jar-1l",
-    "name": "Storage Jar 1L",
+    "name": "Storage Jar ",
     "price": 129,
-    "image": "/images/New folder/Storage Jar 1L.jpg",
+    "image": "/images/1763988733318-41RTjiP6zmL.jpg",
     "category": "kitchen"
   },
   {
@@ -1081,12 +1081,12 @@
     "id": "doormat",
     "name": "Doormat",
     "price": 169,
-    "image": "/images/New folder/Doormat.jpg",
+    "image": "/images/1763988776390-door-mat-welcome-isolated-on-600nw-2565176415.webp",
     "category": "kitchen"
   },
   {
     "id": "led-bulb-9w",
-    "name": "LED Bulb 9W",
+    "name": "BPL LED Bulb 9W",
     "price": 179,
     "image": "/images/New folder/LED Bulb 9W.jpg",
     "category": "kitchen"
@@ -1109,7 +1109,7 @@
     "id": "laundry-basket",
     "name": "Laundry Basket",
     "price": 209,
-    "image": "/images/New folder/Laundry Basket.jpg",
+    "image": "/images/1763988835307-laundry-basket-clothes-white-background-on-transparent-background-png.webp",
     "category": "kitchen"
   },
   {
@@ -1352,7 +1352,7 @@
   },
   {
     "id": "pain-relief-spray",
-    "name": "Pain Relief Spray",
+    "name": "Iodex Pain Relief Spray",
     "price": 159,
     "image": "/images/New folder/Pain Relief Spray.png",
     "category": "health"
@@ -1366,7 +1366,7 @@
   },
   {
     "id": "cough-drops-50g",
-    "name": "Cough Drops 50g",
+    "name": "Cofsils Cough Drops 50g",
     "price": 179,
     "image": "/images/New folder/Cough Drops 50g.jpg",
     "category": "health"
@@ -1380,7 +1380,7 @@
   },
   {
     "id": "green-tea-100g",
-    "name": "Green Tea 100g",
+    "name": "AVT Green Tea 100g",
     "price": 199,
     "image": "/images/New folder/Green Tea 100g.jpg",
     "category": "health"
@@ -1429,9 +1429,128 @@
   },
   {
     "id": "pickles",
-    "name": "Pickles",
+    "name": "Urban Platter Whole Dill Gherkins",
     "price": 250,
-    "image": "/images/1763941581448-images__1_.jfif",
+    "image": "/images/1763991861411-11523_01_-WholeDillGherkins360g.webp",
+    "category": "pickle"
+  },
+  {
+    "id": "mixnuts",
+    "name": "Mix Nuts 500g",
+    "price": 299,
+    "image": "/images/1763990757990-8116WQQe6bL._SX569_.jpg",
+    "category": "dry-fruits"
+  },
+  {
+    "id": "Happilo Premium",
+    "name": "Happilo Premium Walnut 200g",
+    "price": 400,
+    "image": "/images/1763990842754-71lOZc81MVL._SX679_.jpg",
+    "category": "dry-fruits"
+  },
+  {
+    "id": "Kashmiri Honey ",
+    "name": "Kashmiri Honey mixed dry fruits",
+    "price": 345,
+    "image": "/images/1763990905162-51aLJKGkz1L._SY300_SX300_QL70_FMwebp_.webp",
+    "category": "dry-fruits"
+  },
+  {
+    "id": "JEWEL FARMER Walnuts",
+    "name": "JEWEL FARMER Walnuts",
+    "price": 567,
+    "image": "/images/1763990958443-71x0YNuldwL._SX679_.jpg",
+    "category": "dry-fruits"
+  },
+  {
+    "id": "Farmley ELH Walnut Kernel",
+    "name": "Farmley ELH Walnut Kernel",
+    "price": 678,
+    "image": "/images/1763991000304-61XnMnO74nL._SX679_.jpg",
+    "category": "dry-fruits"
+  },
+  {
+    "id": "premium-dried-apricot-walnut",
+    "name": "Premium Dried Apricot Walnut",
+    "price": 600,
+    "image": "/images/1763991140346-go-grass-premium-dried-apricot-walnut-fruit-soft-khurbani-apricots-walnut-50-g-product-images-orvrfqcwtjm-p604337066-0-202309032101.jfif",
+    "category": "dry-fruits"
+  },
+  {
+    "id": "Afghani Anjeer 400g",
+    "name": "Afghani Anjeer 400g",
+    "price": 700,
+    "image": "/images/1763991187950-7170yoROmrL._SX679_.jpg",
+    "category": "dry-fruits"
+  },
+  {
+    "id": "Fruitri Premium Dried Figs",
+    "name": "Fruitri Premium Dried Figs",
+    "price": 500,
+    "image": "/images/1763991219660-81P66wGLHjL._SY741_.jpg",
+    "category": "dry-fruits"
+  },
+  {
+    "id": "Nutraj Indian Cashews",
+    "name": "Nutraj Indian Cashews",
+    "price": 700,
+    "image": "/images/1763991341743-71DKw6AXeXL._SX679_.jpg",
+    "category": "dry-fruits"
+  },
+  {
+    "id": "MOTABA Chilli Flakes-50g",
+    "name": "MOTABA Chilli Flakes-50g",
+    "price": 340,
+    "image": "/images/1763991413749-81UW4u7PFZL._SX679_PIbundle-4_TopRight_0_0_AA679SH20_.jpg",
+    "category": "spices"
+  },
+  {
+    "id": "LDF 5 Spices Combo (50 Grams x 5)",
+    "name": "LDF 5 Spices Combo (50 Grams x 5)",
+    "price": 700,
+    "image": "/images/1763991463120-61Zn8kgpptL._SY741_PIbundle-5_TopRight_0_0_SX505SY741SH20_.jpg",
+    "category": "spices"
+  },
+  {
+    "id": "Pure & Sure Organic Black Pepper Whole 100gm",
+    "name": "Pure & Sure Organic Black Pepper 100gm",
+    "price": 800,
+    "image": "/images/1763991545791-61tStVMIjYL._SX679_.jpg",
+    "category": "spices"
+  },
+  {
+    "id": "Garam Masala Whole",
+    "name": "Garam Masala Whole",
+    "price": 600,
+    "image": "/images/1763991619611-shopping.webp",
+    "category": "spices"
+  },
+  {
+    "id": "Priya Tomato Pickle",
+    "name": "Priya Tomato Pickle",
+    "price": 50,
+    "image": "/images/1763991925579-Priya-Pickle-Tomato-Without-Garlic.webp",
+    "category": "pickle"
+  },
+  {
+    "id": "Tasty Nibbles Chicken Pickle 200g",
+    "name": "Tasty Nibbles Chicken Pickle 200g",
+    "price": 69,
+    "image": "/images/1763991992255-40286008_1-tasty-nibbles-chicken-pickle-spicy-adds-flavour.webp",
+    "category": "pickle"
+  },
+  {
+    "id": "Freshos Cornichons Dill Pickle",
+    "name": "Freshos Cornichons Dill Pickle",
+    "price": 578,
+    "image": "/images/1763992031084-413q_JRkLsL._SY300_SX300_QL70_FMwebp_.webp",
+    "category": "pickle"
+  },
+  {
+    "id": "French's Classic Yellow Mustard",
+    "name": "French's Classic Yellow Mustard",
+    "price": 780,
+    "image": "/images/1763992061221-61JPAwxiG6L._SX679_.jpg",
     "category": "pickle"
   }
 ]

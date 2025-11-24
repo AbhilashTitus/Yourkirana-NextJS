@@ -614,12 +614,12 @@ button {
 }
 
 .card .pic {
-  width: 100%;
-  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  width: 200px;
+  background: #ffffff;
   position: relative;
   overflow: hidden;
-  padding: 20px;
-  min-height: 180px;
+  padding: 0;
+  height: 160px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -632,9 +632,10 @@ button {
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle at center, rgba(54, 193, 153, 0.05) 0%, transparent 70%);
+  background: rgba(0, 0, 0, 0.03);
   opacity: 0;
   transition: opacity 0.3s ease;
+  z-index: 2;
 }
 
 .card:hover .pic::before {
@@ -644,17 +645,17 @@ button {
 .card .pic img,
 .card .pic .emoji-icon {
   width: 100%;
-  aspect-ratio: 1 / 1;
+  height: 100%;
   object-fit: cover;
-  border-radius: 12px;
-  transition: transform 0.3s ease;
+  border-radius: 0;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   z-index: 1;
 }
 
 .card:hover .pic img,
 .card:hover .pic .emoji-icon {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
 .card .body {
@@ -667,17 +668,15 @@ button {
 }
 
 .card .body h3 {
-  font-size: 0.95rem;
-  line-height: 1.4;
-  margin: 0;
-  font-weight: 600;
+  font-weight: 700;
+  font-size: medium;
   color: #1a1a1a;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  min-height: 2.8em;
+  min-height: 1rem;
 }
 
 .price {
