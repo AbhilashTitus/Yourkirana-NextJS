@@ -1479,7 +1479,7 @@ footer {
   text-align: center;
   padding-top: 10px;
   border-top: 1px solid var(--border);
-  font-size: 12px;
+  font-size: 11px;
   color: #667085;
   margin-top: 30px;
 }
@@ -2430,4 +2430,41 @@ footer {
   to {
     transform: translateY(0);
   }
+}/* ============================================
+   LOGIN BUTTON STYLING
+   ============================================ */
+/* Desktop navigation login button */
+.nav .nav-btn {
+    background: linear-gradient(135deg, var(--mint), var(--mint-700));
+    color: #fff !important;
+    padding: 10px 18px;
+    border-radius: 12px;
+    font-weight: 700;
+    box-shadow: 0 2px 8px rgba(6, 194, 112, 0.25);
+    transition: all 0.3s ease;
+}
+
+.nav .nav-btn:hover {
+    box-shadow: 0 4px 16px rgba(6, 194, 112, 0.35);
+    transform: translateY(-2px);
+    filter: saturate(1.05) brightness(1.05);
+}
+
+/* Mobile drawer login button */
+.drawer .nav-btn {
+    background: linear-gradient(135deg, var(--mint), var(--mint-700)) !important;
+    color: #fff !important;
+    padding: 10px 18px;
+    border-radius: 12px;
+    font-weight: 700;
+    box-shadow: 0 2px 8px rgba(6, 194, 112, 0.25) !important;
+    margin-top: 8px;
+    transition: all 0.3s ease;
+    border: none !important;
+}
+
+.drawer .nav-btn:hover {
+    box-shadow: 0 4px 16px rgba(6, 194, 112, 0.35) !important;
+    transform: translateY(-2px);
+    filter: saturate(1.05) brightness(1.05);
 }
