@@ -2,6 +2,8 @@
 
 import { useCart, CartItem } from "@/context/CartContext";
 import Link from "next/link";
+import { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
 
 const productIcons: Record<string, string> = {
     "Diapers Small 20pc": "🧷", "Diapers Medium 20pc": "🧷", "Diapers Large 20pc": "🧷",
@@ -29,8 +31,119 @@ function getIcon(name: string) {
     return productIcons[name] || "📦";
 }
 
+// Declare Razorpay type
+declare global {
+    interface Window {
+        Razorpay: any;
+    }
+}
+
 export default function CartPage() {
     const { cart, updateQuantity, removeFromCart, cartTotal, totalItems } = useCart();
+    const [isProcessing, setIsProcessing] = useState(false);
+    const router = useRouter();
+
+    // Load Razorpay script
+    useEffect(() => {
+        const script = document.createElement('script');
+        script.src = 'https://checkout.razorpay.com/v1/checkout.js';
+        script.async = true;
+        document.body.appendChild(script);
+
+        return () => {
+            document.body.removeChild(script);
+        };
+    }, []);
+
+    const handleCheckout = async () => {
+        if (isProcessing) return;
+
+        setIsProcessing(true);
+
+        try {
+            // Create order on backend
+            const response = await fetch('/api/razorpay/create-order', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ amount: cartTotal }),
+            });
+
+            const data = await response.json();
+
+            if (!response.ok) {
+                throw new Error(data.error || 'Failed to create order');
+            }
+
+            // Configure Razorpay options
+            const options = {
+                key: data.keyId,
+                amount: data.amount,
+                currency: data.currency,
+                name: 'YourKirana',
+                description: 'Order Payment',
+                order_id: data.orderId,
+                handler: async function (response: any) {
+                    // Verify payment on backend
+                    try {
+                        const verifyResponse = await fetch('/api/razorpay/verify-payment', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify({
+                                razorpay_order_id: response.razorpay_order_id,
+                                razorpay_payment_id: response.razorpay_payment_id,
+                                razorpay_signature: response.razorpay_signature,
+                            }),
+                        });
+
+                        const verifyData = await verifyResponse.json();
+
+                        if (verifyResponse.ok && verifyData.success) {
+                            // Payment successful
+                            localStorage.setItem('payment_success', JSON.stringify({
+                                orderId: verifyData.orderId,
+                                paymentId: verifyData.paymentId,
+                                amount: cartTotal,
+                                items: cart,
+                            }));
+
+                            // Clear cart
+                            cart.forEach(item => removeFromCart(item.name));
+
+                            // Redirect to success page
+                            router.push('/payment-success');
+                        } else {
+                            throw new Error('Payment verification failed');
+                        }
+                    } catch (error) {
+                        console.error('Verification error:', error);
+                        alert('Payment verification failed. Please contact support.');
+                        setIsProcessing(false);
+                    }
+                },
+                prefill: {
+                    name: '',
+                    email: '',
+                    contact: '',
+                },
+                theme: {
+                    color: '#10b981',
+                },
+                modal: {
+                    ondismiss: function () {
+                        setIsProcessing(false);
+                    }
+                }
+            };
+
+            // Open Razorpay checkout
+            const razorpay = new window.Razorpay(options);
+            razorpay.open();
+        } catch (error) {
+            console.error('Checkout error:', error);
+            alert(error instanceof Error ? error.message : 'Failed to initiate checkout. Please check your API keys in .env.local');
+            setIsProcessing(false);
+        }
+    };
 
     return (
         <main className="cart-page">
@@ -83,8 +196,13 @@ export default function CartPage() {
                                 <span>Total</span>
                                 <span>₹ {cartTotal.toFixed(0)}</span>
                             </div>
-                            <button className="checkout-btn" onClick={() => alert('Checkout functionality will be implemented soon!')}>
-                                Proceed to Checkout
+                            <button
+                                className="checkout-btn"
+                                onClick={handleCheckout}
+                                disabled={isProcessing}
+                                style={{ opacity: isProcessing ? 0.7 : 1, cursor: isProcessing ? 'not-allowed' : 'pointer' }}
+                            >
+                                {isProcessing ? 'Processing...' : 'Proceed to Checkout'}
                             </button>
                         </div>
                     </div>
