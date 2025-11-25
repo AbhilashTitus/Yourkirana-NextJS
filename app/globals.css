@@ -131,13 +131,12 @@ img {
 .nav {
   display: flex;
   align-items: center;
-  gap: 12px
+  gap: 24px
 }
 
 .nav a {
   position: relative;
   color: #475467;
-  padding: 10px 12px;
   border-radius: 12px;
   font-weight: 600;
   text-decoration: none;
@@ -180,6 +179,12 @@ img {
   display: none;
 }
 
+/* Fix for Login button turning white on click */
+.nav .nav-btn:focus {
+  background: transparent;
+  color: inherit;
+}
+
 .cart-btn {
   background: linear-gradient(135deg, var(--mint), var(--mint-700));
   color: #fff;
@@ -192,6 +197,14 @@ img {
 
 .cart-btn:hover {
   filter: saturate(1.05) brightness(1.02);
+}
+
+.hamb {
+  display: none;
+  background: transparent;
+  border: 0;
+  font-size: 1.7rem;
+  padding: 8px 10px
 }
 
 .hamb {
@@ -1899,6 +1912,201 @@ footer {
 }
 
 .nav .nav-btn:active {
+  line-height: 1;
+  transition: color 0.2s ease;
+}
+
+.close-btn:hover {
+  color: var(--text);
+}
+
+.filter-drawer-content .price-filter-container {
+  margin: 24px;
+  box-shadow: none;
+  border: none;
+  padding: 0;
+}
+
+.filter-drawer-footer {
+  padding: 20px 24px;
+  border-top: 1px solid var(--border-light);
+  background: var(--bg-soft);
+}
+
+@keyframes slideIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  .filter-drawer-content {
+    width: 95%;
+    max-width: none;
+    border-radius: 16px 16px 0 0;
+    position: absolute;
+    bottom: 0;
+    animation: slideUp 0.3s ease;
+  }
+
+  .filter-drawer.open {
+    align-items: flex-end;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* ============================================
+/* ============================================
+   LOGIN BUTTON STYLING
+   ============================================ */
+/* Desktop navigation login button */
+.nav .nav-btn {
+  background: linear-gradient(135deg, var(--mint), var(--mint-700));
+  color: #444343 !important;
+  padding: 10px 18px;
+  border-radius: 12px;
+  font-weight: 700;
+  box-shadow: 0 2px 8px rgba(6, 194, 112, 0.25);
+  transition: all 0.3s ease;
+}
+
+.nav .nav-btn:hover {
+  box-shadow: 0 4px 16px rgba(6, 194, 112, 0.35);
+  transform: translateY(-2px);
+  filter: saturate(1.05) brightness(1.05);
+}
+
+/* Mobile drawer login button */
+.drawer .nav-btn {
+  background: linear-gradient(135deg, var(--mint), var(--mint-700)) !important;
+  color: #fff !important;
+  padding: 10px 18px;
+  border-radius: 12px;
+  font-weight: 700;
+  box-shadow: 0 2px 8px rgba(6, 194, 112, 0.25) !important;
+  margin-top: 8px;
+  transition: all 0.3s ease;
+  border: none !important;
+}
+
+.drawer .nav-btn:hover {
+  box-shadow: 0 4px 16px rgba(6, 194, 112, 0.35) !important;
+  transform: translateY(-2px);
+  filter: saturate(1.05) brightness(1.05);
+}
+
+/* ============================================
+   TOAST NOTIFICATIONS
+   ============================================ */
+.toast-container {
+  position: fixed;
+  top: 90px;
+  right: 20px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  pointer-events: none;
+}
+
+.toast {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: linear-gradient(135deg, var(--mint), var(--mint-700));
+  color: #fff;
+  padding: 14px 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(6, 194, 112, 0.35);
+  min-width: 280px;
+  max-width: 400px;
+  pointer-events: auto;
+  animation: slideInRight 0.3s ease, fadeOut 0.3s ease 2.7s;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.toast-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.toast-message {
+  flex: 1;
+  line-height: 1.4;
+}
+
+.toast-error {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  box-shadow: 0 8px 24px rgba(239, 68, 68, 0.35);
+}
+
+.toast-info {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  box-shadow: 0 8px 24px rgba(59, 130, 246, 0.35);
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(400px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  .toast-container {
+    top: 80px;
+    right: 12px;
+    left: 12px;
+  }
+
+  .toast {
+    min-width: auto;
+    max-width: none;
+  }
+}
+
+.nav .nav-btn:active {
   background: linear-gradient(135deg, var(--mint), var(--mint-700)) !important;
   color: #fff !important;
   transform: translateY(0);
@@ -1908,4 +2116,158 @@ footer {
   background: linear-gradient(135deg, var(--mint), var(--mint-700)) !important;
   color: #fff !important;
   transform: translateY(0);
+}
+
+/* Price Filter Styles */
+.price-filter-container {
+  padding: 10px 0;
+}
+
+.filter-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: var(--text);
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 20px;
+  margin-bottom: 30px;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+}
+
+.slider__track,
+.slider__range {
+  position: absolute;
+  border-radius: 3px;
+  height: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slider__track {
+  background-color: var(--border-light);
+  width: 100%;
+  z-index: 1;
+}
+
+.slider__range {
+  background-color: var(--mint);
+  z-index: 2;
+}
+
+.thumb {
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  pointer-events: none;
+  position: absolute;
+  height: 0;
+  width: 100%;
+  outline: none;
+  z-index: 3;
+}
+
+.thumb--left {
+  z-index: 3;
+}
+
+.thumb--right {
+  z-index: 4;
+}
+
+/* For Chrome browsers */
+.thumb::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  background-color: #fff;
+  border: 2px solid var(--mint);
+  border-radius: 50%;
+  box-shadow: 0 0 1px 1px #ced4da;
+  cursor: pointer;
+  height: 24px;
+  width: 24px;
+  margin-top: 4px;
+  pointer-events: all;
+  position: relative;
+  z-index: 5;
+  transition: transform 0.1s ease;
+}
+
+.thumb::-webkit-slider-thumb:hover {
+  transform: scale(1.1);
+}
+
+/* For Firefox browsers */
+.thumb::-moz-range-thumb {
+  background-color: #fff;
+  border: 2px solid var(--mint);
+  border-radius: 50%;
+  box-shadow: 0 0 1px 1px #ced4da;
+  cursor: pointer;
+  height: 24px;
+  width: 24px;
+  margin-top: 4px;
+  pointer-events: all;
+  position: relative;
+  z-index: 5;
+  transition: transform 0.1s ease;
+}
+
+.thumb::-moz-range-thumb:hover {
+  transform: scale(1.1);
+}
+
+.price-inputs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.price-field {
+  display: flex;
+  align-items: center;
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 8px 12px;
+  flex: 1;
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+.price-field span {
+  color: var(--text-secondary);
+  margin-right: 4px;
+  font-weight: 500;
+}
+
+.price-field input {
+  width: 100%;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: var(--text);
+  font-weight: 500;
+  -moz-appearance: textfield;
+}
+
+.price-field input::-webkit-outer-spin-button,
+.price-field input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.separator {
+  color: var(--text-secondary);
+  font-weight: 500;
 }
