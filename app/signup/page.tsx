@@ -1,12 +1,12 @@
 "use client";
 
-import { useState } from "react";
+import { useState, Suspense } from "react";
 import { useAuth } from "@/context/AuthContext";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useToast } from "@/context/ToastContext";
 import Link from "next/link";
 
-export default function SignupPage() {
+function SignupForm() {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -47,6 +47,70 @@ export default function SignupPage() {
     };
 
     return (
+        <form className="form glass-card" onSubmit={handleSubmit}>
+            <div>
+                <label className="label">Full Name</label>
+                <input
+                    type="text"
+                    className="input"
+                    placeholder="Enter your full name"
+                    required
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                />
+            </div>
+            <div>
+                <label className="label">Email Address</label>
+                <input
+                    type="email"
+                    className="input"
+                    placeholder="Enter your email"
+                    required
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                />
+            </div>
+            <div>
+                <label className="label">Password</label>
+                <input
+                    type="password"
+                    className="input"
+                    placeholder="Create a password"
+                    required
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                />
+            </div>
+            <div>
+                <label className="label">Confirm Password</label>
+                <input
+                    type="password"
+                    className="input"
+                    placeholder="Confirm your password"
+                    required
+                    value={confirmPassword}
+                    onChange={(e) => setConfirmPassword(e.target.value)}
+                />
+            </div>
+            <button
+                type="submit"
+                className="btn btn-submit btn-primary"
+                disabled={isLoading}
+            >
+                <span>{isLoading ? "Creating Account..." : "Create Account"}</span>
+                {!isLoading && <span>→</span>}
+            </button>
+            <div style={{ marginTop: '1rem', textAlign: 'center' }}>
+                <Link href={loginLink} className="text-sm text-primary hover:underline">
+                    Already have an account? Login
+                </Link>
+            </div>
+        </form>
+    );
+}
+
+export default function SignupPage() {
+    return (
         <main>
             <section className="page-hero signup-hero">
                 <div className="container">
@@ -58,65 +122,9 @@ export default function SignupPage() {
             <section className="section signup-section">
                 <div className="container">
                     <div className="signup-card">
-                        <form className="form glass-card" onSubmit={handleSubmit}>
-                            <div>
-                                <label className="label">Full Name</label>
-                                <input
-                                    type="text"
-                                    className="input"
-                                    placeholder="Enter your full name"
-                                    required
-                                    value={name}
-                                    onChange={(e) => setName(e.target.value)}
-                                />
-                            </div>
-                            <div>
-                                <label className="label">Email Address</label>
-                                <input
-                                    type="email"
-                                    className="input"
-                                    placeholder="Enter your email"
-                                    required
-                                    value={email}
-                                    onChange={(e) => setEmail(e.target.value)}
-                                />
-                            </div>
-                            <div>
-                                <label className="label">Password</label>
-                                <input
-                                    type="password"
-                                    className="input"
-                                    placeholder="Create a password"
-                                    required
-                                    value={password}
-                                    onChange={(e) => setPassword(e.target.value)}
-                                />
-                            </div>
-                            <div>
-                                <label className="label">Confirm Password</label>
-                                <input
-                                    type="password"
-                                    className="input"
-                                    placeholder="Confirm your password"
-                                    required
-                                    value={confirmPassword}
-                                    onChange={(e) => setConfirmPassword(e.target.value)}
-                                />
-                            </div>
-                            <button
-                                type="submit"
-                                className="btn btn-submit btn-primary"
-                                disabled={isLoading}
-                            >
-                                <span>{isLoading ? "Creating Account..." : "Create Account"}</span>
-                                {!isLoading && <span>→</span>}
-                            </button>
-                            <div style={{ marginTop: '1rem', textAlign: 'center' }}>
-                                <Link href={loginLink} className="text-sm text-primary hover:underline">
-                                    Already have an account? Login
-                                </Link>
-                            </div>
-                        </form>
+                        <Suspense fallback={<div className="glass-card p-8 text-center">Loading signup form...</div>}>
+                            <SignupForm />
+                        </Suspense>
                     </div>
                 </div>
             </section>
