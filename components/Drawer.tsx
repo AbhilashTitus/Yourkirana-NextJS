@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useCart } from '@/context/CartContext';
+import { useAuth } from '@/context/AuthContext';
 import { useEffect, useRef } from 'react';
 
 interface DrawerProps {
@@ -11,6 +12,7 @@ interface DrawerProps {
 
 export default function Drawer({ isOpen, onClose }: DrawerProps) {
     const { totalItems } = useCart();
+    const { user, isAuthenticated } = useAuth();
     const drawerRef = useRef<HTMLDivElement>(null);
 
     // Close drawer if user clicks outside
@@ -54,7 +56,13 @@ export default function Drawer({ isOpen, onClose }: DrawerProps) {
                 <Link href="/cart" className="cart-trigger" onClick={onClose}>
                     Cart <span className="cart-badge" style={{ display: totalItems > 0 ? 'inline-flex' : 'none' }}>{totalItems}</span>
                 </Link>
-                <Link href="/login" className="nav-btn" onClick={onClose}>Login</Link>
+                {isAuthenticated ? (
+                    <Link href="/account" className="nav-btn" onClick={onClose} style={{ background: 'var(--mint)', color: 'white', border: 'none', textAlign: 'center' }}>
+                        👤 {user?.name?.split(' ')[0] || 'My Account'}
+                    </Link>
+                ) : (
+                    <Link href="/login" className="nav-btn" onClick={onClose}>Login</Link>
+                )}
             </div>
         </>
     );

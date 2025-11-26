@@ -3,6 +3,7 @@ import { Lexend } from "next/font/google";
 import "./globals.css";
 import { ToastProvider } from "@/context/ToastContext";
 import { CartProvider } from "@/context/CartContext";
+import { AuthProvider } from "@/context/AuthContext";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
@@ -27,12 +28,14 @@ export default function RootLayout({
     <html lang="en">
       <body className={lexend.className}>
         <ToastProvider>
-          <CartProvider>
-            <ScrollToTop />
-            <Header />
-            {children}
-            <Footer />
-          </CartProvider>
+          <AuthProvider>
+            <CartProvider>
+              <ScrollToTop />
+              <Header />
+              {children}
+              <Footer />
+            </CartProvider>
+          </AuthProvider>
         </ToastProvider>
       </body>
     </html>

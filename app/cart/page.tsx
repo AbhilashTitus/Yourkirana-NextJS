@@ -4,6 +4,7 @@ import { useCart, CartItem } from "@/context/CartContext";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
+import { useAuth } from "@/context/AuthContext";
 
 const productIcons: Record<string, string> = {
     "Diapers Small 20pc": "🧷", "Diapers Medium 20pc": "🧷", "Diapers Large 20pc": "🧷",
@@ -40,6 +41,7 @@ declare global {
 
 export default function CartPage() {
     const { cart, updateQuantity, removeFromCart, cartTotal, totalItems } = useCart();
+    const { user, isAuthenticated } = useAuth();
     const [isProcessing, setIsProcessing] = useState(false);
     const router = useRouter();
 
@@ -56,6 +58,20 @@ export default function CartPage() {
     }, []);
 
     const handleCheckout = async () => {
+        // 1. Check Authentication
+        if (!isAuthenticated) {
+            router.push('/login?redirect=/cart');
+            return;
+        }
+
+        // 2. Check Address
+        if (!user?.address) {
+            if (confirm("Please add a delivery address to proceed.")) {
+                router.push('/account');
+            }
+            return;
+        }
+
         if (isProcessing) return;
 
         setIsProcessing(true);
@@ -121,9 +137,9 @@ export default function CartPage() {
                     }
                 },
                 prefill: {
-                    name: '',
-                    email: '',
-                    contact: '',
+                    name: user.name,
+                    email: user.email,
+                    contact: user.address.phone,
                 },
                 theme: {
                     color: '#10b981',

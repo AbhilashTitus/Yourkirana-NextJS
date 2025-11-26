@@ -2,11 +2,13 @@
 
 import Link from 'next/link';
 import { useCart } from '@/context/CartContext';
+import { useAuth } from '@/context/AuthContext';
 import { useState, useEffect } from 'react';
 import Drawer from './Drawer';
 
 export default function Header() {
     const { totalItems } = useCart();
+    const { user, isAuthenticated } = useAuth();
     const [isScrolled, setIsScrolled] = useState(false);
     const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
@@ -36,7 +38,13 @@ export default function Header() {
                         <Link href="/cart" className="cart-trigger">
                             Cart <span className="cart-badge" style={{ display: totalItems > 0 ? 'inline-flex' : 'none' }}>{totalItems}</span>
                         </Link>
-                        <Link href="/login" className="nav-btn">Login</Link>
+                        {isAuthenticated ? (
+                            <Link href="/account" className="nav-btn" style={{ background: 'var(--mint)', color: 'white', border: 'none' }}>
+                                👤 {user?.name?.split(' ')[0] || 'Account'}
+                            </Link>
+                        ) : (
+                            <Link href="/login" className="nav-btn">Login</Link>
+                        )}
                     </nav>
                     <button
                         className="hamb md:hidden"

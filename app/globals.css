@@ -469,6 +469,7 @@ button {
 }
 
 .btn-submit {
+  height: 60px;
   width: 100%;
   padding: 18px 28px;
   font-size: 1.0625rem;
