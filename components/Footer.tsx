@@ -40,14 +40,16 @@ export default function Footer() {
                     <ul>
                         <li><Link href="/contact">Contact Us</Link></li>
                         <li><a href="mailto:support@yourkirana.in">support@yourkirana.in</a></li>
-                        <li><a href="tel:+919999999999">+91 99999 99999</a></li>
-                        <li>New Delhi, India</li>
+                        {/* <li><a href="tel:+919999999999">+91 99999 99999</a></li> */}
+                        <li> Aurevia Technologies Pvt Ltd<br />
+                            18/1 4th Cross, 2nd Floor, <br /> Rahmath Nagar, R.T. Nagar, Bangalore, Karnataka <br />
+                            India - 560032</li>
                     </ul>
                 </div>
             </div>
 
             <div className="footer-bottom">
-                © 2025 YourKirana • Equispark Trading Private Limited • New Delhi
+                © 2025 YourKirana • Aurevia Technologies Pvt Ltd • Bangalore
             </div>
         </footer >
     );

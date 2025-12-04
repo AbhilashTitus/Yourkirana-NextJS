@@ -22,7 +22,7 @@ export default function CancellationPage() {
                     <div className="feature-card" style={{ maxWidth: '900px', margin: 'auto' }}>
 
                         <p style={{ marginBottom: '20px', lineHeight: '1.8' }}>
-                            We understand that plans can change. This policy outlines the terms under which you can cancel your order with YourKirana (Equispark Trading Private Limited).
+                            We understand that plans can change. This policy outlines the terms under which you can cancel your order with YourKirana (Aurevia Technologies Pvt Ltd).
                         </p>
 
                         <h2 style={{ marginTop: '30px' }}>1. Cancellation by Customer</h2>

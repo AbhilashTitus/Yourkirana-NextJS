@@ -22,8 +22,8 @@ export default function AboutPage() {
                     <div className="feature-card" style={{ maxWidth: '900px', margin: 'auto' }}>
                         <h2>Who We Are</h2>
                         <p style={{ marginBottom: '20px', lineHeight: '1.8' }}>
-                            YourKirana is a leading e-commerce platform operated by <strong>Equispark Trading Private Limited</strong>,
-                            headquartered in New Delhi, India. We bridge the gap between traditional kirana stores and modern consumers,
+                            YourKirana is a leading e-commerce platform operated by <strong>Aurevia Technologies Pvt Ltd</strong>,
+                            headquartered in Bangalore, India. We bridge the gap between traditional kirana stores and modern consumers,
                             enabling local businesses to thrive in the digital economy while providing customers with convenient access
                             to daily essentials.
                         </p>
@@ -42,8 +42,8 @@ export default function AboutPage() {
 
                         <h2 style={{ marginTop: '30px' }}>Company Information</h2>
                         <ul style={{ lineHeight: '2', marginLeft: '20px' }}>
-                            <li><strong>Legal Name:</strong> Equispark Trading Private Limited</li>
-                            <li><strong>Registered Office:</strong> New Delhi, India</li>
+                            <li><strong>Legal Name:</strong> Aurevia Technologies Pvt Ltd</li>
+                            <li><strong>Registered Office:</strong> Bangalore, India</li>
                             {/* <li><strong>Year of Establishment:</strong> 2024</li>
                             <li><strong>GSTIN:</strong> [To be updated]</li>
                             <li><strong>CIN:</strong> [To be updated]</li> */}

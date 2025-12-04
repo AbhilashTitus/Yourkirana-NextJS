@@ -166,7 +166,7 @@ export default function RefundPage() {
                         <p style={{ marginBottom: '20px', lineHeight: '1.8' }}>
                             <strong>Customer Support:</strong><br />
                             Email: support@yourkirana.in<br />
-                            Phone: +91 99999 99999<br />
+                            {/* Phone: +91 99999 99999<br /> */}
                             Hours: Monday to Sunday, 9:00 AM - 9:00 PM IST
                         </p>
 

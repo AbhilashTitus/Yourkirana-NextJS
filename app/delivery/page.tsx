@@ -22,7 +22,7 @@ export default function DeliveryPage() {
                     <div className="feature-card" style={{ maxWidth: '900px', margin: 'auto' }}>
 
                         <p style={{ marginBottom: '20px', lineHeight: '1.8' }}>
-                            This Delivery Policy outlines the terms and conditions regarding the delivery of products ordered from YourKirana (Equispark Trading Private Limited).
+                            This Delivery Policy outlines the terms and conditions regarding the delivery of products ordered from YourKirana (Aurevia Technologies Pvt Ltd).
                         </p>
 
                         <h2 style={{ marginTop: '30px' }}>1. Delivery Partners</h2>

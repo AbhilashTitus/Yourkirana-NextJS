@@ -22,7 +22,7 @@ export default function ShippingPage() {
                     <div className="feature-card" style={{ maxWidth: '900px', margin: 'auto' }}>
 
                         <p style={{ marginBottom: '20px', lineHeight: '1.8' }}>
-                            At YourKirana (Equispark Trading Private Limited), we are committed to delivering your orders accurately, in good condition, and always on time. We partner with reputed courier agencies to ensure that your order reaches you safely.
+                            At YourKirana (Aurevia Technologies Pvt Ltd), we are committed to delivering your orders accurately, in good condition, and always on time. We partner with reputed courier agencies to ensure that your order reaches you safely.
                         </p>
 
                         <h2 style={{ marginTop: '30px' }}>1. Shipping Locations</h2>

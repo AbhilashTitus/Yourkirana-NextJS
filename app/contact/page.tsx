@@ -61,7 +61,7 @@ export default function ContactPage() {
                                     </p>
                                 </div>
 
-                                <div style={{ marginBottom: '25px' }}>
+                                {/* <div style={{ marginBottom: '25px' }}>
                                     <h4 style={{ fontSize: '1rem', marginBottom: '10px', display: 'flex', alignItems: 'center', gap: '12px' }}>
                                         <span style={{ width: '32px', height: '32px', background: 'linear-gradient(135deg, #06C270, #059C5A)', borderRadius: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '16px' }}>☎</span>
                                         Phone
@@ -70,7 +70,7 @@ export default function ContactPage() {
                                         <a href="tel:+919999999999" style={{ color: 'var(--mint)' }}>+91 99999 99999</a><br />
                                         <span style={{ fontSize: '0.9rem' }}>Mon-Sun: 9:00 AM - 9:00 PM IST</span>
                                     </p>
-                                </div>
+                                </div> */}
 
                                 <div style={{ marginBottom: '25px' }}>
                                     <h4 style={{ fontSize: '1rem', marginBottom: '10px', display: 'flex', alignItems: 'center', gap: '12px' }}>
@@ -78,9 +78,9 @@ export default function ContactPage() {
                                         Address
                                     </h4>
                                     <p style={{ color: '#667085', marginLeft: '30px', lineHeight: '1.8' }}>
-                                        Equispark Trading Private Limited<br />
-                                        NO PVT 319, KH 4/25, GF, ST- 19 BLK - <br />D COLONY, Burari, North Delhi <br />
-                                        India - 110084
+                                        Aurevia Technologies Pvt Ltd<br />
+                                        18/1 4th Cross, 2nd Floor, <br />Rahmath Nagar, R.T. Nagar, Bangalore, Karnataka <br />
+                                        India - 560032
                                     </p>
                                 </div>
 
@@ -199,7 +199,7 @@ export default function ContactPage() {
                     <div className="feature-card" style={{ maxWidth: '1000px', margin: '40px auto 0', textAlign: 'center' }}>
                         <h3 style={{ marginBottom: '15px' }}>Need Immediate Assistance?</h3>
                         <p style={{ marginBottom: '20px', lineHeight: '1.8', color: '#667085' }}>
-                            For urgent matters, please call us directly at <a href="tel:+919999999999" style={{ color: 'var(--mint)', fontWeight: '600' }}>+91 99999 99999</a> or
+                            For urgent matters
                             email us at <a href="mailto:support@yourkirana.in" style={{ color: 'var(--mint)', fontWeight: '600' }}>support@yourkirana.in</a>
                         </p>
                         <p style={{ fontSize: '0.9rem', color: '#667085' }}>
