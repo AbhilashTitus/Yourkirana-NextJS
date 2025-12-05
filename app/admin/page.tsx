@@ -1,12 +1,15 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import { generateDescription } from "@/components/ProductModal";
 
 interface Product {
     id: string;
     name: string;
     price: number;
     image: string;
+    images?: string[];
+    description?: string;
     category: string;
 }
 
@@ -40,6 +43,8 @@ export default function AdminPage() {
     const [loading, setLoading] = useState(true);
     const [uploading, setUploading] = useState(false);
     const [imagePreview, setImagePreview] = useState<string>("");
+    const [imagePreviews, setImagePreviews] = useState<string[]>(["", "", ""]);
+    const [uploadingIndex, setUploadingIndex] = useState<number | null>(null);
 
     useEffect(() => {
         fetchProducts();
@@ -104,6 +109,153 @@ export default function AdminPage() {
         }
     };
 
+    // Handle multiple image uploads for product gallery
+    const handleMultipleImageUpload = async (e: React.ChangeEvent<HTMLInputElement>, index: number) => {
+        const file = e.target.files?.[0];
+        if (!file) return;
+
+        setUploadingIndex(index);
+        try {
+            const formData = new FormData();
+            formData.append("file", file);
+
+            const res = await fetch("/api/upload", {
+                method: "POST",
+                body: formData,
+            });
+
+            const data = await res.json();
+
+            if (res.ok) {
+                const newImages = [...(productFormData.images || ["", "", ""])];
+                newImages[index] = data.path;
+
+                setProductFormData((prev) => ({
+                    ...prev,
+                    images: newImages,
+                    image: index === 0 ? data.path : prev.image // Update main image if first image
+                }));
+
+                const newPreviews = [...imagePreviews];
+                newPreviews[index] = data.path;
+                setImagePreviews(newPreviews);
+            } else {
+                alert(data.error || "Failed to upload image");
+            }
+        } catch (error) {
+            console.error("Error uploading image:", error);
+            alert("Failed to upload image");
+        } finally {
+            setUploadingIndex(null);
+        }
+    };
+
+    // Handle drag and drop for images
+    const handleDragOver = (e: React.DragEvent) => {
+        e.preventDefault();
+        e.stopPropagation();
+    };
+
+    const handleDrop = async (e: React.DragEvent, index?: number) => {
+        e.preventDefault();
+        e.stopPropagation();
+
+        const file = e.dataTransfer.files[0];
+        if (!file || !file.type.startsWith('image/')) {
+            alert('Please drop an image file');
+            return;
+        }
+
+        // If index is provided, it's for gallery images
+        if (index !== undefined) {
+            await uploadImageFile(file, index);
+        } else {
+            // For main image upload
+            await uploadImageFile(file);
+        }
+    };
+
+    // Handle clipboard paste for images
+    const handlePaste = async (e: React.ClipboardEvent, index?: number) => {
+        const items = e.clipboardData?.items;
+        if (!items) return;
+
+        for (let i = 0; i < items.length; i++) {
+            if (items[i].type.indexOf('image') !== -1) {
+                const file = items[i].getAsFile();
+                if (file) {
+                    e.preventDefault();
+                    if (index !== undefined) {
+                        await uploadImageFile(file, index);
+                    } else {
+                        await uploadImageFile(file);
+                    }
+                    break;
+                }
+            }
+        }
+    };
+
+    // Unified upload function for file, drag-drop, and paste
+    const uploadImageFile = async (file: File, index?: number) => {
+        if (index !== undefined) {
+            // Gallery image upload
+            setUploadingIndex(index);
+        } else {
+            // Main image upload
+            setUploading(true);
+        }
+
+        try {
+            const formData = new FormData();
+            formData.append("file", file);
+
+            const res = await fetch("/api/upload", {
+                method: "POST",
+                body: formData,
+            });
+
+            const data = await res.json();
+
+            if (res.ok) {
+                if (index !== undefined) {
+                    // Update gallery images
+                    const newImages = [...(productFormData.images || ["", "", ""])];
+                    newImages[index] = data.path;
+
+                    setProductFormData((prev) => ({
+                        ...prev,
+                        images: newImages,
+                        image: index === 0 ? data.path : prev.image
+                    }));
+
+                    const newPreviews = [...imagePreviews];
+                    newPreviews[index] = data.path;
+                    setImagePreviews(newPreviews);
+                } else {
+                    // Update main image
+                    if (activeTab === "products") {
+                        setProductFormData((prev) => ({ ...prev, image: data.path }));
+                    } else {
+                        setCategoryFormData((prev) => ({ ...prev, image: data.path }));
+                    }
+                    setImagePreview(data.path);
+                }
+            } else {
+                alert(data.error || "Failed to upload image");
+            }
+        } catch (error) {
+            console.error("Error uploading image:", error);
+            alert("Failed to upload image");
+        } finally {
+            if (index !== undefined) {
+                setUploadingIndex(null);
+            } else {
+                setUploading(false);
+            }
+        }
+    };
+
     // Product CRUD operations
     const handleProductSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
@@ -159,22 +311,38 @@ export default function AdminPage() {
 
     const startProductEdit = (product: Product) => {
         setEditingProduct(product);
-        setProductFormData(product);
+
+        // Auto-fill gallery images: Image 1 should be the main product image
+        const galleryImages = product.images || ["", "", ""];
+        if (!galleryImages[0] || galleryImages[0].trim() === "") {
+            galleryImages[0] = product.image; // Set Image 1 to main image if empty
+        }
+
+        setProductFormData({
+            ...product,
+            images: galleryImages,
+            description: product.description || generateDescription(product.name)
+        });
         setImagePreview(product.image);
+        setImagePreviews(galleryImages);
         setIsAddingNewProduct(false);
     };
 
     const startProductAdd = () => {
         setIsAddingNewProduct(true);
         setEditingProduct(null);
+        const mainImage = "/images/placeholder.jpg";
         setProductFormData({
             id: "",
             name: "",
             price: 0,
-            image: "/images/placeholder.jpg",
+            image: mainImage,
+            images: [mainImage, "", ""], // Image 1 starts with main image
+            description: "",
             category: categories[0]?.id || "groceries",
         });
         setImagePreview("");
+        setImagePreviews([mainImage, "", ""]);
     };
 
     const cancelProductEdit = () => {
@@ -277,7 +445,7 @@ export default function AdminPage() {
         const matchesCategory = filterCategory ? p.category === filterCategory : true;
         const matchesSearch = productSearchQuery
             ? p.name.toLowerCase().includes(productSearchQuery.toLowerCase()) ||
-              p.id.toLowerCase().includes(productSearchQuery.toLowerCase())
+            p.id.toLowerCase().includes(productSearchQuery.toLowerCase())
             : true;
         return matchesCategory && matchesSearch;
     });
@@ -285,7 +453,7 @@ export default function AdminPage() {
     const filteredCategories = categories.filter((c) => {
         const matchesSearch = categorySearchQuery
             ? c.name.toLowerCase().includes(categorySearchQuery.toLowerCase()) ||
-              c.id.toLowerCase().includes(categorySearchQuery.toLowerCase())
+            c.id.toLowerCase().includes(categorySearchQuery.toLowerCase())
             : true;
         return matchesSearch;
     });
@@ -316,21 +484,19 @@ export default function AdminPage() {
                 <div className="bg-white rounded-2xl p-2 shadow-lg border border-gray-100 mb-8 flex gap-2">
                     <button
                         onClick={() => setActiveTab("products")}
-                        className={`flex-1 py-3 px-6 rounded-xl font-semibold transition-all ${
-                            activeTab === "products"
-                                ? "bg-gradient-to-r from-mint to-mint-700 text-white shadow-md"
-                                : "text-gray-600 hover:bg-gray-50"
-                        }`}
+                        className={`flex-1 py-3 px-6 rounded-xl font-semibold transition-all ${activeTab === "products"
+                            ? "bg-gradient-to-r from-mint to-mint-700 text-white shadow-md"
+                            : "text-gray-600 hover:bg-gray-50"
+                            }`}
                     >
                         📦 Products
                     </button>
                     <button
                         onClick={() => setActiveTab("categories")}
-                        className={`flex-1 py-3 px-6 rounded-xl font-semibold transition-all ${
-                            activeTab === "categories"
-                                ? "bg-gradient-to-r from-mint to-mint-700 text-white shadow-md"
-                                : "text-gray-600 hover:bg-gray-50"
-                        }`}
+                        className={`flex-1 py-3 px-6 rounded-xl font-semibold transition-all ${activeTab === "categories"
+                            ? "bg-gradient-to-r from-mint to-mint-700 text-white shadow-md"
+                            : "text-gray-600 hover:bg-gray-50"
+                            }`}
                     >
                         🏷️ Categories
                     </button>
@@ -578,6 +744,120 @@ export default function AdminPage() {
                                             ))}
                                         </select>
                                     </div>
+
+                                    {/* Description Field */}
+                                    <div className="md:col-span-2">
+                                        <label className="label">Product Description</label>
+                                        <textarea
+                                            className="input min-h-[100px] resize-y"
+                                            value={productFormData.description || ""}
+                                            onChange={(e) =>
+                                                setProductFormData({
+                                                    ...productFormData,
+                                                    description: e.target.value,
+                                                })
+                                            }
+                                            placeholder="Enter product description..."
+                                            rows={4}
+                                        />
+                                        <p className="text-xs text-gray-500 mt-1">
+                                            💡 Auto-generated description will be used if left empty
+                                        </p>
+                                    </div>
+
+                                    {/* Gallery Images (3 Images) */}
+                                    <div className="md:col-span-2">
+                                        <label className="label">Product Gallery Images (3 Images)</label>
+                                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                            {[0, 1, 2].map((index) => (
+                                                <div
+                                                    key={index}
+                                                    className="space-y-3"
+                                                    onDragOver={handleDragOver}
+                                                    onDrop={(e) => handleDrop(e, index)}
+                                                    onPaste={(e) => handlePaste(e, index)}
+                                                >
+                                                    <p className="text-sm font-medium text-gray-700">
+                                                        Image {index + 1} {index === 0 && "(Main)"}
+                                                    </p>
+
+                                                    {/* Drop Zone with Preview */}
+                                                    <div
+                                                        className="relative p-3 bg-gray-50 rounded-lg border-2 border-dashed border-gray-300 hover:border-mint hover:bg-mint-50 transition-all cursor-pointer"
+                                                        style={{ minHeight: '140px' }}
+                                                    >
+                                                        {imagePreviews[index] ? (
+                                                            <img
+                                                                src={imagePreviews[index]}
+                                                                alt={`Preview ${index + 1}`}
+                                                                className="w-full h-32 object-cover rounded-md shadow-sm"
+                                                            />
+                                                        ) : (
+                                                            <div className="flex flex-col items-center justify-center h-32 text-gray-400">
+                                                                <svg className="w-10 h-10 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                                                </svg>
+                                                                <p className="text-xs text-center">
+                                                                    Drop, paste, or click
+                                                                </p>
+                                                            </div>
+                                                        )}
+                                                    </div>
+
+                                                    <label
+                                                        className="btn cursor-pointer w-full text-sm"
+                                                        style={{
+                                                            background: uploadingIndex === index
+                                                                ? "#ccc"
+                                                                : "#f3f4f6",
+                                                            color: "#374151",
+                                                        }}
+                                                    >
+                                                        <svg
+                                                            className="w-4 h-4 inline-block mr-2"
+                                                            fill="none"
+                                                            stroke="currentColor"
+                                                            viewBox="0 0 24 24"
+                                                        >
+                                                            <path
+                                                                strokeLinecap="round"
+                                                                strokeLinejoin="round"
+                                                                strokeWidth={2}
+                                                                d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"
+                                                            />
+                                                        </svg>
+                                                        {uploadingIndex === index ? "Uploading..." : "Upload"}
+                                                        <input
+                                                            type="file"
+                                                            accept="image/*"
+                                                            onChange={(e) => handleMultipleImageUpload(e, index)}
+                                                            disabled={uploadingIndex === index}
+                                                            className="hidden"
+                                                        />
+                                                    </label>
+                                                    <input
+                                                        type="text"
+                                                        className="input text-sm"
+                                                        value={productFormData.images?.[index] || ""}
+                                                        onChange={(e) => {
+                                                            const newImages = [...(productFormData.images || ["", "", ""])];
+                                                            newImages[index] = e.target.value;
+                                                            setProductFormData({
+                                                                ...productFormData,
+                                                                images: newImages,
+                                                                image: index === 0 ? e.target.value : productFormData.image
+                                                            });
+                                                        }}
+                                                        placeholder={`/images/product-${index + 1}.jpg`}
+                                                    />
+                                                </div>
+                                            ))}
+                                        </div>
+                                        <p className="text-xs text-gray-500 mt-2">
+                                            📁 Drag & drop, paste (Ctrl+V), or upload 3 images for the product gallery. First image will be the main product image.
+                                        </p>
+                                    </div>
+
                                     <div className="md:col-span-2">
                                         <label className="label">Product Image</label>
                                         <div className="space-y-4">

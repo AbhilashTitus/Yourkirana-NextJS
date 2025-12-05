@@ -61,16 +61,16 @@ export default function ContactPage() {
                                     </p>
                                 </div>
 
-                                {/* <div style={{ marginBottom: '25px' }}>
+                                <div style={{ marginBottom: '25px' }}>
                                     <h4 style={{ fontSize: '1rem', marginBottom: '10px', display: 'flex', alignItems: 'center', gap: '12px' }}>
                                         <span style={{ width: '32px', height: '32px', background: 'linear-gradient(135deg, #06C270, #059C5A)', borderRadius: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '16px' }}>☎</span>
                                         Phone
                                     </h4>
                                     <p style={{ color: '#667085', marginLeft: '30px' }}>
-                                        <a href="tel:+919999999999" style={{ color: 'var(--mint)' }}>+91 99999 99999</a><br />
+                                        <a href="tel:+917619559128" style={{ color: 'var(--mint)' }}>+91 7619559128</a><br />
                                         <span style={{ fontSize: '0.9rem' }}>Mon-Sun: 9:00 AM - 9:00 PM IST</span>
                                     </p>
-                                </div> */}
+                                </div>
 
                                 <div style={{ marginBottom: '25px' }}>
                                     <h4 style={{ fontSize: '1rem', marginBottom: '10px', display: 'flex', alignItems: 'center', gap: '12px' }}>

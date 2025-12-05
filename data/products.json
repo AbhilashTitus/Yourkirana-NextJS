@@ -508,14 +508,26 @@
     "name": "Limca Soda Combo Pack 750ml",
     "price": 49,
     "image": "/images/1763990095858-images__1_.jfif",
-    "category": "beverages"
+    "category": "beverages",
+    "images": [
+      "/images/1763990095858-images__1_.jfif",
+      "/images/1764936323928-image.png",
+      "/images/1764936359719-image.png"
+    ],
+    "description": "Refreshing carbonated beverage, perfect for quenching your thirst. Great with meals or on its own."
   },
   {
     "id": "cola-1.25l",
     "name": "Cocacola Combo Pack 1.25L",
     "price": 59,
     "image": "/images/1763990052640-74bc227305598943b4a1cbc3d2ffdc38.png",
-    "category": "beverages"
+    "category": "beverages",
+    "images": [
+      "/images/1763990052640-74bc227305598943b4a1cbc3d2ffdc38.png",
+      "/images/1764935181603-Coca-Cola-Soft-Drink-Can.webp",
+      "/images/1764936145941-Coca-Cola-Soft-Drink-Can.webp"
+    ],
+    "description": "Refreshing carbonated beverage, perfect for quenching your thirst. Great with meals or on its own."
   },
   {
     "id": "orange-drink-1l",
@@ -2098,5 +2110,18 @@
     "price": 450,
     "image": "/images/1764055459152-images__6_.jfif",
     "category": "health"
+  },
+  {
+    "id": "test-product-001",
+    "name": "Test Product",
+    "price": 99,
+    "image": "/images/products/basmati-rice.jpg",
+    "images": [
+      "/images/products/basmati-rice.jpg",
+      "/images/products/wheat-atta.jpg",
+      "/images/products/toor-dal.jpg"
+    ],
+    "description": "This is a test product description",
+    "category": "groceries"
   }
 ]

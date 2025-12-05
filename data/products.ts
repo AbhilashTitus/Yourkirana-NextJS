@@ -2,7 +2,9 @@ export interface Product {
     id: string;
     name: string;
     price: number;
-    image: string;
+    image: string; // Main image (for backward compatibility)
+    images?: string[]; // Array of 3 images for gallery
+    description?: string; // Product description
     category: string;
 }
 

@@ -9,6 +9,8 @@ export interface Product {
     name: string;
     price: number;
     image: string;
+    images?: string[];
+    description?: string;
     category: string;
 }
 
@@ -53,7 +55,7 @@ export async function GET(request: Request) {
 export async function POST(request: Request) {
     try {
         const body = await request.json();
-        const { id, name, price, image, category } = body;
+        const { id, name, price, image, images, description, category } = body;
 
         // Validation
         if (!id || !name || !price || !category) {
@@ -78,6 +80,8 @@ export async function POST(request: Request) {
             name,
             price: Number(price),
             image: image || '/images/placeholder.jpg',
+            ...(images && { images }),
+            ...(description && { description }),
             category
         };
 
@@ -97,7 +101,7 @@ export async function POST(request: Request) {
 export async function PUT(request: Request) {
     try {
         const body = await request.json();
-        const { id, name, price, image, category } = body;
+        const { id, name, price, image, images, description, category } = body;
 
         if (!id) {
             return NextResponse.json(
@@ -122,6 +126,8 @@ export async function PUT(request: Request) {
             ...(name && { name }),
             ...(price && { price: Number(price) }),
             ...(image && { image }),
+            ...(images && { images }),
+            ...(description && { description }),
             ...(category && { category })
         };
 

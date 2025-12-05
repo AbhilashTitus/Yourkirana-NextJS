@@ -6,6 +6,7 @@ import { useCart } from '@/context/CartContext';
 import { notFound } from 'next/navigation';
 import { useState, useEffect } from 'react';
 import PriceFilter from '@/components/PriceFilter';
+import ProductModal from '@/components/ProductModal';
 
 interface Product {
     id: string;
@@ -25,6 +26,8 @@ export default function CategoryPage() {
     const [loading, setLoading] = useState(true);
     const [category, setCategory] = useState<any>(null);
     const [categoryLoading, setCategoryLoading] = useState(true);
+    const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     // Fetch category and products
     useEffect(() => {
@@ -66,6 +69,16 @@ export default function CategoryPage() {
     const handlePriceChange = (min: number, max: number) => {
         const filtered = products.filter(p => p.price >= min && p.price <= max);
         setFilteredProducts(filtered);
+    };
+
+    const handleProductClick = (product: Product) => {
+        setSelectedProduct(product);
+        setIsModalOpen(true);
+    };
+
+    const handleCloseModal = () => {
+        setIsModalOpen(false);
+        setSelectedProduct(null);
     };
 
     if (categoryLoading || loading) {
@@ -129,8 +142,10 @@ export default function CategoryPage() {
                     <div className="products">
                         {filteredProducts.map((product) => (
                             <div key={product.id} className="card">
-                                <img className="pic" src={product.image} alt={product.name} />
-                                <div className="body">
+                                <div className="pic" onClick={() => handleProductClick(product)} style={{ cursor: 'pointer' }}>
+                                    <img src={product.image} alt={product.name} />
+                                </div>
+                                <div className="body" onClick={() => handleProductClick(product)} style={{ cursor: 'pointer' }}>
                                     <h3>{product.name}</h3>
                                     <div className="price">₹ {product.price}</div>
                                 </div>
@@ -151,6 +166,15 @@ export default function CategoryPage() {
                     )}
                 </div>
             </section>
+
+            {/* Product Modal */}
+            {selectedProduct && (
+                <ProductModal
+                    product={selectedProduct}
+                    isOpen={isModalOpen}
+                    onClose={handleCloseModal}
+                />
+            )}
         </main>
     );
 }
