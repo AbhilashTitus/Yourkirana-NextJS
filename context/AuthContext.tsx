@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation';
 export interface User {
     name: string;
     email: string;
-    password?: string; 
+    password?: string;
     address?: {
         street: string;
         city: string;
@@ -42,6 +42,24 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
     const login = async (email: string, password: string): Promise<boolean> => {
         // Simulate API delay
         await new Promise(resolve => setTimeout(resolve, 500));
+
+        // Check for demo credentials first
+        if (email === 'test123@gmail.com' && password === '123456789') {
+            const demoUser: User = {
+                name: 'Demo User',
+                email: 'test123@gmail.com',
+                address: {
+                    street: '123 Demo Street',
+                    city: 'Demo City',
+                    state: 'Demo State',
+                    pincode: '123456',
+                    phone: '1234567890'
+                }
+            };
+            setUser(demoUser);
+            localStorage.setItem('yk_current_user', JSON.stringify(demoUser));
+            return true;
+        }
 
         // Get all users
         const usersStr = localStorage.getItem('yk_users');
