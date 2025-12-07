@@ -151,7 +151,7 @@ export default function CategoryPage() {
                                 </div>
                                 <button
                                     className="btn"
-                                    onClick={() => addToCart(product.name, product.price)}
+                                    onClick={() => addToCart(product.name, product.price, product.image)}
                                 >
                                     Add to Cart
                                 </button>

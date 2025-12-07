@@ -181,7 +181,22 @@ export default function CartPage() {
                         <div className="cart-items-list">
                             {cart.map((item: CartItem) => (
                                 <div key={item.name} className="cart-item">
-                                    <div className="cart-item-image">{getIcon(item.name)}</div>
+                                    <div className="cart-item-image">
+                                        {item.image ? (
+                                            <img 
+                                                src={item.image} 
+                                                alt={item.name}
+                                                style={{ 
+                                                    width: '100%', 
+                                                    height: '100%', 
+                                                    objectFit: 'contain',
+                                                    borderRadius: '8px'
+                                                }}
+                                            />
+                                        ) : (
+                                            getIcon(item.name)
+                                        )}
+                                    </div>
                                     <div className="cart-item-details">
                                         <div className="cart-item-name">{item.name}</div>
                                         <div className="cart-item-price">₹ {item.price.toFixed(0)}</div>

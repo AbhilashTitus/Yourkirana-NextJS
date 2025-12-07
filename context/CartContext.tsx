@@ -7,11 +7,12 @@ export interface CartItem {
   name: string;
   price: number;
   quantity: number;
+  image?: string;
 }
 
 interface CartContextType {
   cart: CartItem[];
-  addToCart: (name: string, price: number) => void;
+  addToCart: (name: string, price: number, image?: string) => void;
   removeFromCart: (name: string) => void;
   updateQuantity: (name: string, change: number) => void;
   cartTotal: number;
@@ -45,7 +46,7 @@ export const CartProvider = ({ children }: { children: React.ReactNode }) => {
     localStorage.setItem('yk_cart', JSON.stringify(cart));
   }, [cart]);
 
-  const addToCart = (name: string, price: number) => {
+  const addToCart = (name: string, price: number, image?: string) => {
     setCart((prevCart) => {
       const existingItem = prevCart.find((item) => item.name === name);
       if (existingItem) {
@@ -53,7 +54,7 @@ export const CartProvider = ({ children }: { children: React.ReactNode }) => {
           item.name === name ? { ...item, quantity: item.quantity + 1 } : item
         );
       } else {
-        return [...prevCart, { name, price, quantity: 1 }];
+        return [...prevCart, { name, price, quantity: 1, image }];
       }
     });
     // Show toast notification

@@ -96,7 +96,7 @@ export default function ContactPage() {
                                 </div>
                             </div>
 
-                            <div className="feature-card" style={{ marginTop: '20px' }}>
+                            {/* <div className="feature-card" style={{ marginTop: '20px' }}>
                                 <h3 style={{ marginBottom: '15px' }}>Quick Support</h3>
                                 <ul style={{ lineHeight: '2', marginLeft: '20px', color: '#667085' }}>
                                     <li>Order tracking and status</li>
@@ -106,7 +106,7 @@ export default function ContactPage() {
                                     <li>Seller onboarding</li>
                                     <li>Technical support</li>
                                 </ul>
-                            </div>
+                            </div> */}
                         </div>
 
                         {/* Contact Form */}

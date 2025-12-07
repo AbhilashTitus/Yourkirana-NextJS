@@ -326,6 +326,9 @@ export default function AdminPage() {
         setImagePreview(product.image);
         setImagePreviews(galleryImages);
         setIsAddingNewProduct(false);
+        
+        // Scroll to top smoothly
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     };
 
     const startProductAdd = () => {
@@ -343,6 +346,9 @@ export default function AdminPage() {
         });
         setImagePreview("");
         setImagePreviews([mainImage, "", ""]);
+        
+        // Scroll to top smoothly
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     };
 
     const cancelProductEdit = () => {
@@ -419,6 +425,9 @@ export default function AdminPage() {
         setCategoryFormData(category);
         setImagePreview(category.image);
         setIsAddingNewCategory(false);
+        
+        // Scroll to top smoothly
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     };
 
     const startCategoryAdd = () => {
@@ -431,6 +440,9 @@ export default function AdminPage() {
             href: "/categories/",
         });
         setImagePreview("");
+        
+        // Scroll to top smoothly
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     };
 
     const cancelCategoryEdit = () => {

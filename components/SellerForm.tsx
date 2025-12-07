@@ -303,37 +303,34 @@ export default function SellerForm() {
                         Enter your 15-digit GST number for instant verification. We'll fetch your business details from government records.
                     </p>
 
-                    <div style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
-                        <div style={{ flex: 1 }}>
-                            <label className="label">GST Number (GSTIN) *</label>
-                            <input
-                                className="input"
-                                type="text"
-                                name="gstNumber"
-                                value={formData.gstNumber}
-                                onChange={handleInputChange}
-                                placeholder="29ABCDE1234F1Z5"
-                                maxLength={15}
-                                style={{ textTransform: 'uppercase' }}
-                                required
-                            />
-                        </div>
-                        <div style={{ paddingTop: '28px' }}>
-                            <button
-                                type="button"
-                                className="btn btn-primary"
-                                onClick={verifyGST}
-                                disabled={gstVerification.status === 'verifying' || gstVerification.status === 'verified'}
-                                style={{
-                                    minWidth: '140px',
-                                    opacity: gstVerification.status === 'verifying' ? 0.7 : 1,
-                                    cursor: gstVerification.status === 'verified' ? 'not-allowed' : 'pointer'
-                                }}
-                            >
-                                {gstVerification.status === 'verifying' ? '⏳ Verifying...' :
-                                    gstVerification.status === 'verified' ? '✓ Verified' : 'Verify GST'}
-                            </button>
-                        </div>
+                    <div>
+                        <label className="label">GST Number (GSTIN) *</label>
+                        <input
+                            className="input"
+                            type="text"
+                            name="gstNumber"
+                            value={formData.gstNumber}
+                            onChange={handleInputChange}
+                            placeholder="29ABCDE1234F1Z5"
+                            maxLength={15}
+                            style={{ textTransform: 'uppercase' }}
+                            required
+                        />
+                        <button
+                            type="button"
+                            className="btn btn-primary"
+                            onClick={verifyGST}
+                            disabled={gstVerification.status === 'verifying' || gstVerification.status === 'verified'}
+                            style={{
+                                width: '100%',
+                                marginTop: '12px',
+                                opacity: gstVerification.status === 'verifying' ? 0.7 : 1,
+                                cursor: gstVerification.status === 'verified' ? 'not-allowed' : 'pointer'
+                            }}
+                        >
+                            {gstVerification.status === 'verifying' ? '⏳ Verifying...' :
+                                gstVerification.status === 'verified' ? '✓ Verified' : 'Verify GST'}
+                        </button>
                     </div>
 
                     {/* GST Verification Status */}
@@ -413,36 +410,33 @@ export default function SellerForm() {
                             />
                         </div>
                     </div>
-
-                    <div style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
-                        <div style={{ flex: 1 }}>
-                            <label className="label">Account Holder Name *</label>
-                            <input
-                                className="input"
-                                type="text"
-                                name="accountHolderName"
-                                value={formData.accountHolderName}
-                                onChange={handleInputChange}
-                                placeholder="As per bank records"
-                                required
-                            />
-                        </div>
-                        <div style={{ paddingTop: '28px' }}>
-                            <button
-                                type="button"
-                                className="btn btn-primary"
-                                onClick={verifyBankAccount}
-                                disabled={bankVerification.status === 'verifying' || bankVerification.status === 'verified'}
-                                style={{
-                                    minWidth: '140px',
-                                    opacity: bankVerification.status === 'verifying' ? 0.7 : 1,
-                                    cursor: bankVerification.status === 'verified' ? 'not-allowed' : 'pointer'
-                                }}
-                            >
-                                {bankVerification.status === 'verifying' ? '⏳ Verifying...' :
-                                    bankVerification.status === 'verified' ? '✓ Verified' : 'Verify Account'}
-                            </button>
-                        </div>
+<br />
+                    <div>
+                        <label className="label">Account Holder Name *</label>
+                        <input
+                            className="input"
+                            type="text"
+                            name="accountHolderName"
+                            value={formData.accountHolderName}
+                            onChange={handleInputChange}
+                            placeholder="As per bank records"
+                            required
+                        />
+                        <button
+                            type="button"
+                            className="btn btn-primary"
+                            onClick={verifyBankAccount}
+                            disabled={bankVerification.status === 'verifying' || bankVerification.status === 'verified'}
+                            style={{
+                                width: '100%',
+                                marginTop: '12px',
+                                opacity: bankVerification.status === 'verifying' ? 0.7 : 1,
+                                cursor: bankVerification.status === 'verified' ? 'not-allowed' : 'pointer'
+                            }}
+                        >
+                            {bankVerification.status === 'verifying' ? '⏳ Verifying...' :
+                                bankVerification.status === 'verified' ? '✓ Verified' : 'Verify Account'}
+                        </button>
                     </div>
 
                     {/* Bank Verification Status */}

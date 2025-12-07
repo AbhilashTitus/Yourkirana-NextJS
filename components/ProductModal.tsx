@@ -115,7 +115,7 @@ export default function ProductModal({ product, isOpen, onClose }: ProductModalP
     if (!isOpen) return null;
 
     const handleAddToCart = () => {
-        addToCart(product.name, product.price);
+        addToCart(product.name, product.price, product.image);
         onClose();
     };
 

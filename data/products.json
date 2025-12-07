@@ -49,7 +49,7 @@
       "/images/1765107144678-image.png",
       "/images/1765107133339-image.png"
     ],
-    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
+    "description": "Fine quality refined wheat flour, perfect for baking cakes, pastries, and making crispy snacks."
   },
   {
     "id": "suji-1kg",
@@ -62,7 +62,7 @@
       "/images/1765107182878-image.png",
       "/images/1765107190564-image.png"
     ],
-    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
+    "description": "Premium quality semolina, ideal for making upma, halwa, and traditional South Indian dishes."
   },
   {
     "id": "toor-dal-1kg",
@@ -238,378 +238,702 @@
     "name": "Coriander 1 bunch",
     "price": 109,
     "image": "/images/New folder/Coriander 1 bunch.jpg",
-    "category": "vegetables"
+    "category": "vegetables",
+    "images": [
+      "/images/New folder/Coriander 1 bunch.jpg",
+      "/images/1765121142481-image.png",
+      "/images/1765121160197-image.png"
+    ],
+    "description": "Fresh green leafy vegetables, packed with nutrients. Adds flavor and nutrition to your dishes."
   },
   {
     "id": "banana-1-dozen",
     "name": "Banana 1 dozen",
-    "price": 119,
+    "price": 95,
     "image": "/images/New folder/Banana 1 dozen.jpg",
-    "category": "vegetables"
+    "category": "vegetables",
+    "images": [
+      "/images/New folder/Banana 1 dozen.jpg",
+      "/images/1765121222523-image.png",
+      "/images/1765121250628-image.png"
+    ],
+    "description": "Fresh, juicy fruits bursting with natural sweetness. Rich in vitamins and perfect for a healthy snack."
   },
   {
     "id": "apple-1kg",
     "name": "Organic Apple 1kg",
     "price": 129,
     "image": "/images/1763987873725-apple-basket-iga00338-500x500.webp",
-    "category": "vegetables"
+    "category": "vegetables",
+    "images": [
+      "/images/1763987873725-apple-basket-iga00338-500x500.webp",
+      "/images/1765121387425-image.png",
+      "/images/1765121408005-image.png"
+    ],
+    "description": "Fresh, juicy fruits bursting with natural sweetness. Rich in vitamins and perfect for a healthy snack."
   },
   {
     "id": "orange-1kg",
     "name": "Organic Orange 1kg",
     "price": 139,
     "image": "/images/1763987995619-n1905fruit04.jpg",
-    "category": "vegetables"
+    "category": "vegetables",
+    "images": [
+      "/images/1763987995619-n1905fruit04.jpg",
+      "/images/1765121477919-image.png",
+      "/images/1765121503728-image.png"
+    ],
+    "description": "Fresh, juicy fruits bursting with natural sweetness. Rich in vitamins and perfect for a healthy snack."
   },
   {
     "id": "grapes-500g",
     "name": "Grapes 500g",
     "price": 149,
     "image": "/images/New folder/Grapes 500g.jpg",
-    "category": "vegetables"
+    "category": "vegetables",
+    "images": [
+      "/images/New folder/Grapes 500g.jpg",
+      "/images/1765121532864-image.png",
+      "/images/1765121545436-image.png"
+    ],
+    "description": "Premium quality seasonal fruits, naturally sweet and delicious. Packed with antioxidants and vitamins."
   },
   {
     "id": "pomegranate-500g",
     "name": "Natural Pomegranate 500g",
     "price": 159,
     "image": "/images/1763988974331-isolated-bunch-pomegranate-white-background-isolated-bunch-pomegranate-white-background-279705611.webp",
-    "category": "vegetables"
+    "category": "vegetables",
+    "images": [
+      "/images/1763988974331-isolated-bunch-pomegranate-white-background-isolated-bunch-pomegranate-white-background-279705611.webp",
+      "/images/1765121580965-image.png",
+      "/images/1765121589385-image.png"
+    ],
+    "description": "Premium quality seasonal fruits, naturally sweet and delicious. Packed with antioxidants and vitamins."
   },
   {
     "id": "mango-1kg",
     "name": "Natural Mango 1kg",
     "price": 169,
     "image": "/images/1763989068803-360_F_1626003392_Kcs3cHgTGvPWvgsCaddp0AK59yaz1CnX.jpg",
-    "category": "vegetables"
+    "category": "vegetables",
+    "images": [
+      "/images/1763989068803-360_F_1626003392_Kcs3cHgTGvPWvgsCaddp0AK59yaz1CnX.jpg",
+      "/images/1765121612445-image.png",
+      "/images/1765121621212-image.png"
+    ],
+    "description": "Premium quality seasonal fruits, naturally sweet and delicious. Packed with antioxidants and vitamins."
   },
   {
     "id": "papaya-1pc",
     "name": "Papaya 1pc",
     "price": 179,
     "image": "/images/New folder/Papaya 1pc.jpg",
-    "category": "vegetables"
+    "category": "vegetables",
+    "images": [
+      "/images/New folder/Papaya 1pc.jpg",
+      "/images/1765121647722-image.png",
+      "/images/1765121656735-image.png"
+    ],
+    "description": "Sweet and nutritious tropical fruit, rich in vitamins and enzymes. Great for digestion and immunity."
   },
   {
     "id": "lemon-6pc",
     "name": "Lemon 1 kg",
     "price": 189,
     "image": "/images/1763989008179-istockphoto-956192380-612x612.jpg",
-    "category": "vegetables"
+    "category": "vegetables",
+    "images": [
+      "/images/1763989008179-istockphoto-956192380-612x612.jpg",
+      "/images/1765121707324-image.png",
+      "/images/1765121718407-image.png"
+    ],
+    "description": "Tangy and refreshing citrus fruit, rich in Vitamin C. Perfect for drinks, garnishing, and cooking."
   },
   {
     "id": "cucumber-500g",
     "name": "Cucumber 500g",
     "price": 199,
     "image": "/images/New folder/Cucumber 500g.jpg",
-    "category": "vegetables"
+    "category": "vegetables",
+    "images": [
+      "/images/New folder/Cucumber 500g.jpg",
+      "/images/1765121741538-image.png",
+      "/images/1765121750720-image.png"
+    ],
+    "description": "Cool and refreshing vegetable, perfect for salads, raita, and healthy snacking. Hydrating and nutritious."
   },
   {
     "id": "capsicum-500g",
     "name": "Capsicum 500g",
     "price": 209,
     "image": "/images/New folder/Capsicum 500g.jpg",
-    "category": "vegetables"
+    "category": "vegetables",
+    "images": [
+      "/images/New folder/Capsicum 500g.jpg",
+      "/images/1765121771050-image.png",
+      "/images/1765121806511-image.png"
+    ],
+    "description": "Crisp and fresh vegetables, rich in vitamins and minerals. Perfect for healthy meals."
   },
   {
     "id": "garlic-250g",
     "name": "Garlic 250g",
     "price": 219,
     "image": "/images/New folder/Garlic 250g.jpg",
-    "category": "vegetables"
+    "category": "vegetables",
+    "images": [
+      "/images/New folder/Garlic 250g.jpg",
+      "/images/1765121828477-image.png",
+      "/images/1765121838039-image.png"
+    ],
+    "description": "Fresh aromatic garlic bulbs, essential for adding flavor to curries, marinades, and everyday cooking."
   },
   {
     "id": "ginger-250g",
     "name": "Ginger 250g",
     "price": 229,
     "image": "/images/New folder/Ginger 250g.jpg",
-    "category": "vegetables"
+    "category": "vegetables",
+    "images": [
+      "/images/New folder/Ginger 250g.jpg",
+      "/images/1765121858049-image.png",
+      "/images/1765121873008-image.png"
+    ],
+    "description": "Fresh ginger root with strong aroma and flavor. Perfect for tea, curries, and medicinal uses."
   },
   {
     "id": "coconut-1pc",
     "name": "Coconut 5 Kg",
     "price": 239,
     "image": "/images/1763988068785-platone-husked-coconut-pack-3-organic-coconut-pooja-coconut-nariyal-product-images-orvdb2ugu5a-p605893953-1-202310291947.jpg",
-    "category": "vegetables"
+    "category": "vegetables",
+    "images": [
+      "/images/1763988068785-platone-husked-coconut-pack-3-organic-coconut-pooja-coconut-nariyal-product-images-orvdb2ugu5a-p605893953-1-202310291947.jpg",
+      "/images/1765121900436-image.png",
+      "/images/1765121909520-image.png"
+    ],
+    "description": "Fresh coconut with rich flavor and aroma. Perfect for cooking, garnishing, and traditional recipes."
   },
   {
     "id": "milk-1l",
     "name": "Milma Milk 1L",
     "price": 49,
     "image": "/images/1763957828275-a86b4959-b0f6-48e7-b1d3-1c281590b847.webp",
-    "category": "dairy"
+    "category": "dairy",
+    "images": [
+      "/images/1763957828275-a86b4959-b0f6-48e7-b1d3-1c281590b847.webp",
+      "/images/1765122347379-image.png",
+      "/images/1765122362919-image.png"
+    ],
+    "description": "Fresh, pure milk rich in calcium and protein. Essential for strong bones and overall health."
   },
   {
     "id": "curd-500g",
     "name": "Milky Mist Curd 500g",
     "price": 59,
     "image": "/images/1763957924410-c7d877d2fc74df345a968eb64cf32936.png",
-    "category": "dairy"
+    "category": "dairy",
+    "images": [
+      "/images/1763957924410-c7d877d2fc74df345a968eb64cf32936.png",
+      "/images/1765122387474-image.png",
+      "/images/1765122397429-image.png"
+    ],
+    "description": "Fresh, pure milk rich in calcium and protein. Essential for strong bones and overall health."
   },
   {
     "id": "paneer-200g",
     "name": "Milky Mist Paneer 200g",
     "price": 69,
     "image": "/images/1763957999335-milky-mist-fresh-paneer.webp",
-    "category": "dairy"
+    "category": "dairy",
+    "images": [
+      "/images/1763957999335-milky-mist-fresh-paneer.webp",
+      "/images/1765122421567-image.png",
+      "/images/1765122442049-image.png"
+    ],
+    "description": "Fresh, pure milk rich in calcium and protein. Essential for strong bones and overall health."
   },
   {
     "id": "cheese-slices-200g",
     "name": "Amul Cheese Slices 200g",
     "price": 79,
     "image": "/images/1763958068335-download.jfif",
-    "category": "dairy"
+    "category": "dairy",
+    "images": [
+      "/images/1763958068335-download.jfif",
+      "/images/1765122467237-image.png",
+      "/images/1765122476366-image.png"
+    ],
+    "description": "Premium quality cheese with rich, creamy texture. Perfect for sandwiches, pizzas, and snacks."
   },
   {
     "id": "butter-500g",
     "name": "Amul Butter 500g",
     "price": 89,
     "image": "/images/1763958151301-trfhcd.jfif",
-    "category": "dairy"
+    "category": "dairy",
+    "images": [
+      "/images/1763958151301-trfhcd.jfif",
+      "/images/1765122496602-image.png",
+      "/images/1765122510154-image.png"
+    ],
+    "description": "Smooth and creamy butter made from pure milk. Adds richness to your breakfast and cooking."
   },
   {
     "id": "brown-bread",
     "name": "English Oven Brown Bread",
     "price": 99,
     "image": "/images/1763958195445-download__1_.jfif",
-    "category": "dairy"
+    "category": "dairy",
+    "images": [
+      "/images/1763958195445-download__1_.jfif",
+      "/images/1765122529776-image.png",
+      "/images/1765122538606-image.png"
+    ],
+    "description": "Soft and fresh bread, perfect for breakfast and sandwiches. Made with quality ingredients."
   },
   {
     "id": "white-bread",
     "name": "Modern White Bread",
     "price": 35,
     "image": "/images/1763958326173-modern-white-sandwich-bread-1200gm.jpg",
-    "category": "dairy"
+    "category": "dairy",
+    "images": [
+      "/images/1763958326173-modern-white-sandwich-bread-1200gm.jpg",
+      "/images/1765122564941-image.png",
+      "/images/1765122572157-image.png"
+    ],
+    "description": "Soft and fresh bread, perfect for breakfast and sandwiches. Made with quality ingredients."
   },
   {
     "id": "multigrain-bread",
     "name": "English Oven Multigrain Bread",
     "price": 119,
     "image": "/images/1763958383774-816YuzA5QPL.jpg",
-    "category": "dairy"
+    "category": "dairy",
+    "images": [
+      "/images/1763958383774-816YuzA5QPL.jpg",
+      "/images/1765122592682-image.png",
+      "/images/1765122607808-image.png"
+    ],
+    "description": "Soft and fresh bread, perfect for breakfast and sandwiches. Made with quality ingredients."
   },
   {
     "id": "buns-4pc",
     "name": "Modern Buns 4pc",
     "price": 129,
     "image": "/images/1763958450932-fe4ef3c3dd7cdb1893d93aff18ac1265.png",
-    "category": "dairy"
+    "category": "dairy",
+    "images": [
+      "/images/1763958450932-fe4ef3c3dd7cdb1893d93aff18ac1265.png",
+      "/images/1765122633507-image.png",
+      "/images/1765122662668-image.png"
+    ],
+    "description": "Soft and fluffy buns, perfect for burgers and sandwiches. Freshly baked for you."
   },
   {
     "id": "yogurt-cup-100g",
     "name": "Amul Yogurt 100g",
     "price": 139,
     "image": "/images/1763958577231-download__2_.jfif",
-    "category": "dairy"
+    "category": "dairy",
+    "images": [
+      "/images/1763958577231-download__2_.jfif",
+      "/images/1765122688432-image.png",
+      ""
+    ],
+    "description": "Creamy and fresh curd with natural probiotics. Great for digestion and a cooling treat."
   },
   {
     "id": "ghee-500ml-dairy",
     "name": "Amul Ghee 500ml",
     "price": 149,
     "image": "/images/1763958645908-download__3_.jfif",
-    "category": "dairy"
+    "category": "dairy",
+    "images": [
+      "/images/1763958645908-download__3_.jfif",
+      "/images/1765122769149-image.png",
+      "/images/1765122782143-image.png"
+    ],
+    "description": "Traditional pure ghee with rich aroma and authentic taste. Made from the finest quality milk."
   },
   {
     "id": "khoya-250g",
     "name": "Nanak Khoa 250g",
     "price": 159,
     "image": "/images/1763958703355-Nanak-Khoa-Mawa-341g.webp",
-    "category": "dairy"
+    "category": "dairy",
+    "images": [
+      "/images/1763958703355-Nanak-Khoa-Mawa-341g.webp",
+      "/images/1765122803520-image.png",
+      "/images/1765122820395-image.png"
+    ],
+    "description": "Rich and creamy khoya (mawa), essential for making traditional Indian sweets like gulab jamun and barfi."
   },
   {
     "id": "cream-200ml",
     "name": "Amul Fresh Cream 200ml",
     "price": 169,
     "image": "/images/1763958803305-365ab89ec5315fb897151bc33ed82d91.jpeg",
-    "category": "dairy"
+    "category": "dairy",
+    "images": [
+      "/images/1763958803305-365ab89ec5315fb897151bc33ed82d91.jpeg",
+      "/images/1765122840884-image.png",
+      "/images/1765122848043-image.png"
+    ],
+    "description": "Thick and rich dairy cream, perfect for making desserts, curries, and adding richness to dishes."
   },
   {
     "id": "buttermilk-1l",
     "name": "Amul Buttermilk 1L",
     "price": 179,
     "image": "/images/New folder/Buttermilk 1L.jpg",
-    "category": "dairy"
+    "category": "dairy",
+    "images": [
+      "/images/New folder/Buttermilk 1L.jpg",
+      "/images/1765122865406-image.png",
+      "/images/1765122937383-image.png"
+    ],
+    "description": "Refreshing and tangy buttermilk with probiotics. Perfect for digestion and cooling in summer."
   },
   {
     "id": "cupcake-6pc",
     "name": "Elite Choco Cupcakes 6pc",
     "price": 189,
     "image": "/images/1763958925677-40052061_3-elite-dreams-cup-cake-choco.webp",
-    "category": "dairy"
+    "category": "dairy",
+    "images": [
+      "/images/1763958925677-40052061_3-elite-dreams-cup-cake-choco.webp",
+      "/images/1765122957581-image.png",
+      "/images/1765122995467-image.png"
+    ],
+    "description": "Delicious chocolate cupcakes, soft and moist. Perfect treat for parties and celebrations."
   },
   {
     "id": "cookies-200g",
     "name": "Amul Choco Cookies 200g",
     "price": 199,
     "image": "/images/1763959058183-new-product-500x500.webp",
-    "category": "dairy"
+    "category": "dairy",
+    "images": [
+      "/images/1763959058183-new-product-500x500.webp",
+      "/images/1765123045242-image.png",
+      "/images/1765123053352-image.png"
+    ],
+    "description": "Crispy and delicious treats, perfect with tea or coffee. Made with quality ingredients."
   },
   {
     "id": "rusk-300g",
     "name": "Britania Rusk 300g",
     "price": 209,
     "image": "/images/1763958995686-c16a8686-6214-4858-b1f0-fccbc39131b1.webp",
-    "category": "dairy"
+    "category": "dairy",
+    "images": [
+      "/images/1763958995686-c16a8686-6214-4858-b1f0-fccbc39131b1.webp",
+      "/images/1765123079441-image.png",
+      "/images/1765123093813-image.png"
+    ],
+    "description": "Buttery and flaky French pastries, light and delicious. Perfect for breakfast or evening snack."
   },
   {
     "id": "croissant-2pc",
     "name": "Britannia Croissant 2pc",
     "price": 219,
     "image": "/images/1763959166493-61-y-5KAJYL.jpg",
-    "category": "dairy"
+    "category": "dairy",
+    "images": [
+      "/images/1763959166493-61-y-5KAJYL.jpg",
+      "/images/1765123115416-image.png",
+      "/images/1765123132215-image.png"
+    ],
+    "description": "Soft and fluffy pav buns, essential for making pav bhaji, vada pav, and other street food favorites."
   },
   {
     "id": "pav-6pc",
     "name": "Pav 6pc",
     "price": 229,
     "image": "/images/New folder/Pav 6pc.jpg",
-    "category": "dairy"
+    "category": "dairy",
+    "images": [
+      "/images/New folder/Pav 6pc.jpg",
+      "/images/1765123157295-image.png",
+      "/images/1765123168107-image.png"
+    ],
+    "description": "Rich and buttery brioche bread with a soft, tender crumb. Perfect for gourmet sandwiches and French toast."
   },
   {
     "id": "brioche-300g",
     "name": "Indian Brioche 300g",
     "price": 239,
     "image": "/images/New folder/Brioche 300g.jpg",
-    "category": "dairy"
+    "category": "dairy",
+    "images": [
+      "/images/New folder/Brioche 300g.jpg",
+      "/images/1765123189913-image.png",
+      "/images/1765123198717-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "potato-chips-100g",
     "name": "Lays Chips Combo 100g",
     "price": 49,
     "image": "/images/1763989395111-4LaysPotatoChipsAssortedFlavoursCombo1450421944.jpg",
-    "category": "snacks"
+    "category": "snacks",
+    "images": [
+      "/images/1763989395111-4LaysPotatoChipsAssortedFlavoursCombo1450421944.jpg",
+      "/images/1765123809208-image.png",
+      "/images/1765123819436-image.png"
+    ],
+    "description": "Crispy and crunchy chips with irresistible flavor. Perfect snack for any time of the day."
   },
   {
     "id": "nacho-chips-150g",
     "name": "Nacho Chips Combo 150g",
     "price": 59,
     "image": "/images/1763989466464-cdc73c81-74fc-473d-b1a5-60c035bc3086.webp",
-    "category": "snacks"
+    "category": "snacks",
+    "images": [
+      "/images/1763989466464-cdc73c81-74fc-473d-b1a5-60c035bc3086.webp",
+      "/images/1765123838512-image.png",
+      "/images/1765123845112-image.png"
+    ],
+    "description": "Crispy and crunchy chips with irresistible flavor. Perfect snack for any time of the day."
   },
   {
     "id": "masala-peanuts-200g",
     "name": "Masala Peanuts 200g",
     "price": 69,
     "image": "/images/New folder/Masala Peanuts 200g.jpg",
-    "category": "snacks"
+    "category": "snacks",
+    "images": [
+      "/images/New folder/Masala Peanuts 200g.jpg",
+      "/images/1765123873548-image.png",
+      "/images/1765123884151-image.png"
+    ],
+    "description": "Savory and crunchy snack mix with perfect blend of spices. Great for tea-time munching."
   },
   {
     "id": "mixture-200g",
     "name": "Mixture 200g",
     "price": 79,
     "image": "/images/New folder/Mixture 200g.jpg",
-    "category": "snacks"
+    "category": "snacks",
+    "images": [
+      "/images/New folder/Mixture 200g.jpg",
+      "/images/1765123904210-image.png",
+      "/images/1765123922148-image.png"
+    ],
+    "description": "Savory and crunchy snack mix with perfect blend of spices. Great for tea-time munching."
   },
   {
     "id": "popcorn-100g",
     "name": "Act 2 Popcorn Combo 100g",
     "price": 89,
     "image": "/images/1763989516650-images.jfif",
-    "category": "snacks"
+    "category": "snacks",
+    "images": [
+      "/images/1763989516650-images.jfif",
+      "/images/1765123957759-image.png",
+      "/images/1765123944413-image.png"
+    ],
+    "description": "Ready-to-pop microwave popcorn in assorted flavors. Perfect movie-time snack in just 2 minutes."
   },
   {
     "id": "instant-noodles-70g",
     "name": "Maggie Noodles Combo 70g",
     "price": 25,
     "image": "/images/1763989561657-MaggiVegImage-4fd3e.jpg",
-    "category": "snacks"
+    "category": "snacks",
+    "images": [
+      "/images/1763989561657-MaggiVegImage-4fd3e.jpg",
+      "/images/1765123994631-image.png",
+      "/images/1765123985326-image.png"
+    ],
+    "description": "Quick and easy to prepare, perfect for a delicious meal in minutes. Versatile and tasty."
   },
   {
     "id": "pasta-500g",
     "name": "Maggie Pasta 500g",
     "price": 109,
     "image": "/images/1763959536218-81LQ0ILprOL.jpg",
-    "category": "snacks"
+    "category": "snacks",
+    "images": [
+      "/images/1763959536218-81LQ0ILprOL.jpg",
+      "/images/1765124013452-image.png",
+      "/images/1765124032339-image.png"
+    ],
+    "description": "Quick and easy to prepare, perfect for a delicious meal in minutes. Versatile and tasty."
   },
   {
     "id": "tomato-ketchup-1kg",
     "name": "Kissan Tomato Ketchup 1kg",
     "price": 119,
     "image": "/images/1763959580836-3eeb2348-94e0-4c45-80bf-fbe5591ce750.webp",
-    "category": "snacks"
+    "category": "snacks",
+    "images": [
+      "/images/1763959580836-3eeb2348-94e0-4c45-80bf-fbe5591ce750.webp",
+      "/images/1765124050914-image.png",
+      "/images/1765124064702-image.png"
+    ],
+    "description": "Fresh farm produce, handpicked for quality. Essential ingredient for everyday cooking."
   },
   {
     "id": "mayonnaise-500g",
     "name": "Heinz Mayonnaise 500g",
     "price": 129,
     "image": "/images/1763959672302-51SK8hfNTlL.jpg",
-    "category": "snacks"
+    "category": "snacks",
+    "images": [
+      "/images/1763959672302-51SK8hfNTlL.jpg",
+      "/images/1765124085021-image.png",
+      "/images/1765124115365-image.png"
+    ],
+    "description": "Authentic South Indian style chutney, perfect accompaniment for dosa, idli, and snacks."
   },
   {
     "id": "chutney-200g",
     "name": "Tasty Nibbles Chutney 200g",
     "price": 139,
     "image": "/images/New folder/Chutney 200g.jpg",
-    "category": "snacks"
+    "category": "snacks",
+    "images": [
+      "/images/New folder/Chutney 200g.jpg",
+      "/images/1765124141663-image.png",
+      "/images/1765124134410-image.png"
+    ],
+    "description": "Authentic South Indian style chutney, perfect accompaniment for dosa, idli, and snacks."
   },
   {
     "id": "chocolate-bar-50g",
     "name": "Cadbury Dairy Milk Combo Pack 50g",
     "price": 149,
     "image": "/images/1763989736524-619XPjMyesL.jpg",
-    "category": "snacks"
+    "category": "snacks",
+    "images": [
+      "/images/1763989736524-619XPjMyesL.jpg",
+      "/images/1765124167414-image.png",
+      "/images/1765124178831-image.png"
+    ],
+    "description": "Smooth and creamy milk chocolate bars, perfect for satisfying your sweet cravings. Classic favorite."
   },
   {
     "id": "dark-chocolate-90g",
     "name": "Amul Dark Chocolate Combo 90g",
     "price": 159,
     "image": "/images/1763989801948-450-combo-of-3-dark-chocolates-bars-019-bars-3-x-150-g-3-amul-original-imagcmd6zhsnhg4s.webp",
-    "category": "snacks"
+    "category": "snacks",
+    "images": [
+      "/images/1763989801948-450-combo-of-3-dark-chocolates-bars-019-bars-3-x-150-g-3-amul-original-imagcmd6zhsnhg4s.webp",
+      "/images/1765124198646-image.png",
+      "/images/1765124208650-image.png"
+    ],
+    "description": "Smooth and indulgent chocolate that melts in your mouth. Perfect treat for chocolate lovers."
   },
   {
     "id": "biscuits-100g",
     "name": "Britannia NutriChoice Biscuits 100g",
     "price": 169,
     "image": "/images/1763989871326-cc5f38fe-df21-4add-9672-0e3ad78df1c6.webp",
-    "category": "snacks"
+    "category": "snacks",
+    "images": [
+      "/images/1763989871326-cc5f38fe-df21-4add-9672-0e3ad78df1c6.webp",
+      "/images/1765124236575-image.png",
+      "/images/1765124226577-image.png"
+    ],
+    "description": "Crispy and delicious treats, perfect with tea or coffee. Made with quality ingredients."
   },
   {
     "id": "cream-biscuits-120g",
     "name": "Oreo Cream Biscuits Combo 120g",
     "price": 179,
     "image": "/images/1763989919161-4f2b924a-321e-4116-bffb-a4816cd7ad65.webp",
-    "category": "snacks"
+    "category": "snacks",
+    "images": [
+      "/images/1763989919161-4f2b924a-321e-4116-bffb-a4816cd7ad65.webp",
+      "/images/1765124267192-image.png",
+      "/images/1765124294952-image.png"
+    ],
+    "description": "Crispy and delicious treats, perfect with tea or coffee. Made with quality ingredients."
   },
   {
     "id": "energy-bar-50g",
     "name": "Go On Energy Bar 50g",
     "price": 189,
     "image": "/images/New folder/Energy Bar 50g.jpg",
-    "category": "snacks"
+    "category": "snacks",
+    "images": [
+      "/images/New folder/Energy Bar 50g.jpg",
+      "/images/1765124322905-image.png",
+      "/images/1765124335043-image.png"
+    ],
+    "description": "Nutritious energy bar packed with nuts and grains. Perfect pre-workout or on-the-go snack."
   },
   {
     "id": "protein-bar-60g",
     "name": "Phab Protein Bar 60g",
     "price": 199,
     "image": "/images/1763960062088-1SN0209.webp",
-    "category": "snacks"
+    "category": "snacks",
+    "images": [
+      "/images/1763960062088-1SN0209.webp",
+      "/images/1765124365210-image.png",
+      "/images/1765124376076-image.png"
+    ],
+    "description": "High-protein bar for fitness enthusiasts. Delicious and nutritious post-workout recovery snack."
   },
   {
     "id": "instant-soup-50g",
     "name": "Knorr Instant Soup 50g",
     "price": 209,
     "image": "/images/1763960184903-1696528502772_SKU-0938_1.png",
-    "category": "snacks"
+    "category": "snacks",
+    "images": [
+      "/images/1763960184903-1696528502772_SKU-0938_1.png",
+      "/images/1765124464820-image.png",
+      "/images/1765124441982-image.png"
+    ],
+    "description": "Quick and easy instant soup, ready in minutes. Warm and comforting for any time of day."
   },
   {
     "id": "sauce-combo-pack",
     "name": "Sauce Combo Pack",
     "price": 219,
     "image": "/images/New folder/Sauce Combo Pack.jpg",
-    "category": "snacks"
+    "category": "snacks",
+    "images": [
+      "/images/New folder/Sauce Combo Pack.jpg",
+      "/images/1765124499489-image.png",
+      "/images/1765124487641-image.png"
+    ],
+    "description": "Rich and tangy condiment that enhances the flavor of your favorite dishes. A must-have in every kitchen."
   },
   {
     "id": "nutella-350g",
     "name": "Nutella 350g",
     "price": 229,
     "image": "/images/New folder/Nutella 350g.jpg",
-    "category": "snacks"
+    "category": "snacks",
+    "images": [
+      "/images/New folder/Nutella 350g.jpg",
+      "/images/1765124527459-image.png",
+      "/images/1765124518444-image.png"
+    ],
+    "description": "Creamy hazelnut spread with cocoa, perfect for breakfast and desserts. Irresistibly delicious."
   },
   {
     "id": "cornflakes-475g",
     "name": "Cornflakes 475g",
     "price": 239,
     "image": "/images/New folder/Cornflakes 475g.jpg",
-    "category": "snacks"
+    "category": "snacks",
+    "images": [
+      "/images/New folder/Cornflakes 475g.jpg",
+      "/images/1765124568483-image.png",
+      "/images/1765124548466-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "soda-750ml",
@@ -642,448 +966,832 @@
     "name": "Minute Made Orange  1L",
     "price": 69,
     "image": "/images/New folder/Orange Drink 1L.jpg",
-    "category": "beverages"
+    "category": "beverages",
+    "images": [
+      "/images/New folder/Orange Drink 1L.jpg",
+      "/images/1765124884050-image.png",
+      "/images/1765124877663-image.png"
+    ],
+    "description": "Refreshing orange juice drink with real fruit pulp. Packed with Vitamin C and natural flavor."
   },
   {
     "id": "lemonade-1l",
     "name": "Shweppes Lemonade 1L",
     "price": 79,
     "image": "/images/New folder/Lemonade 1L.jpg",
-    "category": "beverages"
+    "category": "beverages",
+    "images": [
+      "/images/New folder/Lemonade 1L.jpg",
+      "/images/1765124934787-image.png",
+      "/images/1765124910024-image.png"
+    ],
+    "description": "Tangy and refreshing lemonade with a perfect balance of sweet and sour. Great for hot days."
   },
   {
     "id": "tonic-water-750ml",
     "name": "Tonic Water 750ml",
     "price": 89,
     "image": "/images/New folder/Tonic Water 750ml.jpg",
-    "category": "beverages"
+    "category": "beverages",
+    "images": [
+      "/images/New folder/Tonic Water 750ml.jpg",
+      "/images/1765124985072-image.png",
+      ""
+    ],
+    "description": "Pure and safe drinking water, essential for staying hydrated. Quality you can trust."
   },
   {
     "id": "packaged-water-1l",
     "name": "Bisleri Water 1L",
     "price": 99,
     "image": "/images/1763990234880-bisleri-mineral-water-filtered-refined-for-domestic-industrial-purpose-094.jpg",
-    "category": "beverages"
+    "category": "beverages",
+    "images": [
+      "/images/1763990234880-bisleri-mineral-water-filtered-refined-for-domestic-industrial-purpose-094.jpg",
+      "/images/1765125022887-image.png",
+      "/images/1765125015362-image.png"
+    ],
+    "description": "Pure and safe drinking water, essential for staying hydrated. Quality you can trust."
   },
   {
     "id": "coconut-water-200ml",
     "name": "Storia Coconut Water 200ml",
     "price": 109,
     "image": "/images/New folder/Coconut Water 200ml.jpg",
-    "category": "beverages"
+    "category": "beverages",
+    "images": [
+      "/images/New folder/Coconut Water 200ml.jpg",
+      "/images/1765125048153-image.png",
+      "/images/1765125055781-image.png"
+    ],
+    "description": "Fresh coconut with rich flavor and aroma. Perfect for cooking, garnishing, and traditional recipes."
   },
   {
     "id": "fruit-juice-1l",
     "name": "Raw Fruit Juice Combo 1L",
     "price": 119,
     "image": "/images/1763990154460-0eee5068-ea22-4997-833a-f5a311e7f1d4.webp",
-    "category": "beverages"
+    "category": "beverages",
+    "images": [
+      "/images/1763990154460-0eee5068-ea22-4997-833a-f5a311e7f1d4.webp",
+      "/images/1765125079311-image.png",
+      "/images/1765125085602-image.png"
+    ],
+    "description": "Fresh and natural fruit juice packed with vitamins. Refreshing and healthy beverage choice."
   },
   {
     "id": "iced-tea-500ml",
     "name": "Lipton Iced Tea Combo Pack 500ml",
     "price": 129,
     "image": "/images/1763990279407-images__2_.jfif",
-    "category": "beverages"
+    "category": "beverages",
+    "images": [
+      "/images/1763990279407-images__2_.jfif",
+      "/images/1765125125765-image.png",
+      "/images/1765125147201-image.png"
+    ],
+    "description": "Premium quality tea leaves for the perfect cup. Rich aroma and authentic taste in every sip."
   },
   {
     "id": "green-tea-25-bags",
     "name": "Chai Craft Green Tea 25 bags",
     "price": 139,
     "image": "/images/New folder/Green Tea 25 bags.jpg",
-    "category": "beverages"
+    "category": "beverages",
+    "images": [
+      "/images/New folder/Green Tea 25 bags.jpg",
+      "/images/1765125182511-image.png",
+      "/images/1765125167365-image.png"
+    ],
+    "description": "Premium quality tea leaves for the perfect cup. Rich aroma and authentic taste in every sip."
   },
   {
     "id": "coffee-200g",
     "name": "Nescafe Coffee 200g",
     "price": 149,
     "image": "/images/New folder/Coffee 200g.jpg",
-    "category": "beverages"
+    "category": "beverages",
+    "images": [
+      "/images/New folder/Coffee 200g.jpg",
+      "/images/1765125206390-image.png",
+      "/images/1765125219208-image.png"
+    ],
+    "description": "Aromatic coffee with rich flavor and perfect strength. Your perfect morning companion."
   },
   {
     "id": "instant-coffee-100g",
     "name": "Bru Instant Coffee 100g",
     "price": 159,
     "image": "/images/New folder/Instant Coffee 100g.jpg",
-    "category": "beverages"
+    "category": "beverages",
+    "images": [
+      "/images/New folder/Instant Coffee 100g.jpg",
+      "/images/1765125242509-image.png",
+      "/images/1765125250893-image.png"
+    ],
+    "description": "Aromatic coffee with rich flavor and perfect strength. Your perfect morning companion."
   },
   {
     "id": "milkshake-180ml",
     "name": "Sunfeast Milkshake 180ml",
     "price": 169,
     "image": "/images/New folder/Milkshake 180ml.jpg",
-    "category": "beverages"
+    "category": "beverages",
+    "images": [
+      "/images/New folder/Milkshake 180ml.jpg",
+      "/images/1765125269931-image.png",
+      "/images/1765125276655-image.png"
+    ],
+    "description": "Fresh, pure milk rich in calcium and protein. Essential for strong bones and overall health."
   },
   {
     "id": "malted-drink-500g",
     "name": "Horlicks Combo Pack 500g",
     "price": 179,
     "image": "/images/1763990339977-71vG7MVUH4L.jpg_BO30_255_255_255_UF900_850_SR1910_1000_0_C_QL100_.jpg",
-    "category": "beverages"
+    "category": "beverages",
+    "images": [
+      "/images/1763990339977-71vG7MVUH4L.jpg_BO30_255_255_255_UF900_850_SR1910_1000_0_C_QL100_.jpg",
+      "/images/1765125299464-image.png",
+      "/images/1765125313775-image.png"
+    ],
+    "description": "Nutritious malted health drink enriched with vitamins and minerals. Perfect for growing children and adults."
   },
   {
     "id": "electrolyte-drink-500ml",
     "name": "Prime Drink Combo 500ml",
     "price": 189,
     "image": "/images/1763990383811-613BsdSoFeL.jpg",
-    "category": "beverages"
+    "category": "beverages",
+    "images": [
+      "/images/1763990383811-613BsdSoFeL.jpg",
+      "/images/1765125336518-image.png",
+      "/images/1765125363012-image.png"
+    ],
+    "description": "Hydrating electrolyte drink for instant energy and rehydration. Perfect for sports and workouts."
   },
   {
     "id": "energy-drink-250ml",
     "name": "Redbull Combo Pack 250ml",
     "price": 199,
     "image": "/images/1763990449725-Red-Bull-Energy-Drink_-Mixed-Fruit-250ml-_Pack-of-24_-_-Energy-Drink-with-Caffeine-and-Taurine-for-Boosted-Energy-Luckystore-59852861_1080x.webp",
-    "category": "beverages"
+    "category": "beverages",
+    "images": [
+      "/images/1763990449725-Red-Bull-Energy-Drink_-Mixed-Fruit-250ml-_Pack-of-24_-_-Energy-Drink-with-Caffeine-and-Taurine-for-Boosted-Energy-Luckystore-59852861_1080x.webp",
+      "/images/1765125385608-image.png",
+      "/images/1765125396438-image.png"
+    ],
+    "description": "Powerful energy drink with caffeine and taurine. Boosts energy and mental alertness instantly."
   },
   {
     "id": "sparkling-water-750ml",
     "name": "Sparkling Water 750ml",
     "price": 209,
     "image": "/images/New folder/Sparkling Water 750ml.jpg",
-    "category": "beverages"
+    "category": "beverages",
+    "images": [
+      "/images/New folder/Sparkling Water 750ml.jpg",
+      "/images/1765125431070-image.png",
+      "/images/1765125446708-image.png"
+    ],
+    "description": "Crisp and refreshing sparkling water with natural carbonation. A healthier alternative to sodas."
   },
   {
     "id": "kombucha-330ml",
     "name": "Remley Kombucha 330ml",
     "price": 219,
     "image": "/images/New folder/Kombucha 330ml.jpg",
-    "category": "beverages"
+    "category": "beverages",
+    "images": [
+      "/images/New folder/Kombucha 330ml.jpg",
+      "/images/1765125476088-image.png",
+      "/images/1765125483097-image.png"
+    ],
+    "description": "Fermented tea drink with probiotics and antioxidants. Great for gut health and immunity."
   },
   {
     "id": "lassi-200ml",
     "name": "Amul Lassi 200ml",
     "price": 229,
     "image": "/images/New folder/Lassi 200ml.jpg",
-    "category": "beverages"
+    "category": "beverages",
+    "images": [
+      "/images/New folder/Lassi 200ml.jpg",
+      "/images/1765125517798-image.png",
+      "/images/1765125510649-image.png"
+    ],
+    "description": "Traditional Indian yogurt drink, sweet and creamy. Refreshing and cooling for hot days."
   },
   {
     "id": "buttermilk-200ml",
     "name": "Amul Buttermilk 200ml",
     "price": 239,
     "image": "/images/New folder/Buttermilk 200ml.jpg",
-    "category": "beverages"
+    "category": "beverages",
+    "images": [
+      "/images/New folder/Buttermilk 200ml.jpg",
+      "/images/1765125541318-image.png",
+      "/images/1765125549900-image.png"
+    ],
+    "description": "Light and tangy buttermilk with probiotics. Perfect digestive drink after meals."
   },
   {
     "id": "detergent-powder-1kg",
     "name": "Rin Detergent Powder 1kg",
     "price": 49,
     "image": "/images/New folder/Detergent Powder 1kg.jpg",
-    "category": "cleaning"
+    "category": "cleaning",
+    "images": [
+      "/images/New folder/Detergent Powder 1kg.jpg",
+      "/images/1765125846120-image.png",
+      "/images/1765125852930-image.png"
+    ],
+    "description": "Powerful cleaning formula that removes tough stains. Keeps your clothes fresh and bright."
   },
   {
     "id": "liquid-detergent-1l",
     "name": "Ariel Liquid Detergent 1L",
     "price": 59,
     "image": "/images/New folder/Liquid Detergent 1L.jpg",
-    "category": "cleaning"
+    "category": "cleaning",
+    "images": [
+      "/images/New folder/Liquid Detergent 1L.jpg",
+      "/images/1765125876214-image.png",
+      "/images/1765125886082-image.png"
+    ],
+    "description": "Powerful cleaning formula that removes tough stains. Keeps your clothes fresh and bright."
   },
   {
     "id": "fabric-conditioner-500ml",
     "name": "Comfort Fabric Conditioner 500ml",
     "price": 69,
     "image": "/images/1763960324486-61cTC3JlZYL.jpg",
-    "category": "cleaning"
+    "category": "cleaning",
+    "images": [
+      "/images/1763960324486-61cTC3JlZYL.jpg",
+      "/images/1765125906892-image.png",
+      "/images/1765125916592-image.png"
+    ],
+    "description": "Softens clothes and adds long-lasting fragrance. Makes your laundry feel fresh and comfortable."
   },
   {
     "id": "dishwash-liquid-500ml",
     "name": "Prill Dishwash Liquid 500ml",
     "price": 79,
     "image": "/images/New folder/Dishwash Liquid 500ml.jpg",
-    "category": "cleaning"
+    "category": "cleaning",
+    "images": [
+      "/images/New folder/Dishwash Liquid 500ml.jpg",
+      "/images/1765125946991-image.png",
+      "/images/1765125990043-image.png"
+    ],
+    "description": "Powerful dishwashing liquid that cuts through grease and oil. Leaves dishes sparkling clean."
   },
   {
     "id": "dishwash-bar-200g",
     "name": "Exo Dishwash Bar 200g",
     "price": 89,
     "image": "/images/New folder/Dishwash Bar 200g.jpg",
-    "category": "cleaning"
+    "category": "cleaning",
+    "images": [
+      "/images/New folder/Dishwash Bar 200g.jpg",
+      "/images/1765126015417-image.png",
+      "/images/1765126024751-image.png"
+    ],
+    "description": "Tough on stains and gentle on hands. Removes stubborn grease from utensils effectively."
   },
   {
     "id": "floor-cleaner-1l",
     "name": "My Home Floor Cleaner 1L",
     "price": 99,
     "image": "/images/New folder/Floor Cleaner 1L.jpg",
-    "category": "cleaning"
+    "category": "cleaning",
+    "images": [
+      "/images/New folder/Floor Cleaner 1L.jpg",
+      "/images/1765126050535-image.png",
+      "/images/1765126057524-image.png"
+    ],
+    "description": "Effective cleaning solution for a spotless home. Removes dirt and germs with ease."
   },
   {
     "id": "toilet-cleaner-1l",
     "name": "Harpic Toilet Cleaner 1L",
     "price": 109,
     "image": "/images/New folder/Toilet Cleaner 1L.jpg",
-    "category": "cleaning"
+    "category": "cleaning",
+    "images": [
+      "/images/New folder/Toilet Cleaner 1L.jpg",
+      "/images/1765126080009-image.png",
+      "/images/1765126087098-image.png"
+    ],
+    "description": "Powerful toilet cleaner that kills 99.9% germs. Removes tough stains and leaves fresh fragrance."
   },
   {
     "id": "glass-cleaner-500ml",
     "name": "Colin Glass Cleaner 500ml",
     "price": 119,
     "image": "/images/New folder/Glass Cleaner 500ml.jpg",
-    "category": "cleaning"
+    "category": "cleaning",
+    "images": [
+      "/images/New folder/Glass Cleaner 500ml.jpg",
+      "/images/1765126112006-image.png",
+      "/images/1765126106862-image.png"
+    ],
+    "description": "Effective cleaning solution for a spotless home. Removes dirt and germs with ease."
   },
   {
     "id": "garbage-bags-l",
     "name": "Garbage Bags L",
     "price": 129,
     "image": "/images/New folder/Garbage Bags L.jpg",
-    "category": "cleaning"
+    "category": "cleaning",
+    "images": [
+      "/images/New folder/Garbage Bags L.jpg",
+      "/images/1765126135519-image.png",
+      "/images/1765126141468-image.png"
+    ],
+    "description": "Strong and durable garbage bags for household waste. Leak-proof and tear-resistant."
   },
   {
     "id": "scrub-pad-3pc",
     "name": "Exo Scrub Pad 3pc",
     "price": 139,
     "image": "/images/New folder/Scrub Pad 3pc.jpg",
-    "category": "cleaning"
+    "category": "cleaning",
+    "images": [
+      "/images/New folder/Scrub Pad 3pc.jpg",
+      "/images/1765126162720-image.png",
+      "/images/1765126172034-image.png"
+    ],
+    "description": "Durable scrubbing pads for tough cleaning. Removes stubborn stains without scratching surfaces."
   },
   {
     "id": "bucket-15l",
     "name": "Bucket 15L",
     "price": 239,
     "image": "/images/New folder/Bucket 15L.jpg",
-    "category": "cleaning"
+    "category": "cleaning",
+    "images": [
+      "/images/New folder/Bucket 15L.jpg",
+      "/images/1765126211813-image.png",
+      "/images/1765126221659-image.png"
+    ],
+    "description": "Sturdy plastic bucket with 15L capacity. Perfect for cleaning, washing, and household storage."
   },
   {
     "id": "bath-soap-125g",
     "name": "Dove Soap 125g",
     "price": 80,
     "image": "/images/New folder/Bath Soap 125g.jpg",
-    "category": "personalcare"
+    "category": "personalcare",
+    "images": [
+      "/images/New folder/Bath Soap 125g.jpg",
+      "/images/1765126440818-image.png",
+      "/images/1765126425076-image.png"
+    ],
+    "description": "Gentle and nourishing soap that cleanses and moisturizes. Leaves skin feeling fresh and soft."
   },
   {
     "id": "body-wash-250ml",
     "name": "Nivea Body Wash 250ml",
     "price": 59,
     "image": "/images/New folder/Body Wash 250ml.jpg",
-    "category": "personalcare"
+    "category": "personalcare",
+    "images": [
+      "/images/New folder/Body Wash 250ml.jpg",
+      "/images/1765126462693-image.png",
+      "/images/1765126504353-image.png"
+    ],
+    "description": "Luxurious body wash with rich lather and moisturizing formula. Leaves skin clean, soft, and fragrant."
   },
   {
     "id": "shampoo-340ml",
     "name": "Dove Shampoo 340ml",
     "price": 69,
     "image": "/images/New folder/Shampoo 340ml.jpg",
-    "category": "personalcare"
+    "category": "personalcare",
+    "images": [
+      "/images/New folder/Shampoo 340ml.jpg",
+      "/images/1765126529168-image.png",
+      "/images/1765126555483-image.png"
+    ],
+    "description": "Nourishing shampoo that cleanses and strengthens hair. For healthy, shiny, and manageable hair."
   },
   {
     "id": "conditioner-170ml",
     "name": "Wish Care Conditioner 170ml",
     "price": 79,
     "image": "/images/New folder/Conditioner 170ml.jpg",
-    "category": "personalcare"
+    "category": "personalcare",
+    "images": [
+      "/images/New folder/Conditioner 170ml.jpg",
+      "/images/1765126577862-image.png",
+      "/images/1765126585884-image.png"
+    ],
+    "description": "Deep conditioning treatment that detangles and smoothens hair. For silky, manageable locks."
   },
   {
     "id": "hair-oil-200ml",
     "name": "Khadi India Hair Oil 200ml",
     "price": 89,
     "image": "/images/New folder/Hair Oil 200ml.jpg",
-    "category": "personalcare"
+    "category": "personalcare",
+    "images": [
+      "/images/New folder/Hair Oil 200ml.jpg",
+      "/images/1765126605481-image.png",
+      "/images/1765126613614-image.png"
+    ],
+    "description": "Nourishing hair oil with natural ingredients. Promotes hair growth and adds shine and strength."
   },
   {
     "id": "face-wash-100ml",
     "name": "Clean & Clear Face Wash 100ml",
     "price": 99,
     "image": "/images/New folder/Face Wash 100ml.png",
-    "category": "personalcare"
+    "category": "personalcare",
+    "images": [
+      "/images/New folder/Face Wash 100ml.png",
+      "/images/1765126632950-image.png",
+      "/images/1765126643481-image.png"
+    ],
+    "description": "Deep cleansing face wash that removes dirt and oil. Leaves skin fresh, clear, and glowing."
   },
   {
     "id": "face-cream-50g",
     "name": "Zicle Face Cream 50g",
     "price": 109,
     "image": "/images/New folder/Face Cream 50g.jpg",
-    "category": "personalcare"
+    "category": "personalcare",
+    "images": [
+      "/images/New folder/Face Cream 50g.jpg",
+      "/images/1765126745759-image.png",
+      "/images/1765126759371-image.png"
+    ],
+    "description": "Nourishing skincare product that hydrates and protects. For soft, smooth, and healthy skin."
   },
   {
     "id": "moisturizer-200ml",
     "name": "Equals Two Moisturizer 200ml",
     "price": 119,
     "image": "/images/New folder/Moisturizer 200ml.jpg",
-    "category": "personalcare"
+    "category": "personalcare",
+    "images": [
+      "/images/New folder/Moisturizer 200ml.jpg",
+      "/images/1765126785565-image.png",
+      "/images/1765126779366-image.png"
+    ],
+    "description": "Nourishing skincare product that hydrates and protects. For soft, smooth, and healthy skin."
   },
   {
     "id": "sunscreen-50ml",
     "name": "SPF 30 Sunscreen 50ml",
     "price": 129,
     "image": "/images/New folder/Sunscreen 50ml.jpg",
-    "category": "personalcare"
+    "category": "personalcare",
+    "images": [
+      "/images/New folder/Sunscreen 50ml.jpg",
+      "/images/1765126806092-image.png",
+      "/images/1765126816290-image.png"
+    ],
+    "description": "Broad spectrum sun protection with SPF 30. Shields skin from harmful UV rays and prevents tanning."
   },
   {
     "id": "toothpaste-150g",
     "name": "Colgate Toothpaste 150g",
     "price": 139,
     "image": "/images/New folder/Toothpaste 150g 🪥.jpg",
-    "category": "personalcare"
+    "category": "personalcare",
+    "images": [
+      "/images/New folder/Toothpaste 150g 🪥.jpg",
+      "/images/1765126847108-image.png",
+      "/images/1765126870655-image.png"
+    ],
+    "description": "Advanced dental care for strong teeth and fresh breath. Protects against cavities and gum problems."
   },
   {
     "id": "toothbrush-2pc",
     "name": "Oral-B Toothbrush 2pc",
     "price": 149,
     "image": "/images/New folder/Toothbrush 2pc.jpg",
-    "category": "personalcare"
+    "category": "personalcare",
+    "images": [
+      "/images/New folder/Toothbrush 2pc.jpg",
+      "/images/1765126894969-image.png",
+      "/images/1765126907273-image.png"
+    ],
+    "description": "Soft bristle toothbrushes for gentle yet effective cleaning. Protects gums while removing plaque."
   },
   {
     "id": "mouthwash-250ml",
     "name": "Listerin Mouthwash 250ml",
     "price": 159,
     "image": "/images/New folder/Mouthwash 250ml.webp",
-    "category": "personalcare"
+    "category": "personalcare",
+    "images": [
+      "/images/New folder/Mouthwash 250ml.webp",
+      "/images/1765126927144-image.png",
+      "/images/1765126934421-image.png"
+    ],
+    "description": "Antibacterial mouthwash for complete oral hygiene. Kills germs and provides long-lasting fresh breath."
   },
   {
     "id": "deodorant-150ml",
     "name": "Ustraa Deodorant 150ml",
     "price": 169,
     "image": "/images/New folder/Deodorant 150ml.jpg",
-    "category": "personalcare"
+    "category": "personalcare",
+    "images": [
+      "/images/New folder/Deodorant 150ml.jpg",
+      "/images/1765126954659-image.png",
+      "/images/1765126967900-image.png"
+    ],
+    "description": "Long-lasting deodorant with refreshing fragrance. Keeps you fresh and confident all day long."
   },
   {
     "id": "shaving-foam-200g",
     "name": "Park Avenue Shaving Foam 200g",
     "price": 179,
     "image": "/images/New folder/Shaving Foam 200g.jpg",
-    "category": "personalcare"
+    "category": "personalcare",
+    "images": [
+      "/images/New folder/Shaving Foam 200g.jpg",
+      "/images/1765126987178-image.png",
+      "/images/1765126993436-image.png"
+    ],
+    "description": "Rich lather shaving foam for smooth and comfortable shave. Protects skin from cuts and irritation."
   },
   {
     "id": "razor-4pc",
     "name": "Gillet Razor 4pc",
     "price": 189,
     "image": "/images/New folder/Razor 4pc.jpg",
-    "category": "personalcare"
+    "category": "personalcare",
+    "images": [
+      "/images/New folder/Razor 4pc.jpg",
+      "/images/1765127024435-image.png",
+      "/images/1765127041644-image.png"
+    ],
+    "description": "Sharp precision razors for close and comfortable shave. Multi-blade system for smooth results."
   },
   {
     "id": "sanitary-pads-20pc",
     "name": "Whisper Sanitary Pads 20pc",
     "price": 199,
     "image": "/images/New folder/Sanitary Pads 20pc.jpg",
-    "category": "personalcare"
+    "category": "personalcare",
+    "images": [
+      "/images/New folder/Sanitary Pads 20pc.jpg",
+      "/images/1765127064916-image.png",
+      "/images/1765127085187-image.png"
+    ],
+    "description": "Ultra-soft sanitary pads with superior absorption. Provides comfort and protection during periods."
   },
   {
     "id": "wet-wipes-20pc",
     "name": "Softsens Wet Wipes 20pc",
     "price": 209,
     "image": "/images/New folder/Wet Wipes 20pc.jpg",
-    "category": "personalcare"
+    "category": "personalcare",
+    "images": [
+      "/images/New folder/Wet Wipes 20pc.jpg",
+      "/images/1765127105971-image.png",
+      "/images/1765127112813-image.png"
+    ],
+    "description": "Soft and gentle wet wipes for quick cleaning. Perfect for on-the-go freshness and hygiene."
   },
   {
     "id": "handwash-250ml",
     "name": "Dettol Handwash 250ml",
     "price": 219,
     "image": "/images/New folder/Handwash 250ml 🫧.jpg",
-    "category": "personalcare"
+    "category": "personalcare",
+    "images": [
+      "/images/New folder/Handwash 250ml 🫧.jpg",
+      "/images/1765127134584-image.png",
+      "/images/1765127142746-image.png"
+    ],
+    "description": "Antibacterial handwash that kills 99.9% germs. Keeps hands clean, soft, and protected."
   },
   {
     "id": "nail-cutter",
     "name": "Nail Cutter",
     "price": 229,
     "image": "/images/New folder/Nail Cutter.jpg",
-    "category": "personalcare"
+    "category": "personalcare",
+    "images": [
+      "/images/New folder/Nail Cutter.jpg",
+      "/images/1765127163046-image.png",
+      "/images/1765127186539-image.png"
+    ],
+    "description": "Sharp and durable nail cutter for precise trimming. Ergonomic design for comfortable use."
   },
   {
     "id": "cotton-buds-100pc",
     "name": "Charm Cotton Buds 100pc",
     "price": 239,
     "image": "/images/New folder/Cotton Buds 100pc.jpg",
-    "category": "personalcare"
+    "category": "personalcare",
+    "images": [
+      "/images/New folder/Cotton Buds 100pc.jpg",
+      "/images/1765127212420-image.png",
+      "/images/1765127218332-image.png"
+    ],
+    "description": "Soft cotton buds for gentle cleaning and makeup application. Safe and hygienic for daily use."
   },
   {
     "id": "diapers-small-20pc",
     "name": "Pampers Diapers Small 20pc",
     "price": 49,
     "image": "/images/New folder/Diapers Small 20pc.jpg",
-    "category": "baby"
+    "category": "baby",
+    "images": [
+      "/images/New folder/Diapers Small 20pc.jpg",
+      "/images/1765127451109-image.png",
+      "/images/1765127458245-image.png"
+    ],
+    "description": "Soft and absorbent diapers that keep baby dry and comfortable. Gentle on delicate skin."
   },
   {
     "id": "diapers-medium-20pc",
     "name": "Pampers Diapers Medium 20pc",
     "price": 59,
     "image": "/images/New folder/Diapers Medium 20pc.jpg",
-    "category": "baby"
+    "category": "baby",
+    "images": [
+      "/images/New folder/Diapers Medium 20pc.jpg",
+      "/images/1765127478639-image.png",
+      "/images/1765127489624-image.png"
+    ],
+    "description": "Soft and absorbent diapers that keep baby dry and comfortable. Gentle on delicate skin."
   },
   {
     "id": "diapers-large-20pc",
     "name": "Liberty Diapers Large 20pc",
     "price": 69,
     "image": "/images/New folder/Diapers Large 20pc.jpg",
-    "category": "baby"
+    "category": "baby",
+    "images": [
+      "/images/New folder/Diapers Large 20pc.jpg",
+      "/images/1765127507474-image.png",
+      "/images/1765127514336-image.png"
+    ],
+    "description": "Soft and absorbent diapers that keep baby dry and comfortable. Gentle on delicate skin."
   },
   {
     "id": "baby-wipes-72pc",
     "name": "Himalaya Baby Wipes 72pc",
     "price": 79,
     "image": "/images/New folder/Baby Wipes 72pc.jpg",
-    "category": "baby"
+    "category": "baby",
+    "images": [
+      "/images/New folder/Baby Wipes 72pc.jpg",
+      "/images/1765127534935-image.png",
+      "/images/1765127542156-image.png"
+    ],
+    "description": "Specially formulated for babies with gentle, safe ingredients. Trusted care for your little one."
   },
   {
     "id": "baby-soap-75g",
     "name": "Johnsons Baby Soap 75g",
     "price": 89,
     "image": "/images/New folder/Baby Soap 75g.jpg",
-    "category": "baby"
+    "category": "baby",
+    "images": [
+      "/images/New folder/Baby Soap 75g.jpg",
+      "/images/1765127559201-image.png",
+      "/images/1765127571502-image.png"
+    ],
+    "description": "Gentle and nourishing soap that cleanses and moisturizes. Leaves skin feeling fresh and soft."
   },
   {
     "id": "baby-shampoo-200ml",
     "name": "Choice Baby Shampoo 200ml",
     "price": 99,
     "image": "/images/New folder/Baby Shampoo 200ml.jpg",
-    "category": "baby"
+    "category": "baby",
+    "images": [
+      "/images/New folder/Baby Shampoo 200ml.jpg",
+      "/images/1765127600528-image.png",
+      ""
+    ],
+    "description": "Nourishing shampoo that cleanses and strengthens hair. For healthy, shiny, and manageable hair."
   },
   {
     "id": "baby-lotion-200ml",
     "name": "Himalaya Baby Lotion 200ml",
     "price": 109,
     "image": "/images/New folder/Baby Lotion 200ml.jpg",
-    "category": "baby"
+    "category": "baby",
+    "images": [
+      "/images/New folder/Baby Lotion 200ml.jpg",
+      "/images/1765127630124-image.png",
+      "/images/1765127636104-image.png"
+    ],
+    "description": "Specially formulated for babies with gentle, safe ingredients. Trusted care for your little one."
   },
   {
     "id": "baby-oil-100ml",
     "name": "Johnsons Baby Oil 100ml",
     "price": 119,
     "image": "/images/New folder/Baby Oil 100ml.jpg",
-    "category": "baby"
+    "category": "baby",
+    "images": [
+      "/images/New folder/Baby Oil 100ml.jpg",
+      "/images/1765127656690-image.png",
+      "/images/1765127668259-image.png"
+    ],
+    "description": "Gentle baby oil for soft and smooth skin. Perfect for massage and moisturizing delicate baby skin."
   },
   {
     "id": "baby-powder-200g",
     "name": "Himalaya Baby Powder 200g",
     "price": 129,
     "image": "/images/New folder/Baby Powder 200g.jpg",
-    "category": "baby"
+    "category": "baby",
+    "images": [
+      "/images/New folder/Baby Powder 200g.jpg",
+      "/images/1765127689766-image.png",
+      "/images/1765127696338-image.png"
+    ],
+    "description": "Specially formulated for babies with gentle, safe ingredients. Trusted care for your little one."
   },
   {
     "id": "feeding-bottle-250ml",
     "name": "Feeding Bottle 250ml",
     "price": 139,
     "image": "/images/New folder/Feeding Bottle 250ml.jpg",
-    "category": "baby"
+    "category": "baby",
+    "images": [
+      "/images/New folder/Feeding Bottle 250ml.jpg",
+      "/images/1765127724512-image.png",
+      "/images/1765127732827-image.png"
+    ],
+    "description": "BPA-free feeding bottle with anti-colic nipple. Safe and comfortable for baby's feeding time."
   },
   {
     "id": "teether",
     "name": "Teether",
     "price": 149,
     "image": "/images/New folder/Teether.jpg",
-    "category": "baby"
+    "category": "baby",
+    "images": [
+      "/images/New folder/Teether.jpg",
+      "/images/1765127757343-image.png",
+      "/images/1765127769171-image.png"
+    ],
+    "description": "Soft and safe teether for soothing baby's gums during teething. BPA-free and easy to grip."
   },
   {
     "id": "rattle",
     "name": "Rattle",
     "price": 159,
     "image": "/images/New folder/Rattle.jpg",
-    "category": "baby"
+    "category": "baby",
+    "images": [
+      "/images/New folder/Rattle.jpg",
+      "/images/1765127793902-image.png",
+      ""
+    ],
+    "description": "Colorful baby rattle with gentle sounds. Stimulates baby's senses and encourages motor skills."
   },
   {
     "id": "sipper-cup",
     "name": "Sipper Cup",
     "price": 169,
     "image": "/images/New folder/Sipper Cup.jpg",
-    "category": "baby"
+    "category": "baby",
+    "images": [
+      "/images/New folder/Sipper Cup.jpg",
+      "/images/1765127816652-image.png",
+      "/images/1765127832573-image.png"
+    ],
+    "description": "Spill-proof sipper cup for toddlers. Easy to hold and helps transition from bottle to cup."
   },
   {
     "id": "rice-cereal-300g",
     "name": "Cerlac Rice Cereal 300g",
     "price": 179,
     "image": "/images/New folder/Rice Cereal 300g.jpg",
-    "category": "baby"
+    "category": "baby",
+    "images": [
+      "/images/New folder/Rice Cereal 300g.jpg",
+      "/images/1765127859887-image.png",
+      "/images/1765127852831-image.png"
+    ],
+    "description": "Nutritious rice cereal for babies, fortified with vitamins and minerals. Perfect first food for infants."
   },
   {
     "id": "fruit-puree-100g",
     "name": "Fruit Puree 100g",
     "price": 189,
     "image": "/images/New folder/Fruit Puree 100g.jpg",
-    "category": "baby"
+    "category": "baby",
+    "images": [
+      "/images/New folder/Fruit Puree 100g.jpg",
+      "/images/1765127894162-image.png",
+      "/images/1765127878713-image.png"
+    ],
+    "description": "Natural fruit puree with no added sugar or preservatives. Healthy and delicious for babies."
   },
   {
     "id": "baby-blanket",
@@ -1097,14 +1805,26 @@
     "name": "Baby Detergent 500ml",
     "price": 209,
     "image": "/images/New folder/Baby Detergent 500ml.jpg",
-    "category": "baby"
+    "category": "baby",
+    "images": [
+      "/images/New folder/Baby Detergent 500ml.jpg",
+      "/images/1765127924918-image.png",
+      "/images/1765127931592-image.png"
+    ],
+    "description": "Gentle detergent specially formulated for baby clothes. Hypoallergenic and safe for sensitive skin."
   },
   {
     "id": "diaper-rash-cream",
     "name": "Diaper Rash Cream",
     "price": 219,
     "image": "/images/New folder/Diaper Rash Cream.jpg",
-    "category": "baby"
+    "category": "baby",
+    "images": [
+      "/images/New folder/Diaper Rash Cream.jpg",
+      "/images/1765127984319-image.png",
+      "/images/1765127957537-image.png"
+    ],
+    "description": "Soothing cream that prevents and treats diaper rash. Creates protective barrier on baby's skin."
   },
   {
     "id": "nail-scissors",
@@ -1118,35 +1838,65 @@
     "name": "Preethi Pressure Cooker 3L",
     "price": 49,
     "image": "/images/New folder/Pressure Cooker 3L.jpg",
-    "category": "kitchen"
+    "category": "kitchen",
+    "images": [
+      "/images/New folder/Pressure Cooker 3L.jpg",
+      "/images/1765128110609-image.png",
+      "/images/1765128119742-image.png"
+    ],
+    "description": "Durable pressure cooker for fast and efficient cooking. Saves time and energy in the kitchen."
   },
   {
     "id": "fry-pan-24cm",
     "name": "Prestige Delux Fry Pan 24cm",
     "price": 59,
     "image": "/images/New folder/Fry Pan 24cm.jpg",
-    "category": "kitchen"
+    "category": "kitchen",
+    "images": [
+      "/images/New folder/Fry Pan 24cm.jpg",
+      "/images/1765128137991-image.png",
+      "/images/1765128146029-image.png"
+    ],
+    "description": "Non-stick frying pan for healthy cooking with less oil. Even heat distribution for perfect results."
   },
   {
     "id": "kadhai-2l",
     "name": "Kadhai 2L",
     "price": 69,
     "image": "/images/New folder/Kadhai 2L.jpg",
-    "category": "kitchen"
+    "category": "kitchen",
+    "images": [
+      "/images/New folder/Kadhai 2L.jpg",
+      "/images/1765128178754-image.png",
+      "/images/1765128185935-image.png"
+    ],
+    "description": "Traditional Indian wok for deep frying and stir-frying. Heavy-duty construction for long-lasting use."
   },
   {
     "id": "spatula-set-3pc",
     "name": "Spatula Set 3pc",
     "price": 79,
     "image": "/images/New folder/Spatula Set 3pc.jpg",
-    "category": "kitchen"
+    "category": "kitchen",
+    "images": [
+      "/images/New folder/Spatula Set 3pc.jpg",
+      "/images/1765128201415-image.png",
+      "/images/1765128217806-image.png"
+    ],
+    "description": "Heat-resistant spatula set for cooking and serving. Non-stick friendly and easy to clean."
   },
   {
     "id": "knife-set-3pc",
     "name": "Knife Set 3pc",
     "price": 89,
     "image": "/images/1763988600402-71E_Y1oHn8L.jpg",
-    "category": "kitchen"
+    "category": "kitchen",
+    "images": [
+      "/images/1763988600402-71E_Y1oHn8L.jpg",
+      "/images/1765128238715-image.png",
+      "/images/1765128245435-image.png"
+    ],
+    "description": "Sharp stainless steel knife set for all cutting needs. Ergonomic handles for comfortable grip."
   },
   {
     "id": "chopping-board",
@@ -1258,14 +2008,26 @@
     "name": "Dog Food 1kg",
     "price": 49,
     "image": "/images/New folder/Dog Food 1kg.jpg",
-    "category": "petcare"
+    "category": "petcare",
+    "images": [
+      "/images/New folder/Dog Food 1kg.jpg",
+      "/images/1765128331983-image.png",
+      "/images/1765128346635-image.png"
+    ],
+    "description": "Nutritious dog food with balanced protein and vitamins. Keeps your pet healthy, active, and happy."
   },
   {
     "id": "cat-food-1kg",
     "name": "Cat Food 1kg",
     "price": 59,
     "image": "/images/New folder/Cat Food 1kg.jpg",
-    "category": "petcare"
+    "category": "petcare",
+    "images": [
+      "/images/New folder/Cat Food 1kg.jpg",
+      "/images/1765128372273-image.png",
+      "/images/1765128383154-image.png"
+    ],
+    "description": "Complete nutrition for cats with real meat and essential nutrients. Supports healthy coat and digestion."
   },
   {
     "id": "bird-feed-1kg",
@@ -1279,14 +2041,26 @@
     "name": "Fish Food 200g",
     "price": 79,
     "image": "/images/New folder/Fish Food 200g.jpg",
-    "category": "petcare"
+    "category": "petcare",
+    "images": [
+      "/images/New folder/Fish Food 200g.jpg",
+      "/images/1765128408533-image.png",
+      ""
+    ],
+    "description": "Balanced fish food with vitamins and minerals. Enhances color and promotes healthy growth."
   },
   {
     "id": "pet-shampoo-250ml",
     "name": "Pet Shampoo 250ml",
     "price": 89,
     "image": "/images/New folder/Pet Shampoo 250ml.jpg",
-    "category": "petcare"
+    "category": "petcare",
+    "images": [
+      "/images/New folder/Pet Shampoo 250ml.jpg",
+      "/images/1765128441465-image.png",
+      ""
+    ],
+    "description": "Gentle pet shampoo for clean and shiny coat. Removes dirt and odor while being kind to skin."
   },
   {
     "id": "pet-conditioner-250ml",
@@ -1398,42 +2172,78 @@
     "name": "Vitamin C 60 tablets",
     "price": 49,
     "image": "/images/New folder/Vitamin C 60 tablets.jpg",
-    "category": "health"
+    "category": "health",
+    "images": [
+      "/images/New folder/Vitamin C 60 tablets.jpg",
+      "/images/1765128472995-image.png",
+      "/images/1765128483422-image.png"
+    ],
+    "description": "Vitamin C supplement for immunity and skin health. Powerful antioxidant for overall wellness."
   },
   {
     "id": "multivitamin-30-tablets",
     "name": "Multivitamin 30 tablets",
     "price": 59,
     "image": "/images/New folder/Multivitamin 30 tablets.jpg",
-    "category": "health"
+    "category": "health",
+    "images": [
+      "/images/New folder/Multivitamin 30 tablets.jpg",
+      "/images/1765128508556-image.png",
+      "/images/1765128524453-image.png"
+    ],
+    "description": "Complete multivitamin with essential nutrients. Supports energy, immunity, and overall health."
   },
   {
     "id": "protein-powder-1kg",
     "name": "Protein Powder 1kg",
     "price": 69,
     "image": "/images/New folder/Protein Powder 1kg.jpg",
-    "category": "health"
+    "category": "health",
+    "images": [
+      "/images/New folder/Protein Powder 1kg.jpg",
+      "/images/1765128543051-image.png",
+      "/images/1765128553427-image.png"
+    ],
+    "description": "High-quality protein powder for muscle building and recovery. Perfect for fitness enthusiasts."
   },
   {
     "id": "ors-200ml",
     "name": "ORS 200ml",
     "price": 79,
     "image": "/images/New folder/ORS 200ml.jpg",
-    "category": "health"
+    "category": "health",
+    "images": [
+      "/images/New folder/ORS 200ml.jpg",
+      "/images/1765128579935-image.png",
+      "/images/1765128572078-image.png"
+    ],
+    "description": "Oral rehydration solution for quick recovery from dehydration. Essential for illness and heat."
   },
   {
     "id": "electrolyte-sachets-5pc",
     "name": "Electrolyte Sachets 5pc",
     "price": 89,
     "image": "/images/New folder/Electrolyte Sachets 5pc.jpg",
-    "category": "health"
+    "category": "health",
+    "images": [
+      "/images/New folder/Electrolyte Sachets 5pc.jpg",
+      "/images/1765128598897-image.png",
+      "/images/1765128609627-image.png"
+    ],
+    "description": "Instant electrolyte sachets for hydration and energy. Perfect for sports and travel."
   },
   {
     "id": "bandages-10pc",
     "name": "Bandages 10pc",
     "price": 99,
     "image": "/images/New folder/Bandages 10pc.jpg",
-    "category": "health"
+    "category": "health",
+    "images": [
+      "/images/New folder/Bandages 10pc.jpg",
+      "/images/1765128632563-image.png",
+      "/images/1765128643670-image.png"
+    ],
+    "description": "Sterile adhesive bandages for minor cuts and wounds. Breathable and comfortable protection."
   },
   {
     "id": "first-aid-kit",
@@ -1461,7 +2271,13 @@
     "name": "Hand Sanitizer 500ml",
     "price": 139,
     "image": "/images/New folder/Hand Sanitizer 500ml.jpg",
-    "category": "health"
+    "category": "health",
+    "images": [
+      "/images/New folder/Hand Sanitizer 500ml.jpg",
+      "/images/1765128711946-image.png",
+      "/images/1765128704867-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "n95-mask-5pc",
@@ -1475,21 +2291,39 @@
     "name": "Iodex Pain Relief Spray",
     "price": 159,
     "image": "/images/New folder/Pain Relief Spray.png",
-    "category": "health"
+    "category": "health",
+    "images": [
+      "/images/New folder/Pain Relief Spray.png",
+      "/images/1765128729447-image.png",
+      "/images/1765128734789-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "cold-and-flu-syrup",
     "name": "Cold & Flu Syrup",
     "price": 169,
     "image": "/images/New folder/Cold & Flu Syrup.jpg",
-    "category": "health"
+    "category": "health",
+    "images": [
+      "/images/New folder/Cold & Flu Syrup.jpg",
+      "/images/1765128758107-image.png",
+      "/images/1765128766637-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "cough-drops-50g",
     "name": "Cofsils Cough Drops 50g",
     "price": 179,
     "image": "/images/New folder/Cough Drops 50g.jpg",
-    "category": "health"
+    "category": "health",
+    "images": [
+      "/images/New folder/Cough Drops 50g.jpg",
+      "/images/1765128666250-image.png",
+      "/images/1765128672146-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "herbal-tea-100g",
@@ -1538,140 +2372,260 @@
     "name": "Cashewnut",
     "price": 180,
     "image": "/images/1763941402055-images.jfif",
-    "category": "dry-fruits"
+    "category": "dry-fruits",
+    "images": [
+      "/images/1763941402055-images.jfif",
+      "/images/1765128870795-image.png",
+      "/images/1765128844676-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "turmeric",
     "name": "Turmeric",
     "price": 200,
     "image": "/images/1763941484116-download.jfif",
-    "category": "spices"
+    "category": "spices",
+    "images": [
+      "/images/1763941484116-download.jfif",
+      "/images/1765129325154-image.png",
+      "/images/1765129337238-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "pickles",
     "name": "Urban Platter Whole Dill Gherkins",
     "price": 250,
     "image": "/images/1763991861411-11523_01_-WholeDillGherkins360g.webp",
-    "category": "pickle"
+    "category": "pickle",
+    "images": [
+      "/images/1763991861411-11523_01_-WholeDillGherkins360g.webp",
+      "/images/1765129574675-image.png",
+      "/images/1765129582271-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "mixnuts",
     "name": "Mix Nuts 500g",
     "price": 299,
     "image": "/images/1763990757990-8116WQQe6bL._SX569_.jpg",
-    "category": "dry-fruits"
+    "category": "dry-fruits",
+    "images": [
+      "/images/1763990757990-8116WQQe6bL._SX569_.jpg",
+      "/images/1765128899268-image.png",
+      "/images/1765128889000-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "Happilo Premium",
     "name": "Happilo Premium Walnut 200g",
     "price": 400,
     "image": "/images/1763990842754-71lOZc81MVL._SX679_.jpg",
-    "category": "dry-fruits"
+    "category": "dry-fruits",
+    "images": [
+      "/images/1763990842754-71lOZc81MVL._SX679_.jpg",
+      "/images/1765128916381-image.png",
+      "/images/1765128923565-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "Kashmiri Honey ",
     "name": "Kashmiri Honey mixed dry fruits",
     "price": 345,
     "image": "/images/1763990905162-51aLJKGkz1L._SY300_SX300_QL70_FMwebp_.webp",
-    "category": "dry-fruits"
+    "category": "dry-fruits",
+    "images": [
+      "/images/1763990905162-51aLJKGkz1L._SY300_SX300_QL70_FMwebp_.webp",
+      "/images/1765128940464-image.png",
+      "/images/1765128977447-71GrKpbUijL._AC_UF350_350_QL80_.jpg"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "JEWEL FARMER Walnuts",
     "name": "JEWEL FARMER Walnuts",
     "price": 567,
     "image": "/images/1763990958443-71x0YNuldwL._SX679_.jpg",
-    "category": "dry-fruits"
+    "category": "dry-fruits",
+    "images": [
+      "/images/1763990958443-71x0YNuldwL._SX679_.jpg",
+      "/images/1765129015121-image.png",
+      "/images/1765129022234-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "Farmley ELH Walnut Kernel",
     "name": "Farmley ELH Walnut Kernel",
     "price": 678,
     "image": "/images/1763991000304-61XnMnO74nL._SX679_.jpg",
-    "category": "dry-fruits"
+    "category": "dry-fruits",
+    "images": [
+      "/images/1763991000304-61XnMnO74nL._SX679_.jpg",
+      "/images/1765129043147-image.png",
+      "/images/1765129050626-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "premium-dried-apricot-walnut",
     "name": "Premium Dried Apricot Walnut",
     "price": 600,
     "image": "/images/1763991140346-go-grass-premium-dried-apricot-walnut-fruit-soft-khurbani-apricots-walnut-50-g-product-images-orvrfqcwtjm-p604337066-0-202309032101.jfif",
-    "category": "dry-fruits"
+    "category": "dry-fruits",
+    "images": [
+      "/images/1763991140346-go-grass-premium-dried-apricot-walnut-fruit-soft-khurbani-apricots-walnut-50-g-product-images-orvrfqcwtjm-p604337066-0-202309032101.jfif",
+      "/images/1765129081586-image.png",
+      "/images/1765129075067-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "Afghani Anjeer 400g",
     "name": "Afghani Anjeer 400g",
     "price": 700,
     "image": "/images/1763991187950-7170yoROmrL._SX679_.jpg",
-    "category": "dry-fruits"
+    "category": "dry-fruits",
+    "images": [
+      "/images/1763991187950-7170yoROmrL._SX679_.jpg",
+      "/images/1765129109578-image.png",
+      "/images/1765129119699-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "Fruitri Premium Dried Figs",
     "name": "Fruitri Premium Dried Figs",
     "price": 500,
     "image": "/images/1763991219660-81P66wGLHjL._SY741_.jpg",
-    "category": "dry-fruits"
+    "category": "dry-fruits",
+    "images": [
+      "/images/1763991219660-81P66wGLHjL._SY741_.jpg",
+      "/images/1765129144361-image.png",
+      "/images/1765129154323-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "Nutraj Indian Cashews",
     "name": "Nutraj Indian Cashews",
     "price": 700,
     "image": "/images/1763991341743-71DKw6AXeXL._SX679_.jpg",
-    "category": "dry-fruits"
+    "category": "dry-fruits",
+    "images": [
+      "/images/1763991341743-71DKw6AXeXL._SX679_.jpg",
+      "/images/1765129171244-image.png",
+      "/images/1765129178651-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "MOTABA Chilli Flakes-50g",
     "name": "MOTABA Chilli Flakes-50g",
     "price": 340,
     "image": "/images/1763991413749-81UW4u7PFZL._SX679_PIbundle-4_TopRight_0_0_AA679SH20_.jpg",
-    "category": "spices"
+    "category": "spices",
+    "images": [
+      "/images/1763991413749-81UW4u7PFZL._SX679_PIbundle-4_TopRight_0_0_AA679SH20_.jpg",
+      "/images/1765129358193-image.png",
+      "/images/1765129388524-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "LDF 5 Spices Combo (50 Grams x 5)",
     "name": "LDF 5 Spices Combo (50 Grams x 5)",
     "price": 700,
     "image": "/images/1763991463120-61Zn8kgpptL._SY741_PIbundle-5_TopRight_0_0_SX505SY741SH20_.jpg",
-    "category": "spices"
+    "category": "spices",
+    "images": [
+      "/images/1763991463120-61Zn8kgpptL._SY741_PIbundle-5_TopRight_0_0_SX505SY741SH20_.jpg",
+      "/images/1765129407981-image.png",
+      "/images/1765129417089-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "Pure & Sure Organic Black Pepper Whole 100gm",
     "name": "Pure & Sure Organic Black Pepper 100gm",
     "price": 800,
     "image": "/images/1763991545791-61tStVMIjYL._SX679_.jpg",
-    "category": "spices"
+    "category": "spices",
+    "images": [
+      "/images/1763991545791-61tStVMIjYL._SX679_.jpg",
+      "/images/1765129436506-image.png",
+      "/images/1765129449245-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "Garam Masala Whole",
     "name": "Garam Masala Whole",
     "price": 600,
     "image": "/images/1763991619611-shopping.webp",
-    "category": "spices"
+    "category": "spices",
+    "images": [
+      "/images/1763991619611-shopping.webp",
+      "/images/1765129477772-image.png",
+      "/images/1765129485322-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "Priya Tomato Pickle",
     "name": "Priya Tomato Pickle",
     "price": 50,
     "image": "/images/1763991925579-Priya-Pickle-Tomato-Without-Garlic.webp",
-    "category": "pickle"
+    "category": "pickle",
+    "images": [
+      "/images/1763991925579-Priya-Pickle-Tomato-Without-Garlic.webp",
+      "/images/1765129597328-image.png",
+      "/images/1765129609442-image.png"
+    ],
+    "description": "Fresh farm produce, handpicked for quality. Essential ingredient for everyday cooking."
   },
   {
     "id": "Tasty Nibbles Chicken Pickle 200g",
     "name": "Tasty Nibbles Chicken Pickle 200g",
     "price": 69,
     "image": "/images/1763991992255-40286008_1-tasty-nibbles-chicken-pickle-spicy-adds-flavour.webp",
-    "category": "pickle"
+    "category": "pickle",
+    "images": [
+      "/images/1763991992255-40286008_1-tasty-nibbles-chicken-pickle-spicy-adds-flavour.webp",
+      "/images/1765129638222-image.png",
+      "/images/1765129627957-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "Freshos Cornichons Dill Pickle",
     "name": "Freshos Cornichons Dill Pickle",
     "price": 578,
     "image": "/images/1763992031084-413q_JRkLsL._SY300_SX300_QL70_FMwebp_.webp",
-    "category": "pickle"
+    "category": "pickle",
+    "images": [
+      "/images/1763992031084-413q_JRkLsL._SY300_SX300_QL70_FMwebp_.webp",
+      "/images/1765129657088-image.png",
+      "/images/1765129664743-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "French's Classic Yellow Mustard",
     "name": "French's Classic Yellow Mustard",
     "price": 780,
     "image": "/images/1763992061221-61JPAwxiG6L._SX679_.jpg",
-    "category": "pickle"
+    "category": "pickle",
+    "images": [
+      "/images/1763992061221-61JPAwxiG6L._SX679_.jpg",
+      "/images/1765129685837-image.png",
+      "/images/1765129692361-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "sona-masoori-10kg",
@@ -1795,315 +2749,585 @@
     "name": "Organic Broccoli 500g",
     "price": 159,
     "image": "/images/1764052293401-picture2-255229094978350_m.jpg",
-    "category": "vegetables"
+    "category": "vegetables",
+    "images": [
+      "/images/1764052293401-picture2-255229094978350_m.jpg",
+      "/images/1765121934429-image.png",
+      "/images/1765121944859-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "Sweet Corn 2pc",
     "name": "Sweet Corn 2pc",
     "price": 49,
     "image": "/images/1764052367188-images__1_.jfif",
-    "category": "vegetables"
+    "category": "vegetables",
+    "images": [
+      "/images/1764052367188-images__1_.jfif",
+      "/images/1765122007588-SweetCorn.webp",
+      "/images/1765122017559-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "Muskmelon 1pc",
     "name": "Muskmelon 1pc",
     "price": 99,
     "image": "/images/1764052415329-71Q4mGcOpLL._AC_UF894_1000_QL80_.jpg",
-    "category": "vegetables"
+    "category": "vegetables",
+    "images": [
+      "/images/1764052415329-71Q4mGcOpLL._AC_UF894_1000_QL80_.jpg",
+      "/images/1765122040776-image.png",
+      "/images/1765122048802-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "Watermelon 1 pc",
     "name": "Watermelon 1 pc",
     "price": 129,
     "image": "/images/1764052480081-watermelon-1-pc-approx-4-kg-6-kg-product-images-o590001262-p591026794-0-202203170808.jpg",
-    "category": "vegetables"
+    "category": "vegetables",
+    "images": [
+      "/images/1764052480081-watermelon-1-pc-approx-4-kg-6-kg-product-images-o590001262-p591026794-0-202203170808.jpg",
+      "/images/1765122088402-watermelon-kiran-big-1-pc-approx-2800-g-4000-g-product-images-o590001265-p590041413-1-202409051634.jpg",
+      "/images/1765122094993-image.png"
+    ],
+    "description": "Pure and safe drinking water, essential for staying hydrated. Quality you can trust."
   },
   {
     "id": "Kiwi 3pc",
     "name": "Kiwi 3pc",
     "price": 119,
     "image": "/images/1764052529124-kiwi-three-pc-box-rgb-mart-nagpur.webp",
-    "category": "vegetables"
+    "category": "vegetables",
+    "images": [
+      "/images/1764052529124-kiwi-three-pc-box-rgb-mart-nagpur.webp",
+      "/images/1765122116391-image.png",
+      "/images/1765122122443-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "Avocado 1pc",
     "name": "Avocado 1pc",
     "price": 149,
     "image": "/images/1764052568700-avocado-imported_effe2726-bc5d-435b-be4b-33bae6e51dcc.webp",
-    "category": "vegetables"
+    "category": "vegetables",
+    "images": [
+      "/images/1764052568700-avocado-imported_effe2726-bc5d-435b-be4b-33bae6e51dcc.webp",
+      "/images/1765122143527-image.png",
+      "/images/1765122151704-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "Dragon Fruit 1pc",
     "name": "Dragon Fruit 1pc",
     "price": 199,
     "image": "/images/1764052597331-raxKpKU0C0LZ2ny9GD6m6dYJtsvuS0u3ZpkpSY76.jpg",
-    "category": "vegetables"
+    "category": "vegetables",
+    "images": [
+      "/images/1764052597331-raxKpKU0C0LZ2ny9GD6m6dYJtsvuS0u3ZpkpSY76.jpg",
+      "/images/1765122180633-image.png",
+      "/images/1765122197242-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "Lettuce 1 bunch",
     "name": "Lettuce 1 bunch",
     "price": 59,
     "image": "/images/1764052647443-Lettuce-1-02.jpg",
-    "category": "vegetables"
+    "category": "vegetables",
+    "images": [
+      "/images/1764052647443-Lettuce-1-02.jpg",
+      "/images/1765122222773-image.png",
+      "/images/1765122232967-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "Green Peas 500g",
-    "name": "Green Peas 500g",
+    "name": "Vajra Green Peas 500g",
     "price": 45,
     "image": "/images/1764052684135-27.webp",
-    "category": "vegetables"
+    "category": "vegetables",
+    "images": [
+      "/images/1764052684135-27.webp",
+      "/images/1765122267391-image.png",
+      "/images/1765122276426-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "Amul Milk 1L (Full Cream)",
     "name": "Amul Milk 1L (Full Cream)",
     "price": 89,
     "image": "/images/1764052788085-download.png",
-    "category": "dairy"
+    "category": "dairy",
+    "images": [
+      "/images/1764052788085-download.png",
+      "/images/1765123224308-image.png",
+      "/images/1765123236194-image.png"
+    ],
+    "description": "Fresh, pure milk rich in calcium and protein. Essential for strong bones and overall health."
   },
   {
     "id": "Nandini Curd 500g",
     "name": "Nandini Curd 500g",
     "price": 34,
     "image": "/images/1764052822142--original-imah7easgszbxyde.webp",
-    "category": "dairy"
+    "category": "dairy",
+    "images": [
+      "/images/1764052822142--original-imah7easgszbxyde.webp",
+      "/images/1765123268111-image.png",
+      "/images/1765123255187-image.png"
+    ],
+    "description": "Creamy and fresh curd with natural probiotics. Great for digestion and a cooling treat."
   },
   {
     "id": "Britannia Whole Wheat Bread",
     "name": "Britannia Whole Wheat Bread",
     "price": 34,
     "image": "/images/1764052853691-40162924_7-britannia-100-whole-wheat-bread.webp",
-    "category": "dairy"
+    "category": "dairy",
+    "images": [
+      "/images/1764052853691-40162924_7-britannia-100-whole-wheat-bread.webp",
+      "/images/1765123410593-image.png",
+      "/images/1765123420541-image.png"
+    ],
+    "description": "Freshly milled whole wheat flour, rich in fiber and nutrients. Perfect for making soft rotis and parathas."
   },
   {
     "id": "Veg Puff 2pc",
     "name": "Veg Puff 2pc",
     "price": 23,
     "image": "/images/1764052886778-veg.-puff.jpg",
-    "category": "dairy"
+    "category": "dairy",
+    "images": [
+      "/images/1764052886778-veg.-puff.jpg",
+      "/images/1765123601252-image.png",
+      "/images/1765123608463-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "Garlic Bread 250g",
     "name": "English Oven Garlic Bread 250g",
     "price": 56,
-    "image": "/images/1764052943047-40162924_7-britannia-100-whole-wheat-bread.webp",
-    "category": "dairy"
+    "image": "/images/1765123689649-fe734f76-29f2-411f-9a00-d633b05afe3d.webp",
+    "category": "dairy",
+    "images": [
+      "/images/1765123689649-fe734f76-29f2-411f-9a00-d633b05afe3d.webp",
+      "/images/1765123676594-image.png",
+      "/images/1765123638653-image.png"
+    ],
+    "description": "Soft and fresh bread, perfect for breakfast and sandwiches. Made with quality ingredients."
   },
   {
     "id": "Chocolate Donut 2pc",
     "name": "Chocolate Donut 2pc",
     "price": 23,
     "image": "/images/1764052976105-Donut.png",
-    "category": "dairy"
+    "category": "dairy",
+    "images": [
+      "/images/1764052976105-Donut.png",
+      "/images/1765123745005-image.png",
+      "/images/1765123756174-image.png"
+    ],
+    "description": "Smooth and indulgent chocolate that melts in your mouth. Perfect treat for chocolate lovers."
   },
   {
     "id": "Amul Ice Cream 1L",
     "name": "Amul Ice Cream 1L",
     "price": 70,
     "image": "/images/1764053020441-images.jfif",
-    "category": "dairy"
+    "category": "dairy",
+    "images": [
+      "/images/1764053020441-images.jfif",
+      "/images/1765123774817-image.png",
+      "/images/1765123786202-image.png"
+    ],
+    "description": "Nourishing skincare product that hydrates and protects. For soft, smooth, and healthy skin."
   },
   {
     "id": "Kurkure Masala Munch 90g",
     "name": "Kurkure Masala Munch 10 Units",
     "price": 100,
     "image": "/images/1764053089960-KurkureMasalaMunch_Bundleof10x90g_-500px_9f270961-f8ae-4fbb-a63a-0780a68ed7ee.webp",
-    "category": "snacks"
+    "category": "snacks",
+    "images": [
+      "/images/1764053089960-KurkureMasalaMunch_Bundleof10x90g_-500px_9f270961-f8ae-4fbb-a63a-0780a68ed7ee.webp",
+      "/images/1765124588263-image.png",
+      "/images/1765124593543-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "Bingo Mad Angles 80g",
     "name": "Bingo Mad Angles 80g",
     "price": 20,
     "image": "/images/1764053120315-411416a001005.jpeg",
-    "category": "snacks"
+    "category": "snacks",
+    "images": [
+      "/images/1764053120315-411416a001005.jpeg",
+      "/images/1765124617419-image.png",
+      "/images/1765124629904-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "Haldiram Aloo Bhujia 200g",
     "name": "Haldiram Aloo Bhujia 200g",
     "price": 35,
     "image": "/images/1764053149995-263128_3-haldirams-namkeen-aloo-bhujia.webp",
-    "category": "snacks"
+    "category": "snacks",
+    "images": [
+      "/images/1764053149995-263128_3-haldirams-namkeen-aloo-bhujia.webp",
+      "/images/1765124653187-image.png",
+      "/images/1765124665854-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "Pringles Original 107g",
     "name": "Pringles Original 107g",
     "price": 50,
     "image": "/images/1764053178097-100550_16-pringles-original.webp",
-    "category": "snacks"
+    "category": "snacks",
+    "images": [
+      "/images/1764053178097-100550_16-pringles-original.webp",
+      "/images/1765124692402-image.png",
+      "/images/1765124685307-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "Sunfeast Yippee Noodles 70g",
     "name": "Sunfeast Yippee Noodles 70g",
     "price": 45,
     "image": "/images/1764053213343-images__1_.jfif",
-    "category": "snacks"
+    "category": "snacks",
+    "images": [
+      "/images/1764053213343-images__1_.jfif",
+      "/images/1765124715409-image.png",
+      "/images/1765124728217-image.png"
+    ],
+    "description": "Quick and easy to prepare, perfect for a delicious meal in minutes. Versatile and tasty."
   },
   {
     "id": "Kettle Chips 120g",
     "name": "Kettle Chips Combo Pack",
     "price": 120,
     "image": "/images/1764053262959-81Tgm8-OVsL.jpg",
-    "category": "snacks"
+    "category": "snacks",
+    "images": [
+      "/images/1764053262959-81Tgm8-OVsL.jpg",
+      "/images/1765124752111-image.png",
+      "/images/1765124767012-image.png"
+    ],
+    "description": "Crispy and crunchy chips with irresistible flavor. Perfect snack for any time of the day."
   },
   {
     "id": "Kelloggs Muesli 500g",
     "name": "Kelloggs Muesli 500g",
     "price": 70,
     "image": "/images/1764053311003-images__2_.jfif",
-    "category": "snacks"
+    "category": "snacks",
+    "images": [
+      "/images/1764053311003-images__2_.jfif",
+      "/images/1765124818264-image.png",
+      "/images/1765124811641-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "MTR Upma Mix 500g",
     "name": "MTR Upma Mix x2",
     "price": 60,
     "image": "/images/1764053367728-e142dfb2-9a1c-4d2a-9c7b-5b76a9c0a255.webp",
-    "category": "snacks"
+    "category": "snacks",
+    "images": [
+      "/images/1764053367728-e142dfb2-9a1c-4d2a-9c7b-5b76a9c0a255.webp",
+      "/images/1765124846269-image.png",
+      "/images/1765124855541-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "Sprite 750ml",
     "name": "Sprite 750ml",
     "price": 45,
     "image": "/images/1764053420966-sprite-750-ml-product-images-o491085934-p491085934-0-202412121933.webp",
-    "category": "beverages"
+    "category": "beverages",
+    "images": [
+      "/images/1764053420966-sprite-750-ml-product-images-o491085934-p491085934-0-202412121933.webp",
+      "/images/1765125581196-image.png",
+      "/images/1765125592203-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "Thums Up 1L — ID: thumsup-1l — ₹65",
     "name": "thumsup-1 L",
     "price": 65,
     "image": "/images/1764053461846-1l-thums-up-cold-drink.png",
-    "category": "beverages"
+    "category": "beverages",
+    "images": [
+      "/images/1764053461846-1l-thums-up-cold-drink.png",
+      "/images/1765125620742-image.png",
+      "/images/1765125611934-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "Real Mixed Fruit Juice 1L — ID: real-mixed-fruit-1l — ₹110",
     "name": "Real Mixed Fruit Juice",
     "price": 110,
     "image": "/images/1764053507211-103686580_1.webp",
-    "category": "beverages"
+    "category": "beverages",
+    "images": [
+      "/images/1764053507211-103686580_1.webp",
+      "/images/1765125657952-image.png",
+      "/images/1765125646668-image.png"
+    ],
+    "description": "Fresh and natural fruit juice packed with vitamins. Refreshing and healthy beverage choice."
   },
   {
     "id": "Tropicana Guava Juice 1L",
     "name": "Tropicana Guava Juice 1L",
     "price": 150,
     "image": "/images/1764053562390-sliding-images-jpeg-9755a1fd-0072-44b7-8491-9e73ba024f96jpgts1727182382-1c09d6f3-2a5a-4a4e-aecf-2129-500x500.webp",
-    "category": "beverages"
+    "category": "beverages",
+    "images": [
+      "/images/1764053562390-sliding-images-jpeg-9755a1fd-0072-44b7-8491-9e73ba024f96jpgts1727182382-1c09d6f3-2a5a-4a4e-aecf-2129-500x500.webp",
+      "/images/1765125681261-image.png",
+      "/images/1765125690248-image.png"
+    ],
+    "description": "Fresh and natural fruit juice packed with vitamins. Refreshing and healthy beverage choice."
   },
   {
     "id": "Boost 500g",
     "name": "Boost 500g",
     "price": 145,
     "image": "/images/1764053590045-500g-boost-nutrition-drink.jpg",
-    "category": "beverages"
+    "category": "beverages",
+    "images": [
+      "/images/1764053590045-500g-boost-nutrition-drink.jpg",
+      "/images/1765125727024-image.png",
+      "/images/1765125720588-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "Red Label Tea 250g",
     "name": "Red Label Tea 250g",
     "price": 45,
     "image": "/images/1764053616936-61VymAnsxyL.jpg",
-    "category": "beverages"
+    "category": "beverages",
+    "images": [
+      "/images/1764053616936-61VymAnsxyL.jpg",
+      "/images/1765125760661-image.png",
+      "/images/1765125747204-image.png"
+    ],
+    "description": "Premium quality tea leaves for the perfect cup. Rich aroma and authentic taste in every sip."
   },
   {
     "id": "Hershey’s Milkshake 200ml",
     "name": "Hershey’s Milkshake 200ml",
     "price": 49,
     "image": "/images/1764053647597-hershey-s-chocolate-milkshake-180-ml-tetra-pak-product-images-o491335842-p491335842-1-202205180454.webp",
-    "category": "beverages"
+    "category": "beverages",
+    "images": [
+      "/images/1764053647597-hershey-s-chocolate-milkshake-180-ml-tetra-pak-product-images-o491335842-p491335842-1-202205180454.webp",
+      "/images/1765125800252-image.png",
+      "/images/1765125811280-image.png"
+    ],
+    "description": "Fresh, pure milk rich in calcium and protein. Essential for strong bones and overall health."
   },
   {
     "id": "Surf Excel Quick Wash 1kg",
     "name": "Surf Excel Quick Wash 1kg",
     "price": 145,
     "image": "/images/1764053704952-61K5qd3T8uL.jpg",
-    "category": "cleaning"
+    "category": "cleaning",
+    "images": [
+      "/images/1764053704952-61K5qd3T8uL.jpg",
+      "/images/1765126245153-image.png",
+      "/images/1765126255366-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "Vim Dishwash Gel 1L",
     "name": "Vim Dishwash Gel 1L",
     "price": 165,
     "image": "/images/1764053772608-c3affa0e-2fc1-4103-96cb-cd298a2782c3.webp",
-    "category": "cleaning"
+    "category": "cleaning",
+    "images": [
+      "/images/1764053772608-c3affa0e-2fc1-4103-96cb-cd298a2782c3.webp",
+      "/images/1765126274273-image.png",
+      "/images/1765126283453-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "Lizol Floor Cleaner 1L",
     "name": "Lizol Floor Cleaner 1L",
     "price": 85,
     "image": "/images/1764053819186-61nJ8gZBSXL.jpg",
-    "category": "cleaning"
+    "category": "cleaning",
+    "images": [
+      "/images/1764053819186-61nJ8gZBSXL.jpg",
+      "/images/1765126303953-image.png",
+      "/images/1765126312060-image.png"
+    ],
+    "description": "Effective cleaning solution for a spotless home. Removes dirt and germs with ease."
   },
   {
     "id": "Scotch Brite Sponge 3pc",
     "name": "Scotch Brite Sponge 3pc",
     "price": 50,
     "image": "/images/1764053863711-71BTs5EIyZL.jpg",
-    "category": "cleaning"
+    "category": "cleaning",
+    "images": [
+      "/images/1764053863711-71BTs5EIyZL.jpg",
+      "/images/1765126338518-image.png",
+      "/images/1765126346234-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "Steel Scrubber 2pc",
     "name": "Steel Scrubber 2pc",
     "price": 25,
     "image": "/images/1764053905809-51cnsp_bICL.jpg",
-    "category": "cleaning"
+    "category": "cleaning",
+    "images": [
+      "/images/1764053905809-51cnsp_bICL.jpg",
+      "/images/1765126366879-image.png",
+      "/images/1765126374554-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "Microfiber Cleaning Cloth",
     "name": "Microfiber Cleaning Cloth",
     "price": 50,
     "image": "/images/1764053946932-91WjG1lqmLL.jpg",
-    "category": "cleaning"
+    "category": "cleaning",
+    "images": [
+      "/images/1764053946932-91WjG1lqmLL.jpg",
+      "/images/1765126393666-image.png",
+      "/images/1765126400512-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "California Almonds Resealable Jar 1kg",
     "name": "California Almonds Resealable Jar 1kg",
     "price": 1250,
     "image": "/images/1764054033163-Artboard5_a51281ed-45c8-4186-97b5-af1fc585e861_1024x1024.webp",
-    "category": "dry-fruits"
+    "category": "dry-fruits",
+    "images": [
+      "/images/1764054033163-Artboard5_a51281ed-45c8-4186-97b5-af1fc585e861_1024x1024.webp",
+      "/images/1765129199727-image.png",
+      "/images/1765129207989-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "Pistachios 500g",
     "name": "Bolas Pistachios 500g",
     "price": 500,
     "image": "/images/1764054090855-71NKbSA25aL.jpg",
-    "category": "dry-fruits"
+    "category": "dry-fruits",
+    "images": [
+      "/images/1764054090855-71NKbSA25aL.jpg",
+      "/images/1765129231804-image.png",
+      "/images/1765129238398-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "Raisins 1kg",
     "name": "Vedaka Raisins 1kg",
     "price": 350,
     "image": "/images/1764054173672-71hYJpQ68nL._AC_UF894_1000_QL80_.jpg",
-    "category": "dry-fruits"
+    "category": "dry-fruits",
+    "images": [
+      "/images/1764054173672-71hYJpQ68nL._AC_UF894_1000_QL80_.jpg",
+      "/images/1765129265130-image.png",
+      "/images/1765129256822-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "Happilo Premium Fard Dates 500g",
     "name": "Happilo Premium Fard Dates 500g",
     "price": 336,
     "image": "/images/1764054226109-01_c58720df-3f02-4c57-a7cf-9811b6cf7167.webp",
-    "category": "dry-fruits"
+    "category": "dry-fruits",
+    "images": [
+      "/images/1764054226109-01_c58720df-3f02-4c57-a7cf-9811b6cf7167.webp",
+      "/images/1765129284609-image.png",
+      "/images/1765129292808-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "Everest Chicken Masala 200g",
     "name": "Everest Chicken Masala 200g",
     "price": 200,
     "image": "/images/1764054320035-images.jfif",
-    "category": "spices"
+    "category": "spices",
+    "images": [
+      "/images/1764054320035-images.jfif",
+      "/images/1765129506629-image.png",
+      "/images/1765129516430-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "Garlic Pickle 400g",
     "name": "Grandma's Garlic Pickle 400g",
     "price": 200,
     "image": "/images/1764054368012-grandma-s-garlic-pickle-400-g-product-images-o490069275-p490069275-0-202406251540.webp",
-    "category": "pickle"
+    "category": "pickle",
+    "images": [
+      "/images/1764054368012-grandma-s-garlic-pickle-400-g-product-images-o490069275-p490069275-0-202406251540.webp",
+      "/images/1765129723319-image.png",
+      "/images/1765129711024-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "Mixed Veg Pickle 400g",
     "name": "Kitchen Treasures Mixed Pickle 400g",
     "price": 200,
     "image": "/images/1764054460059-images__1_.jfif",
-    "category": "pickle"
+    "category": "pickle",
+    "images": [
+      "/images/1764054460059-images__1_.jfif",
+      "/images/1765129743447-image.png",
+      "/images/1765129761120-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "Everest Pav Bhaji Masala 200g",
     "name": "Everest Pav Bhaji Masala 200g",
     "price": 70,
     "image": "/images/1764054509626-images__2_.jfif",
-    "category": "spices"
+    "category": "spices",
+    "images": [
+      "/images/1764054509626-images__2_.jfif",
+      "/images/1765129534797-image.png",
+      "/images/1765129544093-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "MTR Sambhar Powder 200g",
@@ -2117,49 +3341,91 @@
     "name": "Sunsilk Shampoo 340ml",
     "price": 300,
     "image": "/images/1764054699586-511BXe6p8sL.jpg",
-    "category": "personalcare"
+    "category": "personalcare",
+    "images": [
+      "/images/1764054699586-511BXe6p8sL.jpg",
+      "/images/1765127239469-image.png",
+      "/images/1765127255333-image.png"
+    ],
+    "description": "Nourishing shampoo that cleanses and strengthens hair. For healthy, shiny, and manageable hair."
   },
   {
     "id": "Dove Body Lotion 250ml",
     "name": "Dove Body Lotion 250ml",
     "price": 233,
     "image": "/images/1764054729528-6550541c81e812476e66ccc9-dove-essential-body-lotion-250ml.jpg",
-    "category": "personalcare"
+    "category": "personalcare",
+    "images": [
+      "/images/1764054729528-6550541c81e812476e66ccc9-dove-essential-body-lotion-250ml.jpg",
+      "/images/1765127275091-image.png",
+      "/images/1765127295989-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "Pond’s Face Cream 50g",
     "name": "Pond’s Face Cream 50g",
     "price": 250,
     "image": "/images/1764054761360-pond-s-bb-natural-color-correction-cream-with-vitamin-b3-50g-tube-product-images-o490366000-p490366000-0-202410291836.webp",
-    "category": "personalcare"
+    "category": "personalcare",
+    "images": [
+      "/images/1764054761360-pond-s-bb-natural-color-correction-cream-with-vitamin-b3-50g-tube-product-images-o490366000-p490366000-0-202410291836.webp",
+      "/images/1765127327841-image.png",
+      "/images/1765127319234-image.png"
+    ],
+    "description": "Nourishing skincare product that hydrates and protects. For soft, smooth, and healthy skin."
   },
   {
     "id": "Vaseline Petroleum Jelly 50g",
     "name": "Vaseline Petroleum Jelly 50g",
     "price": 99,
     "image": "/images/1764054786714-51fp48N3DnL.jpg",
-    "category": "personalcare"
+    "category": "personalcare",
+    "images": [
+      "/images/1764054786714-51fp48N3DnL.jpg",
+      "/images/1765127344471-image.png",
+      "/images/1765127353485-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "Pears Soap 125g",
     "name": "Pears Soap 125g",
     "price": 30,
     "image": "/images/1764054822946-images.jfif",
-    "category": "personalcare"
+    "category": "personalcare",
+    "images": [
+      "/images/1764054822946-images.jfif",
+      "/images/1765127381911-image.png",
+      "/images/1765127374190-image.png"
+    ],
+    "description": "Gentle and nourishing soap that cleanses and moisturizes. Leaves skin feeling fresh and soft."
   },
   {
     "id": "Gillette Shaving Razor 1pc",
     "name": "Gillette Shaving Razor 1pc",
     "price": 56,
     "image": "/images/1764054854690-images__1_.jfif",
-    "category": "personalcare"
+    "category": "personalcare",
+    "images": [
+      "/images/1764054854690-images__1_.jfif",
+      "/images/1765127413514-image.png",
+      "/images/1765127425694-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "Nestle Cerelac Wheat Apple 300g",
     "name": "Nestle Cerelac Wheat Apple 300g",
     "price": 200,
     "image": "/images/1764054937209-images__2_.jfif",
-    "category": "baby"
+    "category": "baby",
+    "images": [
+      "/images/1764054937209-images__2_.jfif",
+      "/images/1765128016680-image.png",
+      "/images/1765128029358-image.png"
+    ],
+    "description": "Freshly milled whole wheat flour, rich in fiber and nutrients. Perfect for making soft rotis and parathas."
   },
   {
     "id": "Baby Feeding Spoon Set",
@@ -2173,7 +3439,13 @@
     "name": "Baby Mosquito Repellent 50ml",
     "price": 60,
     "image": "/images/1764054993804-61PHEeVj3GL.jpg",
-    "category": "baby"
+    "category": "baby",
+    "images": [
+      "/images/1764054993804-61PHEeVj3GL.jpg",
+      "/images/1765128064969-image.png",
+      "/images/1765128053777-image.png"
+    ],
+    "description": "Specially formulated for babies with gentle, safe ingredients. Trusted care for your little one."
   },
   {
     "id": "Baby Bib 1pc",
@@ -2257,7 +3529,13 @@
     "name": "Vicks Vaporub 25ml",
     "price": 30,
     "image": "/images/1764055374791-images__5_.jfif",
-    "category": "health"
+    "category": "health",
+    "images": [
+      "/images/1764055374791-images__5_.jfif",
+      "/images/1765128806580-image.png",
+      "/images/1765128814437-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "Zincovit Tablets 15pc",
