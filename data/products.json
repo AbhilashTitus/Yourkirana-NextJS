@@ -4,126 +4,234 @@
     "name": "Daawat Basmati Rice 1kg",
     "price": 51,
     "image": "/images/1763988154279-2357.jpg",
-    "category": "groceries"
+    "category": "groceries",
+    "images": [
+      "/images/1763988154279-2357.jpg",
+      "/images/1765104853194-image.png",
+      "/images/1765104928598-image.png"
+    ],
+    "description": "Premium quality rice with perfect grain length and aroma. Ideal for daily meals and special occasions."
   },
   {
     "id": "sona-masoori-rice-5kg",
     "name": "India Gate Sona Masoori Rice 5kg",
     "price": 59,
     "image": "/images/1763988239028-India_Gate_Sona_Masoori_Rice_5kg_-500px_c191bf4c-51e0-479a-9674-8da1caf6692d.webp",
-    "category": "groceries"
+    "category": "groceries",
+    "images": [
+      "/images/1763988239028-India_Gate_Sona_Masoori_Rice_5kg_-500px_c191bf4c-51e0-479a-9674-8da1caf6692d.webp",
+      "/images/1765105394142-image.png",
+      "/images/1765105414986-image.png"
+    ],
+    "description": "Premium quality rice with perfect grain length and aroma. Ideal for daily meals and special occasions."
   },
   {
     "id": "wheat-atta-5kg",
     "name": "Aashirvaad Wheat Atta 5kg",
     "price": 69,
     "image": "/images/1763988326673-126906_10-aashirvaad-atta-whole-wheat.webp",
-    "category": "groceries"
+    "category": "groceries",
+    "images": [
+      "/images/1763988326673-126906_10-aashirvaad-atta-whole-wheat.webp",
+      "/images/1765106248085-image.png",
+      "/images/1765106262722-image.png"
+    ],
+    "description": "Freshly milled whole wheat flour, rich in fiber and nutrients. Perfect for making soft rotis and parathas."
   },
   {
     "id": "maida-1kg",
     "name": "Patanjali Maida 1kg",
     "price": 79,
     "image": "/images/1763988410200-1690017979Maida1Kg1.png",
-    "category": "groceries"
+    "category": "groceries",
+    "images": [
+      "/images/1763988410200-1690017979Maida1Kg1.png",
+      "/images/1765107144678-image.png",
+      "/images/1765107133339-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "suji-1kg",
     "name": "Patanjali Suji 1kg",
     "price": 89,
     "image": "/images/1763989143737-1735561479sooji1kg1.png",
-    "category": "groceries"
+    "category": "groceries",
+    "images": [
+      "/images/1763989143737-1735561479sooji1kg1.png",
+      "/images/1765107182878-image.png",
+      "/images/1765107190564-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "toor-dal-1kg",
     "name": "Toor Dal 1kg",
     "price": 99,
     "image": "/images/New folder/Toor Dal 1kg.webp",
-    "category": "groceries"
+    "category": "groceries",
+    "images": [
+      "/images/New folder/Toor Dal 1kg.webp",
+      "/images/1765107243997-image.png",
+      "/images/1765107257766-image.png"
+    ],
+    "description": "High-quality pulses, carefully selected and cleaned. Rich in protein and essential nutrients."
   },
   {
     "id": "chana-dal-1kg",
     "name": "Chana Dal 1kg",
     "price": 109,
     "image": "/images/New folder/Chana Dal 1kg.jpg",
-    "category": "groceries"
+    "category": "groceries",
+    "images": [
+      "/images/New folder/Chana Dal 1kg.jpg",
+      "/images/1765107307099-image.png",
+      "/images/1765107318133-image.png"
+    ],
+    "description": "High-quality pulses, carefully selected and cleaned. Rich in protein and essential nutrients."
   },
   {
     "id": "moong-dal-1kg",
     "name": "Moong Dal 1kg",
     "price": 119,
     "image": "/images/New folder/Moong Dal 1kg.jpg",
-    "category": "groceries"
+    "category": "groceries",
+    "images": [
+      "/images/New folder/Moong Dal 1kg.jpg",
+      "/images/1765107347497-image.png",
+      "/images/1765107368738-image.png"
+    ],
+    "description": "High-quality pulses, carefully selected and cleaned. Rich in protein and essential nutrients."
   },
   {
     "id": "groundnut-oil-1l",
     "name": "Groundnut Oil 1L",
     "price": 189,
     "image": "/images/New folder/Groundnut Oil 1L.jpg",
-    "category": "groceries"
+    "category": "groceries",
+    "images": [
+      "/images/New folder/Groundnut Oil 1L.jpg",
+      "/images/1765107441771-image.png",
+      "/images/1765107428395-image.png"
+    ],
+    "description": "Pure and natural cooking oil, perfect for all your culinary needs. Heart-healthy and flavorful."
   },
   {
     "id": "ghee-500ml",
     "name": "Sapins Ghee 500ml",
     "price": 219,
     "image": "/images/New folder/Ghee 500ml.jpg",
-    "category": "groceries"
+    "category": "groceries",
+    "images": [
+      "/images/New folder/Ghee 500ml.jpg",
+      "/images/1765107489418-image.png",
+      "/images/1765107502691-image.png"
+    ],
+    "description": "Traditional pure ghee with rich aroma and authentic taste. Made from the finest quality milk."
   },
   {
     "id": "jaggery-1kg",
     "name": "Jaggery 1kg",
     "price": 169,
     "image": "/images/New folder/Jaggery 1kg.jpg",
-    "category": "groceries"
+    "category": "groceries",
+    "images": [
+      "/images/New folder/Jaggery 1kg.jpg",
+      "/images/1765107532766-image.png",
+      "/images/1765107555599-image.png"
+    ],
+    "description": "Natural sweetener packed with minerals and antioxidants. A healthier alternative to refined sugar."
   },
   {
     "id": "iodized-salt-1kg",
     "name": "Tata Iodized Salt 1kg",
     "price": 179,
     "image": "/images/New folder/Iodized Salt 1kg.webp",
-    "category": "groceries"
+    "category": "groceries",
+    "images": [
+      "/images/New folder/Iodized Salt 1kg.webp",
+      "/images/1765107579725-image.png",
+      "/images/1765107588188-image.png"
+    ],
+    "description": "Fine quality iodized salt for everyday cooking. Essential for maintaining proper health."
   },
   {
     "id": "onion-1kg",
     "name": "Organic Onion 1kg",
     "price": 49,
     "image": "/images/1763987609551-onion-packing-net-500x500.webp",
-    "category": "vegetables"
+    "category": "vegetables",
+    "images": [
+      "/images/1763987609551-onion-packing-net-500x500.webp",
+      "/images/1765108066129-image.png",
+      "/images/1765108105140-image.png"
+    ],
+    "description": "Fresh farm produce, handpicked for quality. Essential ingredient for everyday cooking."
   },
   {
     "id": "tomato-1kg",
     "name": "Organic Tomato 1kg",
     "price": 59,
     "image": "/images/1763987689223-istockphoto-177003557-612x612.jpg",
-    "category": "vegetables"
+    "category": "vegetables",
+    "images": [
+      "/images/1763987689223-istockphoto-177003557-612x612.jpg",
+      "/images/1765108244907-image.png",
+      "/images/1765108258116-image.png"
+    ],
+    "description": "Fresh farm produce, handpicked for quality. Essential ingredient for everyday cooking."
   },
   {
     "id": "potato-1kg",
     "name": "Organic Potato 1kg",
     "price": 69,
     "image": "/images/New folder/Potato 1kg.jpg",
-    "category": "vegetables"
+    "category": "vegetables",
+    "images": [
+      "/images/New folder/Potato 1kg.jpg",
+      "/images/1765108280019-image.png",
+      "/images/1765108294862-image.png"
+    ],
+    "description": "Fresh farm produce, handpicked for quality. Essential ingredient for everyday cooking."
   },
   {
     "id": "carrot-500g",
     "name": "Organic Carrot 1 Kg",
     "price": 79,
     "image": "/images/1763987782617-a-vibrant-bundle-of-fresh-organic-orange-carrots-with-lush-green-tops-tied-with-natural-twine-perfect-for-healthy-recipes-and-farm-fresh-concepts-png.png",
-    "category": "vegetables"
+    "category": "vegetables",
+    "images": [
+      "/images/1763987782617-a-vibrant-bundle-of-fresh-organic-orange-carrots-with-lush-green-tops-tied-with-natural-twine-perfect-for-healthy-recipes-and-farm-fresh-concepts-png.png",
+      "/images/1765108318848-image.png",
+      "/images/1765108329488-image.png"
+    ],
+    "description": "Crisp and fresh vegetables, rich in vitamins and minerals. Perfect for healthy meals."
   },
   {
     "id": "beans-500g",
     "name": "Organic Beans 500g",
     "price": 89,
     "image": "/images/New folder/Beans 500g.jpg",
-    "category": "vegetables"
+    "category": "vegetables",
+    "images": [
+      "/images/New folder/Beans 500g.jpg",
+      "/images/1765108361839-image.png",
+      "/images/1765108390598-image.png"
+    ],
+    "description": "Crisp and fresh vegetables, rich in vitamins and minerals. Perfect for healthy meals."
   },
   {
     "id": "spinach-1-bunch",
     "name": "Organic Spinach 1 bunch",
     "price": 99,
     "image": "/images/New folder/Spinach 1 bunch.jpg",
-    "category": "vegetables"
+    "category": "vegetables",
+    "images": [
+      "/images/New folder/Spinach 1 bunch.jpg",
+      "/images/1765108408966-image.png",
+      "/images/1765108421188-image.png"
+    ],
+    "description": "Fresh green leafy vegetables, packed with nutrients. Adds flavor and nutrition to your dishes."
   },
   {
     "id": "coriander-1-bunch",
@@ -1570,63 +1678,117 @@
     "name": "Fortune Sona Masoori Rice 10kg",
     "price": 499,
     "image": "/images/1764051623951-61sTOUjofrL.jpg",
-    "category": "groceries"
+    "category": "groceries",
+    "images": [
+      "/images/1764051623951-61sTOUjofrL.jpg",
+      "/images/1765107616302-image.png",
+      "/images/1765107627166-image.png"
+    ],
+    "description": "Premium quality rice with perfect grain length and aroma. Ideal for daily meals and special occasions."
   },
   {
     "id": "Tata Sampann Urad Dal 1kg",
     "name": "Tata Sampann Urad Dal 1kg",
     "price": 129,
     "image": "/images/1764051727665-JUN110000916xx30JUN22_5_B.jpg",
-    "category": "groceries"
+    "category": "groceries",
+    "images": [
+      "/images/1764051727665-JUN110000916xx30JUN22_5_B.jpg",
+      "/images/1765107651921-image.png",
+      "/images/1765107671937-image.png"
+    ],
+    "description": "High-quality pulses, carefully selected and cleaned. Rich in protein and essential nutrients."
   },
   {
     "id": "Organic Moong Whole 1kg",
     "name": "Organic Moong Whole 1kg",
     "price": 139,
     "image": "/images/1764051795456-Moong_Whole_1kg_front_1200x1200.webp",
-    "category": "groceries"
+    "category": "groceries",
+    "images": [
+      "/images/1764051795456-Moong_Whole_1kg_front_1200x1200.webp",
+      "/images/1765107698508-image.png",
+      "/images/1765107731048-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "Fortune Sunflower Oil 1L",
     "name": "Fortune Sunflower Oil 1L",
     "price": 169,
     "image": "/images/1764051858208-40161771_6-fortune-sunflower-oil.webp",
-    "category": "groceries"
+    "category": "groceries",
+    "images": [
+      "/images/1764051858208-40161771_6-fortune-sunflower-oil.webp",
+      "/images/1765107761169-image.png",
+      "/images/1765107781100-image.png"
+    ],
+    "description": "Pure and natural cooking oil, perfect for all your culinary needs. Heart-healthy and flavorful."
   },
   {
     "id": "Sugar 1kg",
     "name": "Madhur Sugar 1kg",
     "price": 48,
     "image": "/images/1764051951939-images.jfif",
-    "category": "groceries"
+    "category": "groceries",
+    "images": [
+      "/images/1764051951939-images.jfif",
+      "/images/1765107802475-image.png",
+      "/images/1765107814840-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "Poha 1kg",
     "name": "Patanjali Poha 1kg",
     "price": 46,
     "image": "/images/1764052019151-download.jfif",
-    "category": "groceries"
+    "category": "groceries",
+    "images": [
+      "/images/1764052019151-download.jfif",
+      "/images/1765107842098-image.png",
+      "/images/1765107852739-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "Idli Rava 1kg",
     "name": "India Gate Idli Rava 1kg",
     "price": 49,
     "image": "/images/1764052050509-download__1_.jfif",
-    "category": "groceries"
+    "category": "groceries",
+    "images": [
+      "/images/1764052050509-download__1_.jfif",
+      "/images/1765107872653-image.png",
+      "/images/1765107880763-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "Red Chilli Powder 200g",
     "name": "Aachi Red Chilli Powder 200g",
     "price": 59,
     "image": "/images/1764052129868-download__2_.jfif",
-    "category": "groceries"
+    "category": "groceries",
+    "images": [
+      "/images/1764052129868-download__2_.jfif",
+      "/images/1765107907322-image.png",
+      "/images/1765107927533-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "Jeera 200g",
     "name": "Bhoj Jeera 200g",
     "price": 79,
     "image": "/images/1764052202274-download__3_.jfif",
-    "category": "groceries"
+    "category": "groceries",
+    "images": [
+      "/images/1764052202274-download__3_.jfif",
+      "/images/1765107949583-image.png",
+      "/images/1765107961527-image.png"
+    ],
+    "description": "High-quality product carefully selected for you. Fresh, authentic, and perfect for your daily needs."
   },
   {
     "id": "Organic Broccoli 500g",
@@ -2110,18 +2272,5 @@
     "price": 450,
     "image": "/images/1764055459152-images__6_.jfif",
     "category": "health"
-  },
-  {
-    "id": "test-product-001",
-    "name": "Test Product",
-    "price": 99,
-    "image": "/images/products/basmati-rice.jpg",
-    "images": [
-      "/images/products/basmati-rice.jpg",
-      "/images/products/wheat-atta.jpg",
-      "/images/products/toor-dal.jpg"
-    ],
-    "description": "This is a test product description",
-    "category": "groceries"
   }
 ]
