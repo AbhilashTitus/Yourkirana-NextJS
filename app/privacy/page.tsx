@@ -33,9 +33,26 @@ export default function PrivacyPage() {
                         <ul style={{ lineHeight: '2', marginLeft: '20px', marginBottom: '20px' }}>
                             <li>Name, email address, phone number</li>
                             <li>Delivery address and billing information</li>
-                            <li>Payment information (processed securely through payment gateways)</li>
+                            <li>Payment information (processed securely through RBI-authorized payment gateways)</li>
                             <li>Account credentials</li>
+                            <li>KYC documents (for sellers: Aadhaar, PAN, GST, business licenses)</li>
                         </ul>
+
+                        <h3 style={{ marginTop: '20px', fontSize: '1.1rem' }}>2.1.1 Payment Information and Gateway Data Handling</h3>
+                        <p style={{ marginBottom: '20px', lineHeight: '1.8' }}>
+                            <strong>Important:</strong> YourKirana does not directly collect, store, or process sensitive payment information such as complete credit/debit card numbers, CVV, or card PINs.
+                        </p>
+                        <ul style={{ lineHeight: '2', marginLeft: '20px', marginBottom: '20px' }}>
+                            <li><strong>Payment Gateway Processing:</strong> All payment transactions are processed through PCI DSS compliant, RBI-authorized payment gateways</li>
+                            <li><strong>Tokenization:</strong> Card details are tokenized by the payment gateway; we only receive and store encrypted tokens</li>
+                            <li><strong>Transaction Data:</strong> We receive transaction status, payment method type, and transaction reference numbers</li>
+                            <li><strong>UPI/Net Banking:</strong> For UPI and net banking transactions, we receive only transaction IDs and status confirmations</li>
+                            <li><strong>Settlement Information:</strong> Bank account details of sellers are collected for payment settlement purposes and stored securely</li>
+                            <li><strong>Compliance:</strong> All payment data handling complies with RBI guidelines, NPCI regulations, and PCI DSS standards</li>
+                        </ul>
+                        <p style={{ marginBottom: '20px', lineHeight: '1.8' }}>
+                            For more information on payment processing and settlement, please refer to our <a href="/terms" style={{ color: 'var(--mint)', fontWeight: '600' }}>Terms & Conditions</a>.
+                        </p>
 
                         <h3 style={{ marginTop: '20px', fontSize: '1.1rem' }}>2.2 Automatically Collected Information</h3>
                         <p style={{ marginBottom: '20px', lineHeight: '1.8' }}>

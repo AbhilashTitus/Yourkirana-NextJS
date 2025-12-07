@@ -170,6 +170,23 @@ export default function RefundPage() {
                             Hours: Monday to Sunday, 9:00 AM - 9:00 PM IST
                         </p>
 
+                        <h2 style={{ marginTop: '30px' }}>9. Chargebacks and Payment Disputes</h2>
+                        <p style={{ marginBottom: '20px', lineHeight: '1.8' }}>
+                            <strong>Exception for Chargebacks:</strong> This refund policy does not apply to payment disputes filed as chargebacks through your bank or card issuer.
+                        </p>
+                        <p style={{ marginBottom: '20px', lineHeight: '1.8' }}>
+                            If you have filed or are considering filing a chargeback:
+                        </p>
+                        <ul style={{ lineHeight: '2', marginLeft: '20px', marginBottom: '20px' }}>
+                            <li>Please contact our customer support first - most issues can be resolved faster through direct communication</li>
+                            <li>Chargebacks should only be filed for legitimate reasons (unauthorized transactions, non-delivery, significant product discrepancies)</li>
+                            <li>Filing false or fraudulent chargebacks may result in account suspension and legal action</li>
+                            <li>Chargeback processing follows different timelines and procedures than standard refunds</li>
+                        </ul>
+                        <p style={{ marginBottom: '20px', lineHeight: '1.8' }}>
+                            For detailed information on chargeback procedures, responsibilities, and dispute resolution, please refer to our <a href="/chargeback" style={{ color: 'var(--mint)', fontWeight: '600' }}>Chargeback Policy</a>.
+                        </p>
+
                         <p style={{ marginTop: '30px', padding: '15px', background: '#f8fafc', borderRadius: '8px', lineHeight: '1.8' }}>
                             <strong>Note:</strong> This policy is in compliance with the Consumer Protection Act, 2019 and Consumer Protection (E-Commerce) Rules, 2020. We are committed to ensuring fair and transparent practices in all our transactions.
                         </p>

@@ -112,7 +112,7 @@ export default function ContactPage() {
                         {/* Contact Form */}
                         <div>
                             <div className="feature-card">
-                                <h3 style={{ marginBottom: '20px' }}>Send Us a Message</h3>
+                                <h3 style={{ marginBottom: '20px' }}>Send us a Message</h3>
                                 <form onSubmit={handleSubmit} className="form">
                                     <div>
                                         <label className="label">Name *</label>
@@ -148,7 +148,7 @@ export default function ContactPage() {
                                             value={formData.phone}
                                             onChange={handleChange}
                                             className="input"
-                                            placeholder="+91 XXXXX XXXXX"
+                                            placeholder="+91 "
                                         />
                                     </div>
 
