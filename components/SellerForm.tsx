@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef } from 'react';
+import { useRouter } from 'next/navigation';
 
 interface VerificationStatus {
     status: 'idle' | 'verifying' | 'verified' | 'failed' | 'error';
@@ -11,6 +12,10 @@ export default function SellerForm() {
     const [fileName, setFileName] = useState('');
     const [isDragOver, setIsDragOver] = useState(false);
     const fileInputRef = useRef<HTMLInputElement>(null);
+    const router = useRouter();
+
+    // Developer Bypass Check
+    const [isDevMode, setIsDevMode] = useState(false);
 
     // Form data state
     const [formData, setFormData] = useState({
@@ -70,6 +75,11 @@ export default function SellerForm() {
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const { name, value } = e.target;
         setFormData(prev => ({ ...prev, [name]: value }));
+
+        // Check for dev bypass
+        if (name === 'storeName') {
+            setIsDevMode(value.trim().toUpperCase() === 'DEV_SKIP');
+        }
     };
 
     // Verify GST Number
@@ -153,42 +163,47 @@ export default function SellerForm() {
         e.preventDefault();
 
         // Check if verifications are complete
-        if (gstVerification.status !== 'verified') {
+        if (!isDevMode && gstVerification.status !== 'verified') {
             alert('Please verify your GST number before submitting');
             return;
         }
 
-        if (bankVerification.status !== 'verified') {
+        if (!isDevMode && bankVerification.status !== 'verified') {
             alert('Please verify your bank account before submitting');
             return;
         }
 
         setIsSubmitting(true);
 
-        // Here you would typically send the data to your backend
-        // For now, we'll just show a success message
-        setTimeout(() => {
-            alert('Application submitted successfully! Our team will review and contact you within 48 hours.');
-            setIsSubmitting(false);
-            // Reset form
-            setFormData({
-                storeName: '',
-                ownerName: '',
-                phone: '',
-                email: '',
-                address: '',
-                categories: '',
-                gstNumber: '',
-                accountNumber: '',
-                ifscCode: '',
-                accountHolderName: '',
+        try {
+            const response = await fetch('/api/seller/onboard', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData),
             });
-            setGstVerification({ status: 'idle' });
-            setBankVerification({ status: 'idle' });
-            setGstData(null);
-            setBankData(null);
-            setFileName('');
-        }, 1500);
+
+            const data = await response.json();
+
+            if (data.success) {
+                // Store details for the dashboard
+                localStorage.setItem('yk_new_seller', JSON.stringify({
+                    sellerId: data.sellerId,
+                    ...data.details
+                }));
+
+                // Dispatch event to update navbar
+                window.dispatchEvent(new Event('seller-status-changed'));
+
+                router.push('/seller/success');
+            } else {
+                alert(data.error || 'Submission failed. Please try again.');
+                setIsSubmitting(false);
+            }
+        } catch (error) {
+            console.error('Submission error:', error);
+            alert('An unexpected error occurred. Please try again.');
+            setIsSubmitting(false);
+        }
     };
 
     return (
@@ -410,7 +425,7 @@ export default function SellerForm() {
                             />
                         </div>
                     </div>
-<br />
+                    <br />
                     <div>
                         <label className="label">Account Holder Name *</label>
                         <input
@@ -516,18 +531,18 @@ export default function SellerForm() {
                     <button
                         className="btn btn-primary"
                         type="submit"
-                        disabled={isSubmitting || gstVerification.status !== 'verified' || bankVerification.status !== 'verified'}
+                        disabled={isSubmitting || (!isDevMode && (gstVerification.status !== 'verified' || bankVerification.status !== 'verified'))}
                         style={{
                             width: '100%',
                             fontSize: '1.0625rem',
                             padding: '16px',
-                            opacity: (isSubmitting || gstVerification.status !== 'verified' || bankVerification.status !== 'verified') ? 0.6 : 1,
-                            cursor: (isSubmitting || gstVerification.status !== 'verified' || bankVerification.status !== 'verified') ? 'not-allowed' : 'pointer'
+                            opacity: (isSubmitting || (!isDevMode && (gstVerification.status !== 'verified' || bankVerification.status !== 'verified'))) ? 0.6 : 1,
+                            cursor: (isSubmitting || (!isDevMode && (gstVerification.status !== 'verified' || bankVerification.status !== 'verified'))) ? 'not-allowed' : 'pointer'
                         }}
                     >
                         {isSubmitting ? '⏳ Submitting Application...' : 'Submit Seller Application'}
                     </button>
-                    {(gstVerification.status !== 'verified' || bankVerification.status !== 'verified') && (
+                    {(gstVerification.status !== 'verified' || bankVerification.status !== 'verified') && !isDevMode && (
                         <div style={{ marginTop: '12px', textAlign: 'center', fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
                             Please complete GST and Bank Account verification to submit
                         </div>

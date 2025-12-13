@@ -6,11 +6,12 @@ export interface Product {
     images?: string[]; // Array of 3 images for gallery
     description?: string; // Product description
     category: string;
+    sellerId?: string; // Unique Seller ID
 }
 
 export const products: Product[] = [
     // Groceries & Staples
-    { id: 'basmati-rice-1kg', name: 'Basmati Rice 1kg', price: 49, image: '/images/New folder/Basmati Rice 1kg.jpg', category: 'groceries' },
+    { id: 'basmati-rice-1kg', name: 'Basmati Rice 1kg', price: 49, image: '/images/New folder/Basmati Rice 1kg.jpg', category: 'groceries', sellerId: 'YKIR-BLR-001' },
     { id: 'sona-masoori-rice-5kg', name: 'Sona Masoori Rice 5kg', price: 59, image: '/images/New folder/Sona Masoori Rice 5kg.jpg', category: 'groceries' },
     { id: 'wheat-atta-5kg', name: 'Wheat Atta 5kg', price: 69, image: '/images/New folder/Wheat Atta 5kg.jpg', category: 'groceries' },
     { id: 'maida-1kg', name: 'Maida 1kg', price: 79, image: '/images/New folder/Maida 1kg.jpg', category: 'groceries' },
@@ -24,7 +25,7 @@ export const products: Product[] = [
     { id: 'iodized-salt-1kg', name: 'Iodized Salt 1kg', price: 179, image: '/images/New folder/Iodized Salt 1kg.webp', category: 'groceries' },
 
     // Vegetables & Fruits
-    { id: 'onion-1kg', name: 'Onion 1kg', price: 49, image: '/images/New folder/Onion 1kg.jpg', category: 'vegetables' },
+    { id: 'onion-1kg', name: 'Onion 1kg', price: 49, image: '/images/New folder/Onion 1kg.jpg', category: 'vegetables', sellerId: 'YKIR-BLR-002' },
     { id: 'tomato-1kg', name: 'Tomato 1kg', price: 59, image: '/images/New folder/Tomato 1kg.jpg', category: 'vegetables' },
     { id: 'potato-1kg', name: 'Potato 1kg', price: 69, image: '/images/New folder/Potato 1kg.jpg', category: 'vegetables' },
     { id: 'carrot-500g', name: 'Carrot 500g', price: 79, image: '/images/New folder/Carrot 500g.jpg', category: 'vegetables' },
@@ -46,7 +47,7 @@ export const products: Product[] = [
     { id: 'coconut-1pc', name: 'Coconut 1pc', price: 239, image: '/images/New folder/Coconut 1pc.jpg', category: 'vegetables' },
 
     // Dairy & Bakery
-    { id: 'milk-1l', name: 'Milk 1L', price: 49, image: '/images/New folder/Milk 1L.jpg', category: 'dairy' },
+    { id: 'milk-1l', name: 'Milk 1L', price: 49, image: '/images/New folder/Milk 1L.jpg', category: 'dairy', sellerId: 'YKIR-BLR-003' },
     { id: 'curd-500g', name: 'Curd 500g', price: 59, image: '/images/New folder/Curd 500g.jpg', category: 'dairy' },
     { id: 'paneer-200g', name: 'Paneer 200g', price: 69, image: '/images/New folder/Paneer 200g.jpg', category: 'dairy' },
     { id: 'cheese-slices-200g', name: 'Cheese Slices 200g', price: 79, image: '/images/New folder/Cheese Slices 200g.jpg', category: 'dairy' },

@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { useCart } from '@/context/CartContext';
 import { useAuth } from '@/context/AuthContext';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 interface DrawerProps {
     isOpen: boolean;
@@ -14,6 +14,21 @@ export default function Drawer({ isOpen, onClose }: DrawerProps) {
     const { totalItems } = useCart();
     const { user, isAuthenticated } = useAuth();
     const drawerRef = useRef<HTMLDivElement>(null);
+    const [isSeller, setIsSeller] = useState(false);
+
+    useEffect(() => {
+        const checkSellerStatus = () => {
+            const sellerStatus = localStorage.getItem('yk_new_seller');
+            setIsSeller(!!sellerStatus);
+        };
+
+        checkSellerStatus();
+        window.addEventListener('seller-status-changed', checkSellerStatus);
+
+        return () => {
+            window.removeEventListener('seller-status-changed', checkSellerStatus);
+        };
+    }, [isOpen]); // Check on mount, events, and when drawer opens
 
     // Close drawer if user clicks outside
     useEffect(() => {
@@ -51,7 +66,11 @@ export default function Drawer({ isOpen, onClose }: DrawerProps) {
             >
                 <Link href="/" onClick={onClose}>Home</Link>
                 <Link href="/categories" onClick={onClose}>Categories</Link>
-                <Link href="/seller" onClick={onClose}>Seller Onboarding</Link>
+                {isSeller ? (
+                    <Link href="/seller/dashboard" onClick={onClose} style={{ color: 'var(--mint)', fontWeight: '600' }}>Seller Dashboard</Link>
+                ) : (
+                    <Link href="/seller" onClick={onClose}>Seller Onboarding</Link>
+                )}
                 <Link href="/about-advantage" onClick={onClose}>About & Advantage</Link>
                 <Link href="/cart" className="cart-trigger" onClick={onClose}>
                     Cart <span className="cart-badge" style={{ display: totalItems > 0 ? 'inline-flex' : 'none' }}>{totalItems}</span>

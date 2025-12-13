@@ -11,6 +11,21 @@ export default function Header() {
     const { user, isAuthenticated } = useAuth();
     const [isScrolled, setIsScrolled] = useState(false);
     const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+    const [isSeller, setIsSeller] = useState(false);
+
+    useEffect(() => {
+        const checkSellerStatus = () => {
+            const sellerStatus = localStorage.getItem('yk_new_seller');
+            setIsSeller(!!sellerStatus);
+        };
+
+        checkSellerStatus();
+        window.addEventListener('seller-status-changed', checkSellerStatus);
+
+        return () => {
+            window.removeEventListener('seller-status-changed', checkSellerStatus);
+        };
+    }, []);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -33,7 +48,11 @@ export default function Header() {
                     <nav className="nav hidden md:flex">
                         <Link href="/">Home</Link>
                         <Link href="/categories">Categories</Link>
-                        <Link href="/seller">Seller Onboarding</Link>
+                        {isSeller ? (
+                            <Link href="/seller/dashboard" style={{ color: 'var(--mint)', fontWeight: '600' }}>Seller Dashboard</Link>
+                        ) : (
+                            <Link href="/seller">Seller Onboarding</Link>
+                        )}
                         <Link href="/about-advantage">About & Advantage</Link>
                         <Link href="/cart" className="cart-trigger">
                             Cart <span className="cart-badge" style={{ display: totalItems > 0 ? 'inline-flex' : 'none' }}>{totalItems}</span>

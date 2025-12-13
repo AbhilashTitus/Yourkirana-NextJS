@@ -3,7 +3,7 @@ import Razorpay from 'razorpay';
 
 export async function POST(request: NextRequest) {
     try {
-        const { amount } = await request.json();
+        const { amount, sellerIds } = await request.json();
 
         // Validate amount
         if (!amount || amount <= 0) {
@@ -32,6 +32,9 @@ export async function POST(request: NextRequest) {
             amount: Math.round(amount * 100), // Convert to paise (smallest currency unit)
             currency: 'INR',
             receipt: `receipt_${Date.now()}`,
+            notes: {
+                sellerIds: sellerIds ? JSON.stringify(sellerIds) : '',
+            }
         });
 
         return NextResponse.json({

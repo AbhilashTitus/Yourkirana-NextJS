@@ -14,6 +14,7 @@ interface Product {
     price: number;
     image: string;
     category: string;
+    sellerId?: string;
 }
 
 export default function CategoryPage() {
@@ -151,7 +152,7 @@ export default function CategoryPage() {
                                 </div>
                                 <button
                                     className="btn"
-                                    onClick={() => addToCart(product.name, product.price, product.image)}
+                                    onClick={() => addToCart(product.name, product.price, product.image, product.sellerId)}
                                 >
                                     Add to Cart
                                 </button>

@@ -77,11 +77,17 @@ export default function CartPage() {
         setIsProcessing(true);
 
         try {
+            // Collect unique Seller IDs
+            const sellerIds = Array.from(new Set(cart.map(item => (item as any).sellerId).filter(Boolean)));
+
             // Create order on backend
             const response = await fetch('/api/razorpay/create-order', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ amount: cartTotal }),
+                body: JSON.stringify({
+                    amount: cartTotal,
+                    sellerIds
+                }),
             });
 
             const data = await response.json();
@@ -183,12 +189,12 @@ export default function CartPage() {
                                 <div key={item.name} className="cart-item">
                                     <div className="cart-item-image">
                                         {item.image ? (
-                                            <img 
-                                                src={item.image} 
+                                            <img
+                                                src={item.image}
                                                 alt={item.name}
-                                                style={{ 
-                                                    width: '100%', 
-                                                    height: '100%', 
+                                                style={{
+                                                    width: '100%',
+                                                    height: '100%',
                                                     objectFit: 'contain',
                                                     borderRadius: '8px'
                                                 }}

@@ -11,6 +11,7 @@ interface Product {
     images?: string[];
     description?: string;
     category: string;
+    sellerId?: string;
 }
 
 interface ProductModalProps {
@@ -115,7 +116,7 @@ export default function ProductModal({ product, isOpen, onClose }: ProductModalP
     if (!isOpen) return null;
 
     const handleAddToCart = () => {
-        addToCart(product.name, product.price, product.image);
+        addToCart(product.name, product.price, product.image, product.sellerId);
         onClose();
     };
 
