@@ -63,6 +63,42 @@ export default function ChargebackPage() {
                             <li>Bearing financial liability for valid chargebacks arising from their transactions</li>
                         </ul>
 
+                        <h3 style={{ marginTop: '20px', fontSize: '1.1rem' }}>
+                            2.3 Seller Liability for Chargebacks and Fraud
+                        </h3>
+
+                        <p style={{ marginBottom: '20px', lineHeight: '1.8' }}>
+                            In a marketplace transaction, the seller shall bear full responsibility and
+                            financial liability for all chargebacks, refunds, and fraud-related issues
+                            arising from their products or transactions on the YourKirana platform.
+                        </p>
+
+                        <ul style={{ lineHeight: '2', marginLeft: '20px', marginBottom: '20px' }}>
+                            <li>
+                                1. The seller is solely responsible for chargebacks resulting from non-delivery,
+                                delayed delivery, defective products, or products not matching the description.
+                            </li>
+                            <li>
+                                2. The seller shall bear the full transaction amount and any applicable
+                                chargeback or processing fees imposed by banks or payment gateways.
+                            </li>
+                            <li>
+                                3. Any refunds initiated due to seller-side issues shall be the responsibility
+                                of the seller and may be adjusted against future settlements.
+                            </li>
+                            <li>
+                                4. In cases of fraud attributable to the seller, the seller agrees to indemnify
+                                and hold harmless YourKirana and Aurevia Technologies Pvt Ltd from all losses,
+                                penalties, and claims.
+                            </li>
+                            <li>
+                                Upon request by YourKirana, payment partners, banks, or regulatory authorities,
+                                the seller must promptly provide complete and accurate seller details,
+                                transaction records, invoices, and proof of delivery.
+                            </li>
+                        </ul>
+
+
                         <h2 style={{ marginTop: '30px' }}>3. Chargeback Process</h2>
                         <h3 style={{ marginTop: '20px', fontSize: '1.1rem' }}>3.1 Customer-Initiated Chargeback</h3>
                         <p style={{ marginBottom: '20px', lineHeight: '1.8' }}>

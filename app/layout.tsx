@@ -15,7 +15,7 @@ const lexend = Lexend({
 });
 
 export const metadata: Metadata = {
-  title: "YourKirana – Home",
+  title: "YourKirana",
   description: "Delivering essentials from local stores to your doorstep.",
 };
 
