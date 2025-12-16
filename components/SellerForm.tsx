@@ -572,7 +572,7 @@ export default function SellerForm() {
                             lineHeight: '1.5',
                             flex: 1
                         }}>
-                            I agree to ReadFlow's{' '}
+                            I agree to YourKirana's{' '}
                             <a
                                 href="/terms"
                                 target="_blank"
