@@ -31,6 +31,10 @@ export default function SellerForm() {
         accountHolderName: '',
     });
 
+    // Checkbox states
+    const [agreeTerms, setAgreeTerms] = useState(false);
+    const [confirmAccuracy, setConfirmAccuracy] = useState(false);
+
     // Verification states
     const [gstVerification, setGstVerification] = useState<VerificationStatus>({ status: 'idle' });
     const [bankVerification, setBankVerification] = useState<VerificationStatus>({ status: 'idle' });
@@ -170,6 +174,17 @@ export default function SellerForm() {
 
         if (!isDevMode && bankVerification.status !== 'verified') {
             alert('Please verify your bank account before submitting');
+            return;
+        }
+
+        // Check if terms are agreed
+        if (!agreeTerms) {
+            alert('Please agree to the Seller Terms & Conditions');
+            return;
+        }
+
+        if (!confirmAccuracy) {
+            alert('Please confirm that all information provided is accurate');
             return;
         }
 
@@ -521,6 +536,97 @@ export default function SellerForm() {
                     </div>
                 </div>
 
+                {/* Terms and Conditions Checkboxes */}
+                <div style={{ marginBottom: '24px' }}>
+                    <div style={{
+                        display: 'flex',
+                        alignItems: 'flex-start',
+                        gap: '12px',
+                        marginBottom: '16px',
+                        padding: '16px',
+                        background: 'var(--bg-soft)',
+                        borderRadius: '8px',
+                        border: '1px solid var(--border)',
+                        cursor: 'pointer',
+                        transition: 'all 0.2s ease'
+                    }}
+                        onClick={() => setAgreeTerms(!agreeTerms)}
+                    >
+                        <input
+                            type="checkbox"
+                            checked={agreeTerms}
+                            onChange={(e) => setAgreeTerms(e.target.checked)}
+                            onClick={(e) => e.stopPropagation()}
+                            style={{
+                                width: '20px',
+                                height: '20px',
+                                marginTop: '2px',
+                                cursor: 'pointer',
+                                accentColor: 'var(--mint)'
+                            }}
+                        />
+                        <label style={{
+                            fontSize: '0.95rem',
+                            color: 'var(--text-secondary)',
+                            cursor: 'pointer',
+                            lineHeight: '1.5',
+                            flex: 1
+                        }}>
+                            I agree to ReadFlow's{' '}
+                            <a
+                                href="/terms"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                onClick={(e) => e.stopPropagation()}
+                                style={{
+                                    color: 'var(--mint)',
+                                    textDecoration: 'none',
+                                    fontWeight: '500'
+                                }}
+                            >
+                                Seller Terms & Conditions
+                            </a>
+                        </label>
+                    </div>
+
+                    <div style={{
+                        display: 'flex',
+                        alignItems: 'flex-start',
+                        gap: '12px',
+                        padding: '16px',
+                        background: 'var(--bg-soft)',
+                        borderRadius: '8px',
+                        border: '1px solid var(--border)',
+                        cursor: 'pointer',
+                        transition: 'all 0.2s ease'
+                    }}
+                        onClick={() => setConfirmAccuracy(!confirmAccuracy)}
+                    >
+                        <input
+                            type="checkbox"
+                            checked={confirmAccuracy}
+                            onChange={(e) => setConfirmAccuracy(e.target.checked)}
+                            onClick={(e) => e.stopPropagation()}
+                            style={{
+                                width: '20px',
+                                height: '20px',
+                                marginTop: '2px',
+                                cursor: 'pointer',
+                                accentColor: 'var(--mint)'
+                            }}
+                        />
+                        <label style={{
+                            fontSize: '0.95rem',
+                            color: 'var(--text-secondary)',
+                            cursor: 'pointer',
+                            lineHeight: '1.5',
+                            flex: 1
+                        }}>
+                            I confirm all information provided is accurate
+                        </label>
+                    </div>
+                </div>
+
                 {/* Submit Button */}
                 <div style={{
                     padding: '20px',
@@ -531,13 +637,13 @@ export default function SellerForm() {
                     <button
                         className="btn btn-primary"
                         type="submit"
-                        disabled={isSubmitting || (!isDevMode && (gstVerification.status !== 'verified' || bankVerification.status !== 'verified'))}
+                        disabled={isSubmitting || (!isDevMode && (gstVerification.status !== 'verified' || bankVerification.status !== 'verified')) || !agreeTerms || !confirmAccuracy}
                         style={{
                             width: '100%',
                             fontSize: '1.0625rem',
                             padding: '16px',
-                            opacity: (isSubmitting || (!isDevMode && (gstVerification.status !== 'verified' || bankVerification.status !== 'verified'))) ? 0.6 : 1,
-                            cursor: (isSubmitting || (!isDevMode && (gstVerification.status !== 'verified' || bankVerification.status !== 'verified'))) ? 'not-allowed' : 'pointer'
+                            opacity: (isSubmitting || (!isDevMode && (gstVerification.status !== 'verified' || bankVerification.status !== 'verified')) || !agreeTerms || !confirmAccuracy) ? 0.6 : 1,
+                            cursor: (isSubmitting || (!isDevMode && (gstVerification.status !== 'verified' || bankVerification.status !== 'verified')) || !agreeTerms || !confirmAccuracy) ? 'not-allowed' : 'pointer'
                         }}
                     >
                         {isSubmitting ? '⏳ Submitting Application...' : 'Submit Seller Application'}
@@ -545,6 +651,11 @@ export default function SellerForm() {
                     {(gstVerification.status !== 'verified' || bankVerification.status !== 'verified') && !isDevMode && (
                         <div style={{ marginTop: '12px', textAlign: 'center', fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
                             Please complete GST and Bank Account verification to submit
+                        </div>
+                    )}
+                    {(!agreeTerms || !confirmAccuracy) && (
+                        <div style={{ marginTop: '12px', textAlign: 'center', fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
+                            Please agree to the terms and confirm data accuracy
                         </div>
                     )}
                 </div>
