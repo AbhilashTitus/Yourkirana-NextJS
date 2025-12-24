@@ -64,6 +64,35 @@ export default function Drawer({ isOpen, onClose }: DrawerProps) {
                 className={`drawer ${isOpen ? 'show' : ''}`}
                 id="drawer"
             >
+                <div className="flex flex-col gap-3 mb-4 p-4 bg-gray-50 rounded-lg border border-gray-100">
+                    {isAuthenticated && (
+                        <>
+                            {/* Coins */}
+                            <div className="flex items-center justify-between text-sm font-semibold text-yellow-600">
+                                <span>Kirana Coins</span>
+                                <div className="flex items-center bg-white px-3 py-1 rounded-full border border-yellow-200">
+                                    <span className="mr-1">💰</span>
+                                    {user?.coins || 0}
+                                </div>
+                            </div>
+
+                            {/* Membership Badge */}
+                            <div className="flex items-center justify-between text-sm font-semibold">
+                                <span>Membership</span>
+                                {(!user?.membershipTier || user?.membershipTier === 'Free') ? (
+                                    <Link href="/membership" onClick={onClose} className="text-xs font-bold text-white bg-gradient-to-r from-yellow-500 to-amber-600 px-3 py-1 rounded-full hover:scale-105 transition-transform">
+                                        👑 Upgrade
+                                    </Link>
+                                ) : (
+                                    <Link href="/membership" onClick={onClose} className={`flex items-center text-xs font-bold px-3 py-1 rounded-full border ${user?.membershipTier === 'Gold' ? 'border-yellow-300 text-yellow-800 bg-yellow-50' : 'border-gray-300 text-gray-700 bg-white'}`}>
+                                        {user?.membershipTier === 'Gold' ? '🥇' : '🥈'} <span className="ml-1">{user?.membershipTier}</span>
+                                    </Link>
+                                )}
+                            </div>
+                        </>
+                    )}
+                </div>
+
                 <Link href="/" onClick={onClose}>Home</Link>
                 <Link href="/categories" onClick={onClose}>Categories</Link>
                 {isSeller ? (
@@ -82,7 +111,7 @@ export default function Drawer({ isOpen, onClose }: DrawerProps) {
                 ) : (
                     <Link href="/login" className="nav-btn" onClick={onClose}>Login</Link>
                 )}
-            </div>
+            </div >
         </>
     );
 }

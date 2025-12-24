@@ -14,6 +14,9 @@ export interface User {
         pincode: string;
         phone: string;
     };
+    membershipTier: 'Free' | 'Silver' | 'Gold';
+    coins: number;
+    subscriptionExpiry?: string;
 }
 
 interface AuthContextType {
@@ -22,6 +25,8 @@ interface AuthContextType {
     signup: (name: string, email: string, password: string) => Promise<boolean>;
     logout: () => void;
     updateAddress: (address: User['address']) => void;
+    upgradeMembership: (tier: 'Silver' | 'Gold') => void;
+    deductCoins: (amount: number) => boolean;
     isAuthenticated: boolean;
 }
 
@@ -54,7 +59,9 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
                     state: 'Demo State',
                     pincode: '123456',
                     phone: '1234567890'
-                }
+                },
+                membershipTier: 'Free',
+                coins: 100, // Demo bonus
             };
             setUser(demoUser);
             localStorage.setItem('yk_current_user', JSON.stringify(demoUser));
@@ -68,8 +75,14 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
         const foundUser = users.find(u => u.email === email && u.password === password);
 
         if (foundUser) {
-            setUser(foundUser);
-            localStorage.setItem('yk_current_user', JSON.stringify(foundUser));
+            // Ensure legacy users have default membership fields
+            const userWithDefaults = {
+                ...foundUser,
+                membershipTier: foundUser.membershipTier || 'Free',
+                coins: foundUser.coins || 0
+            };
+            setUser(userWithDefaults);
+            localStorage.setItem('yk_current_user', JSON.stringify(userWithDefaults));
             return true;
         }
         return false;
@@ -88,7 +101,13 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
             return false; // User already exists
         }
 
-        const newUser: User = { name, email, password };
+        const newUser: User = {
+            name,
+            email,
+            password,
+            membershipTier: 'Free',
+            coins: 0
+        };
         users.push(newUser);
 
         // Save to "database"
@@ -111,6 +130,43 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
         if (!user) return;
 
         const updatedUser = { ...user, address };
+        updateUserInStorage(updatedUser);
+    };
+
+    const upgradeMembership = (tier: 'Silver' | 'Gold') => {
+        if (!user) return;
+
+        // Calculate expiry (30 days from now)
+        const expiryDate = new Date();
+        expiryDate.setDate(expiryDate.getDate() + 30);
+
+        // Add bonus coins for upgrading? (Optional per requirements, adding generic bonus for now)
+        let bonusCoins = 0;
+        if (tier === 'Silver') bonusCoins = 50;
+        if (tier === 'Gold') bonusCoins = 100;
+
+        const updatedUser: User = {
+            ...user,
+            membershipTier: tier,
+            coins: (user.coins || 0) + bonusCoins,
+            subscriptionExpiry: expiryDate.toISOString()
+        };
+
+        updateUserInStorage(updatedUser);
+    };
+
+    const deductCoins = (amount: number): boolean => {
+        if (!user || (user.coins || 0) < amount) return false;
+
+        const updatedUser = {
+            ...user,
+            coins: user.coins - amount
+        };
+        updateUserInStorage(updatedUser);
+        return true;
+    };
+
+    const updateUserInStorage = (updatedUser: User) => {
         setUser(updatedUser);
         localStorage.setItem('yk_current_user', JSON.stringify(updatedUser));
 
@@ -118,7 +174,7 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
         const usersStr = localStorage.getItem('yk_users');
         if (usersStr) {
             const users: User[] = JSON.parse(usersStr);
-            const index = users.findIndex(u => u.email === user.email);
+            const index = users.findIndex(u => u.email === updatedUser.email);
             if (index !== -1) {
                 users[index] = updatedUser;
                 localStorage.setItem('yk_users', JSON.stringify(users));
@@ -133,6 +189,8 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
             signup,
             logout,
             updateAddress,
+            upgradeMembership,
+            deductCoins,
             isAuthenticated: !!user
         }}>
             {children}

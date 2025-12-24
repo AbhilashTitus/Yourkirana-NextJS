@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { useAuth } from "@/context/AuthContext";
+import { useToast } from "@/context/ToastContext";
 
 const productIcons: Record<string, string> = {
     "Diapers Small 20pc": "🧷", "Diapers Medium 20pc": "🧷", "Diapers Large 20pc": "🧷",
@@ -41,9 +42,23 @@ declare global {
 
 export default function CartPage() {
     const { cart, updateQuantity, removeFromCart, cartTotal, totalItems } = useCart();
-    const { user, isAuthenticated } = useAuth();
+    const { user, isAuthenticated, deductCoins } = useAuth();
+    const { showToast } = useToast();
     const [isProcessing, setIsProcessing] = useState(false);
+    const [useCoins, setUseCoins] = useState(false);
     const router = useRouter();
+
+    // Calculate Coin Logic
+    const membershipTier = user?.membershipTier || 'Free';
+    const limitPercentage = membershipTier === 'Gold' ? 0.5 : 0.3;
+    const maxRedeemableByTier = cartTotal * limitPercentage;
+    const userCoins = user?.coins || 0;
+
+    // The actual amount to redeem is the minimum of user's coins and the tier limit
+    // But we also can't redeem more than the cart total (though tier limit naturally handles that < 100%)
+    const redeemableAmount = Math.min(userCoins, maxRedeemableByTier);
+
+    const finalAmount = useCoins ? cartTotal - redeemableAmount : cartTotal;
 
     // Load Razorpay script
     useEffect(() => {
@@ -81,11 +96,12 @@ export default function CartPage() {
             const sellerIds = Array.from(new Set(cart.map(item => (item as any).sellerId).filter(Boolean)));
 
             // Create order on backend
+            // NOTE: We are sending the FINAL discounted amount
             const response = await fetch('/api/razorpay/create-order', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
-                    amount: cartTotal,
+                    amount: finalAmount,
                     sellerIds
                 }),
             });
@@ -99,7 +115,7 @@ export default function CartPage() {
             // Configure Razorpay options
             const options = {
                 key: data.keyId,
-                amount: data.amount,
+                amount: data.amount, // Amount from backend (should match finalAmount * 100)
                 currency: data.currency,
                 name: 'YourKirana',
                 description: 'Order Payment',
@@ -121,11 +137,19 @@ export default function CartPage() {
 
                         if (verifyResponse.ok && verifyData.success) {
                             // Payment successful
+
+                            // Deduct coins if used
+                            if (useCoins && redeemableAmount > 0) {
+                                deductCoins(redeemableAmount); // Note: redeemableAmount is what we calculated locally. 
+                                // Ideally backend should handle this to be secure, but for this impl we do it here.
+                            }
+
                             localStorage.setItem('payment_success', JSON.stringify({
                                 orderId: verifyData.orderId,
                                 paymentId: verifyData.paymentId,
-                                amount: cartTotal,
+                                amount: finalAmount,
                                 items: cart,
+                                coinsRedeemed: useCoins ? redeemableAmount : 0
                             }));
 
                             // Clear cart
@@ -138,7 +162,7 @@ export default function CartPage() {
                         }
                     } catch (error) {
                         console.error('Verification error:', error);
-                        alert('Payment verification failed. Please contact support.');
+                        showToast('Payment verification failed. Please contact support.', 'error');
                         setIsProcessing(false);
                     }
                 },
@@ -162,7 +186,7 @@ export default function CartPage() {
             razorpay.open();
         } catch (error) {
             console.error('Checkout error:', error);
-            alert(error instanceof Error ? error.message : 'Failed to initiate checkout. Please check your API keys in .env.local');
+            showToast(error instanceof Error ? error.message : 'Failed to initiate checkout', 'error');
             setIsProcessing(false);
         }
     };
@@ -221,17 +245,58 @@ export default function CartPage() {
 
                         <div className="cart-summary sticky top-[100px] h-fit">
                             <h3 style={{ marginBottom: '20px', fontSize: '1.2rem' }}>Order Summary</h3>
+
+                            {/* Coin Redemption Section */}
+                            {isAuthenticated && userCoins > 0 && (
+                                <div style={{
+                                    marginBottom: '20px',
+                                    padding: '16px',
+                                    background: 'var(--bg-soft)',
+                                    borderRadius: '12px',
+                                    border: '1px solid var(--border)'
+                                }}>
+                                    <div className="flex justify-between items-center mb-2" style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                        <span style={{ fontWeight: 600, color: 'var(--text)' }}>Use Kirana Coins</span>
+                                        <span className="pill" style={{ fontSize: '0.8rem', padding: '4px 10px', background: 'var(--mint-50)', color: 'var(--mint-700)' }}>
+                                            Bal: {userCoins}
+                                        </span>
+                                    </div>
+                                    <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '12px' }}>
+                                        You can pay up to {(limitPercentage * 100).toFixed(0)}% with coins ({membershipTier} Plan).
+                                    </p>
+                                    <label style={{ display: 'flex', alignItems: 'center', cursor: 'pointer', gap: '8px' }}>
+                                        <input
+                                            type="checkbox"
+                                            checked={useCoins}
+                                            onChange={(e) => setUseCoins(e.target.checked)}
+                                            style={{ width: '16px', height: '16px', accentColor: 'var(--mint)' }}
+                                        />
+                                        <span style={{ fontSize: '0.95rem', color: 'var(--text)' }}>
+                                            Redeem {Math.floor(redeemableAmount)} coins
+                                        </span>
+                                    </label>
+                                </div>
+                            )}
+
                             <div className="summary-row">
                                 <span>Subtotal ({totalItems} items)</span>
                                 <span>₹ {cartTotal.toFixed(0)}</span>
                             </div>
+
+                            {useCoins && (
+                                <div className="summary-row text-green-600">
+                                    <span>Coin Discount</span>
+                                    <span>- ₹ {Math.floor(redeemableAmount)}</span>
+                                </div>
+                            )}
+
                             <div className="summary-row">
                                 <span>Delivery Charges</span>
                                 <span style={{ color: 'var(--mint)' }}>FREE</span>
                             </div>
                             <div className="summary-row total">
                                 <span>Total</span>
-                                <span>₹ {cartTotal.toFixed(0)}</span>
+                                <span>₹ {Math.ceil(finalAmount)}</span>
                             </div>
                             <button
                                 className="checkout-btn"
@@ -239,7 +304,7 @@ export default function CartPage() {
                                 disabled={isProcessing}
                                 style={{ opacity: isProcessing ? 0.7 : 1, cursor: isProcessing ? 'not-allowed' : 'pointer' }}
                             >
-                                {isProcessing ? 'Processing...' : 'Proceed to Checkout'}
+                                {isProcessing ? 'Processing...' : `Pay ₹${Math.ceil(finalAmount)}`}
                             </button>
                         </div>
                     </div>
