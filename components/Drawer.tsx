@@ -65,7 +65,7 @@ export default function Drawer({ isOpen, onClose }: DrawerProps) {
                 id="drawer"
             >
                 <div className="flex flex-col gap-3 mb-4 p-4 bg-gray-50 rounded-lg border border-gray-100">
-                    {isAuthenticated && (
+                    {isAuthenticated ? (
                         <>
                             {/* Coins */}
                             <div className="flex items-center justify-between text-sm font-semibold text-yellow-600">
@@ -90,6 +90,14 @@ export default function Drawer({ isOpen, onClose }: DrawerProps) {
                                 )}
                             </div>
                         </>
+                    ) : (
+                        /* Guest View in Drawer - Upsell Membership */
+                        <div className="flex items-center justify-between text-sm font-semibold">
+                            <span>Get Premium Benefits</span>
+                            <Link href="/membership" onClick={onClose} className="text-xs font-bold text-white bg-gradient-to-r from-yellow-500 to-amber-600 px-3 py-1 rounded-full hover:scale-105 transition-transform">
+                                Membership 👑
+                            </Link>
+                        </div>
                     )}
                 </div>
 

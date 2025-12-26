@@ -82,7 +82,12 @@ export default function Header() {
                                 </Link>
                             </>
                         ) : (
-                            <Link href="/login" className="nav-btn">Login</Link>
+                            <>
+                                <Link href="/membership" className="text-sm font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-amber-600 hover:scale-105 transition-transform" style={{ marginRight: '15px' }}>
+                                    Membership 👑
+                                </Link>
+                                <Link href="/login" className="nav-btn">Login</Link>
+                            </>
                         )}
                     </nav>
                     <button

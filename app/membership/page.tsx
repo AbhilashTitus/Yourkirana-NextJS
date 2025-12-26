@@ -232,7 +232,7 @@ export default function MembershipPage() {
 
                                     <button
                                         onClick={() => handleSubscribe(plan)}
-                                        disabled={isCurrent || isLoading || (plan.name === 'Free' && user?.membershipTier !== 'Free')}
+                                        disabled={isAuthenticated && (isCurrent || isLoading || (plan.name === 'Free' && user?.membershipTier !== 'Free'))}
                                         className={`btn ${isGold ? 'btn-primary' : ''}`}
                                         style={{
                                             width: '100%',
@@ -244,7 +244,11 @@ export default function MembershipPage() {
                                             opacity: isLoading ? 0.8 : 1
                                         }}
                                     >
-                                        {isLoading ? "Processing..." : isCurrent ? "Current Plan" : plan.name === 'Free' ? "Downgrade" : "Subscribe Now"}
+                                        {isLoading ? "Processing..." :
+                                            !isAuthenticated ? (plan.name === 'Free' ? "Sign Up Free" : "Subscribe Now") :
+                                                isCurrent ? "Current Plan" :
+                                                    plan.name === 'Free' ? "Downgrade" : "Subscribe Now"
+                                        }
                                     </button>
                                 </div>
                             );
