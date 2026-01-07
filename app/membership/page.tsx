@@ -24,7 +24,7 @@ const PLANS = [
     {
         id: "silver",
         name: "Silver",
-        price: 99,
+        price: 100,
         color: "blue", // Will map to CSS vars or classes
         features: [
             "Extra Kirana Coins on top-ups",
@@ -37,7 +37,7 @@ const PLANS = [
     {
         id: "gold",
         name: "Gold",
-        price: 199,
+        price: 200,
         color: "gold",
         features: [
             "Higher Kirana Coin rewards",

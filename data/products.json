@@ -2,7 +2,7 @@
   {
     "id": "basmati-rice-1kg",
     "name": "Daawat Basmati Rice 1kg",
-    "price": 51,
+    "price": 50,
     "image": "/images/1763988154279-2357.jpg",
     "category": "groceries",
     "images": [
@@ -15,7 +15,7 @@
   {
     "id": "sona-masoori-rice-5kg",
     "name": "India Gate Sona Masoori Rice 5kg",
-    "price": 59,
+    "price": 60,
     "image": "/images/1763988239028-India_Gate_Sona_Masoori_Rice_5kg_-500px_c191bf4c-51e0-479a-9674-8da1caf6692d.webp",
     "category": "groceries",
     "images": [
@@ -28,7 +28,7 @@
   {
     "id": "wheat-atta-5kg",
     "name": "Aashirvaad Wheat Atta 5kg",
-    "price": 69,
+    "price": 70,
     "image": "/images/1763988326673-126906_10-aashirvaad-atta-whole-wheat.webp",
     "category": "groceries",
     "images": [
@@ -41,7 +41,7 @@
   {
     "id": "maida-1kg",
     "name": "Patanjali Maida 1kg",
-    "price": 79,
+    "price": 80,
     "image": "/images/1763988410200-1690017979Maida1Kg1.png",
     "category": "groceries",
     "images": [
@@ -54,7 +54,7 @@
   {
     "id": "suji-1kg",
     "name": "Patanjali Suji 1kg",
-    "price": 89,
+    "price": 90,
     "image": "/images/1763989143737-1735561479sooji1kg1.png",
     "category": "groceries",
     "images": [
@@ -67,7 +67,7 @@
   {
     "id": "toor-dal-1kg",
     "name": "Toor Dal 1kg",
-    "price": 99,
+    "price": 100,
     "image": "/images/New folder/Toor Dal 1kg.webp",
     "category": "groceries",
     "images": [
@@ -80,7 +80,7 @@
   {
     "id": "chana-dal-1kg",
     "name": "Chana Dal 1kg",
-    "price": 109,
+    "price": 120,
     "image": "/images/New folder/Chana Dal 1kg.jpg",
     "category": "groceries",
     "images": [
@@ -93,7 +93,7 @@
   {
     "id": "moong-dal-1kg",
     "name": "Moong Dal 1kg",
-    "price": 119,
+    "price": 120,
     "image": "/images/New folder/Moong Dal 1kg.jpg",
     "category": "groceries",
     "images": [
@@ -106,7 +106,7 @@
   {
     "id": "groundnut-oil-1l",
     "name": "Groundnut Oil 1L",
-    "price": 189,
+    "price": 200,
     "image": "/images/New folder/Groundnut Oil 1L.jpg",
     "category": "groceries",
     "images": [
@@ -119,7 +119,7 @@
   {
     "id": "ghee-500ml",
     "name": "Sapins Ghee 500ml",
-    "price": 219,
+    "price": 200,
     "image": "/images/New folder/Ghee 500ml.jpg",
     "category": "groceries",
     "images": [
@@ -132,7 +132,7 @@
   {
     "id": "jaggery-1kg",
     "name": "Jaggery 1kg",
-    "price": 169,
+    "price": 170,
     "image": "/images/New folder/Jaggery 1kg.jpg",
     "category": "groceries",
     "images": [
@@ -145,7 +145,7 @@
   {
     "id": "iodized-salt-1kg",
     "name": "Tata Iodized Salt 1kg",
-    "price": 179,
+    "price": 200,
     "image": "/images/New folder/Iodized Salt 1kg.webp",
     "category": "groceries",
     "images": [
@@ -158,7 +158,7 @@
   {
     "id": "onion-1kg",
     "name": "Organic Onion 1kg",
-    "price": 49,
+    "price": 50,
     "image": "/images/1763987609551-onion-packing-net-500x500.webp",
     "category": "vegetables",
     "images": [
@@ -171,7 +171,7 @@
   {
     "id": "tomato-1kg",
     "name": "Organic Tomato 1kg",
-    "price": 59,
+    "price": 60,
     "image": "/images/1763987689223-istockphoto-177003557-612x612.jpg",
     "category": "vegetables",
     "images": [
@@ -184,7 +184,7 @@
   {
     "id": "potato-1kg",
     "name": "Organic Potato 1kg",
-    "price": 69,
+    "price": 70,
     "image": "/images/New folder/Potato 1kg.jpg",
     "category": "vegetables",
     "images": [
@@ -197,7 +197,7 @@
   {
     "id": "carrot-500g",
     "name": "Organic Carrot 1 Kg",
-    "price": 79,
+    "price": 80,
     "image": "/images/1763987782617-a-vibrant-bundle-of-fresh-organic-orange-carrots-with-lush-green-tops-tied-with-natural-twine-perfect-for-healthy-recipes-and-farm-fresh-concepts-png.png",
     "category": "vegetables",
     "images": [
@@ -210,7 +210,7 @@
   {
     "id": "beans-500g",
     "name": "Organic Beans 500g",
-    "price": 89,
+    "price": 100,
     "image": "/images/New folder/Beans 500g.jpg",
     "category": "vegetables",
     "images": [
@@ -223,7 +223,7 @@
   {
     "id": "spinach-1-bunch",
     "name": "Organic Spinach 1 bunch",
-    "price": 99,
+    "price": 100,
     "image": "/images/New folder/Spinach 1 bunch.jpg",
     "category": "vegetables",
     "images": [
@@ -236,7 +236,7 @@
   {
     "id": "coriander-1-bunch",
     "name": "Coriander 1 bunch",
-    "price": 109,
+    "price": 100,
     "image": "/images/New folder/Coriander 1 bunch.jpg",
     "category": "vegetables",
     "images": [
@@ -249,7 +249,7 @@
   {
     "id": "banana-1-dozen",
     "name": "Banana 1 dozen",
-    "price": 95,
+    "price": 100,
     "image": "/images/New folder/Banana 1 dozen.jpg",
     "category": "vegetables",
     "images": [
@@ -262,7 +262,7 @@
   {
     "id": "apple-1kg",
     "name": "Organic Apple 1kg",
-    "price": 129,
+    "price": 150,
     "image": "/images/1763987873725-apple-basket-iga00338-500x500.webp",
     "category": "vegetables",
     "images": [
@@ -275,7 +275,7 @@
   {
     "id": "orange-1kg",
     "name": "Organic Orange 1kg",
-    "price": 139,
+    "price": 140,
     "image": "/images/1763987995619-n1905fruit04.jpg",
     "category": "vegetables",
     "images": [
@@ -288,7 +288,7 @@
   {
     "id": "grapes-500g",
     "name": "Grapes 500g",
-    "price": 149,
+    "price": 150,
     "image": "/images/New folder/Grapes 500g.jpg",
     "category": "vegetables",
     "images": [
@@ -301,7 +301,7 @@
   {
     "id": "pomegranate-500g",
     "name": "Natural Pomegranate 500g",
-    "price": 159,
+    "price": 160,
     "image": "/images/1763988974331-isolated-bunch-pomegranate-white-background-isolated-bunch-pomegranate-white-background-279705611.webp",
     "category": "vegetables",
     "images": [
@@ -314,7 +314,7 @@
   {
     "id": "mango-1kg",
     "name": "Natural Mango 1kg",
-    "price": 169,
+    "price": 170,
     "image": "/images/1763989068803-360_F_1626003392_Kcs3cHgTGvPWvgsCaddp0AK59yaz1CnX.jpg",
     "category": "vegetables",
     "images": [
@@ -392,7 +392,7 @@
   {
     "id": "ginger-250g",
     "name": "Ginger 250g",
-    "price": 229,
+    "price": 230,
     "image": "/images/New folder/Ginger 250g.jpg",
     "category": "vegetables",
     "images": [
@@ -405,7 +405,7 @@
   {
     "id": "coconut-1pc",
     "name": "Coconut 5 Kg",
-    "price": 239,
+    "price": 240,
     "image": "/images/1763988068785-platone-husked-coconut-pack-3-organic-coconut-pooja-coconut-nariyal-product-images-orvdb2ugu5a-p605893953-1-202310291947.jpg",
     "category": "vegetables",
     "images": [
@@ -418,7 +418,7 @@
   {
     "id": "milk-1l",
     "name": "Milma Milk 1L",
-    "price": 49,
+    "price": 30,
     "image": "/images/1763957828275-a86b4959-b0f6-48e7-b1d3-1c281590b847.webp",
     "category": "dairy",
     "images": [
@@ -431,7 +431,7 @@
   {
     "id": "curd-500g",
     "name": "Milky Mist Curd 500g",
-    "price": 59,
+    "price": 60,
     "image": "/images/1763957924410-c7d877d2fc74df345a968eb64cf32936.png",
     "category": "dairy",
     "images": [
@@ -444,7 +444,7 @@
   {
     "id": "paneer-200g",
     "name": "Milky Mist Paneer 200g",
-    "price": 69,
+    "price": 70,
     "image": "/images/1763957999335-milky-mist-fresh-paneer.webp",
     "category": "dairy",
     "images": [
@@ -457,7 +457,7 @@
   {
     "id": "cheese-slices-200g",
     "name": "Amul Cheese Slices 200g",
-    "price": 79,
+    "price": 80,
     "image": "/images/1763958068335-download.jfif",
     "category": "dairy",
     "images": [
@@ -470,7 +470,7 @@
   {
     "id": "butter-500g",
     "name": "Amul Butter 500g",
-    "price": 89,
+    "price": 90,
     "image": "/images/1763958151301-trfhcd.jfif",
     "category": "dairy",
     "images": [
@@ -483,7 +483,7 @@
   {
     "id": "brown-bread",
     "name": "English Oven Brown Bread",
-    "price": 99,
+    "price": 100,
     "image": "/images/1763958195445-download__1_.jfif",
     "category": "dairy",
     "images": [
@@ -509,7 +509,7 @@
   {
     "id": "multigrain-bread",
     "name": "English Oven Multigrain Bread",
-    "price": 119,
+    "price": 150,
     "image": "/images/1763958383774-816YuzA5QPL.jpg",
     "category": "dairy",
     "images": [
@@ -522,7 +522,7 @@
   {
     "id": "buns-4pc",
     "name": "Modern Buns 4pc",
-    "price": 129,
+    "price": 130,
     "image": "/images/1763958450932-fe4ef3c3dd7cdb1893d93aff18ac1265.png",
     "category": "dairy",
     "images": [
@@ -535,7 +535,7 @@
   {
     "id": "yogurt-cup-100g",
     "name": "Amul Yogurt 100g",
-    "price": 139,
+    "price": 140,
     "image": "/images/1763958577231-download__2_.jfif",
     "category": "dairy",
     "images": [
@@ -561,7 +561,7 @@
   {
     "id": "khoya-250g",
     "name": "Nanak Khoa 250g",
-    "price": 159,
+    "price": 160,
     "image": "/images/1763958703355-Nanak-Khoa-Mawa-341g.webp",
     "category": "dairy",
     "images": [
@@ -574,7 +574,7 @@
   {
     "id": "cream-200ml",
     "name": "Amul Fresh Cream 200ml",
-    "price": 169,
+    "price": 170,
     "image": "/images/1763958803305-365ab89ec5315fb897151bc33ed82d91.jpeg",
     "category": "dairy",
     "images": [
@@ -587,7 +587,7 @@
   {
     "id": "buttermilk-1l",
     "name": "Amul Buttermilk 1L",
-    "price": 179,
+    "price": 180,
     "image": "/images/New folder/Buttermilk 1L.jpg",
     "category": "dairy",
     "images": [
@@ -600,7 +600,7 @@
   {
     "id": "cupcake-6pc",
     "name": "Elite Choco Cupcakes 6pc",
-    "price": 189,
+    "price": 190,
     "image": "/images/1763958925677-40052061_3-elite-dreams-cup-cake-choco.webp",
     "category": "dairy",
     "images": [
@@ -613,7 +613,7 @@
   {
     "id": "cookies-200g",
     "name": "Amul Choco Cookies 200g",
-    "price": 199,
+    "price": 200,
     "image": "/images/1763959058183-new-product-500x500.webp",
     "category": "dairy",
     "images": [
@@ -704,7 +704,7 @@
   {
     "id": "masala-peanuts-200g",
     "name": "Masala Peanuts 200g",
-    "price": 69,
+    "price": 70,
     "image": "/images/New folder/Masala Peanuts 200g.jpg",
     "category": "snacks",
     "images": [
@@ -873,7 +873,7 @@
   {
     "id": "protein-bar-60g",
     "name": "Phab Protein Bar 60g",
-    "price": 199,
+    "price": 200,
     "image": "/images/1763960062088-1SN0209.webp",
     "category": "snacks",
     "images": [
@@ -1003,7 +1003,7 @@
   {
     "id": "packaged-water-1l",
     "name": "Bisleri Water 1L",
-    "price": 99,
+    "price": 25,
     "image": "/images/1763990234880-bisleri-mineral-water-filtered-refined-for-domestic-industrial-purpose-094.jpg",
     "category": "beverages",
     "images": [
@@ -1029,7 +1029,7 @@
   {
     "id": "fruit-juice-1l",
     "name": "Raw Fruit Juice Combo 1L",
-    "price": 119,
+    "price": 120,
     "image": "/images/1763990154460-0eee5068-ea22-4997-833a-f5a311e7f1d4.webp",
     "category": "beverages",
     "images": [
@@ -1068,7 +1068,7 @@
   {
     "id": "coffee-200g",
     "name": "Nescafe Coffee 200g",
-    "price": 149,
+    "price": 150,
     "image": "/images/New folder/Coffee 200g.jpg",
     "category": "beverages",
     "images": [
@@ -1094,7 +1094,7 @@
   {
     "id": "milkshake-180ml",
     "name": "Sunfeast Milkshake 180ml",
-    "price": 169,
+    "price": 170,
     "image": "/images/New folder/Milkshake 180ml.jpg",
     "category": "beverages",
     "images": [
@@ -1120,7 +1120,7 @@
   {
     "id": "electrolyte-drink-500ml",
     "name": "Prime Drink Combo 500ml",
-    "price": 189,
+    "price": 190,
     "image": "/images/1763990383811-613BsdSoFeL.jpg",
     "category": "beverages",
     "images": [
@@ -1133,7 +1133,7 @@
   {
     "id": "energy-drink-250ml",
     "name": "Redbull Combo Pack 250ml",
-    "price": 199,
+    "price": 200,
     "image": "/images/1763990449725-Red-Bull-Energy-Drink_-Mixed-Fruit-250ml-_Pack-of-24_-_-Energy-Drink-with-Caffeine-and-Taurine-for-Boosted-Energy-Luckystore-59852861_1080x.webp",
     "category": "beverages",
     "images": [
@@ -1263,7 +1263,7 @@
   {
     "id": "floor-cleaner-1l",
     "name": "My Home Floor Cleaner 1L",
-    "price": 99,
+    "price": 100,
     "image": "/images/New folder/Floor Cleaner 1L.jpg",
     "category": "cleaning",
     "images": [
@@ -1406,7 +1406,7 @@
   {
     "id": "face-wash-100ml",
     "name": "Clean & Clear Face Wash 100ml",
-    "price": 99,
+    "price": 100,
     "image": "/images/New folder/Face Wash 100ml.png",
     "category": "personalcare",
     "images": [
@@ -1536,7 +1536,7 @@
   {
     "id": "sanitary-pads-20pc",
     "name": "Whisper Sanitary Pads 20pc",
-    "price": 199,
+    "price": 200,
     "image": "/images/New folder/Sanitary Pads 20pc.jpg",
     "category": "personalcare",
     "images": [
@@ -1549,7 +1549,7 @@
   {
     "id": "wet-wipes-20pc",
     "name": "Softsens Wet Wipes 20pc",
-    "price": 209,
+    "price": 200,
     "image": "/images/New folder/Wet Wipes 20pc.jpg",
     "category": "personalcare",
     "images": [
@@ -1666,7 +1666,7 @@
   {
     "id": "baby-shampoo-200ml",
     "name": "Choice Baby Shampoo 200ml",
-    "price": 99,
+    "price": 100,
     "image": "/images/New folder/Baby Shampoo 200ml.jpg",
     "category": "baby",
     "images": [
@@ -1796,7 +1796,7 @@
   {
     "id": "baby-blanket",
     "name": "Baby Blanket",
-    "price": 199,
+    "price": 200,
     "image": "/images/New folder/Baby Blanket.jpg",
     "category": "baby"
   },
