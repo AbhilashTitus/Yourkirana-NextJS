@@ -110,21 +110,22 @@ export async function POST(request: NextRequest) {
             );
         }
 
-        // Call EKYCHub GST Verification API (POST request)
-        const apiUrl = `${apiBaseUrl}/gst`;
+        // Generate unique order ID
+        const orderId = `GST_${Date.now()}_${Math.random().toString(36).substring(7)}`;
 
-        console.log('Calling EKYCHub GST API URL:', apiUrl);
+        // Call EKYCHub GST Verification API (GET request with query parameters)
+        // Reverting to GET as POST /gst returns 404
+        const apiUrl = `${apiBaseUrl}/gst_verification?username=${apiUsername}&token=${apiToken}&gst=${sanitizedGST}&orderid=${orderId}`;
+
+        console.log('Calling EKYCHub GST API URL:', apiUrl.replace(apiToken as string, 'HIDDEN_TOKEN'));
 
         let ekycResponse;
         try {
             ekycResponse = await fetch(apiUrl, {
-                method: 'POST',
+                method: 'GET',
                 headers: {
-                    'Content-Type': 'application/json',
-                    'X-USERNAME': apiUsername,
-                    'X-API-KEY': apiToken,
+                    'Accept': 'application/json',
                 },
-                body: JSON.stringify({ gstin: sanitizedGST }),
             });
         } catch (fetchError) {
             console.error('Fetch error:', fetchError);
