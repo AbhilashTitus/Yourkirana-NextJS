@@ -104,7 +104,15 @@ export default function SellerForm() {
                 body: JSON.stringify({ gstNumber: gstInput }),
             });
 
-            const data = await response.json();
+            let data;
+            const contentType = response.headers.get("content-type");
+            if (contentType && contentType.includes("application/json")) {
+                data = await response.json();
+            } else {
+                const text = await response.text();
+                console.error('Non-JSON response:', text);
+                throw new Error(`Server Error (${response.status}): ${text.substring(0, 100)}...`);
+            }
 
             if (data.success && data.status === 'verified') {
                 setGstVerification({ status: 'verified', message: 'GST verified successfully!' });
@@ -118,7 +126,11 @@ export default function SellerForm() {
                 setGstData(null);
             }
         } catch (error) {
-            setGstVerification({ status: 'error', message: 'Verification service error. Please try again.' });
+            console.error('GST verification error:', error);
+            setGstVerification({
+                status: 'error',
+                message: error instanceof Error ? error.message : 'Verification service exception. Please try again.'
+            });
             setGstData(null);
         }
     };

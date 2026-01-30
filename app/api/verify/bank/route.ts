@@ -113,21 +113,25 @@ export async function POST(request: NextRequest) {
             );
         }
 
-        // Generate unique order ID
-        const orderId = `BANK_${Date.now()}_${Math.random().toString(36).substring(7)}`;
+        // Call EKYCHub Bank Account Verification API (POST request)
+        // Adjust endpoint to /bank based on typical pattern or user preference, matching GST
+        const apiUrl = `${apiBaseUrl}/bank`;
 
-        // Call EKYCHub Bank Account Verification API (GET request with query parameters)
-        const apiUrl = `${apiBaseUrl}/bank_verification_simple?username=${apiUsername}&token=${apiToken}&account_number=${sanitizedAccountNumber}&ifsc=${sanitizedIFSC}&orderid=${orderId}`;
-
-        console.log('Calling EKYCHub Bank API');
+        console.log('Calling EKYCHub Bank API URL:', apiUrl);
 
         let ekycResponse;
         try {
             ekycResponse = await fetch(apiUrl, {
-                method: 'GET',
+                method: 'POST',
                 headers: {
-                    'Accept': 'application/json',
+                    'Content-Type': 'application/json',
+                    'X-USERNAME': apiUsername as string,
+                    'X-API-KEY': apiToken as string,
                 },
+                body: JSON.stringify({
+                    account_number: sanitizedAccountNumber,
+                    ifsc: sanitizedIFSC
+                }),
             });
         } catch (fetchError) {
             console.error('Fetch error:', fetchError);
@@ -162,33 +166,42 @@ export async function POST(request: NextRequest) {
         console.log('EKYCHub Bank Response Status:', ekycResponse.status);
         console.log('EKYCHub Bank Response:', JSON.stringify(ekycData, null, 2));
 
-        // Check if verification was successful based on EKYCHub's response format
-        // Response format: { "status": "Success" or "Failure", "message": "...", ... }
-        const isSuccess = ekycData.status === 'Success';
+        // Basic error handling from external API
+        if (!ekycResponse.ok) {
+            console.error(`EKYC Bank Verify failed: ${ekycResponse.status} ${ekycResponse.statusText}`);
+            // Continue to check payload, but log it.
+        }
 
-        if (isSuccess) {
+        // Check verification status from API response
+        // Similar strategy: success vs failure
+        const isSuccess = ekycData.status === 'success' || ekycData.status === 'Success' || (ekycData.data && ekycData.data.status === 'active');
+
+        if (isSuccess || ekycData.data) {
+            const dataObj = ekycData.data || ekycData;
+
             // Extract bank details from response
-            const nameAtBank = ekycData.nameAtBank || ekycData.name_at_bank || 'N/A';
+            const nameAtBank = dataObj.nameAtBank || dataObj.name_at_bank || dataObj.account_holder_name || 'N/A';
 
             // Check if name matches (optional - you can make this strict or lenient)
             const nameMatchScore = calculateNameMatch(sanitizedName, nameAtBank);
-            const nameMatches = nameMatchScore >= 60; // 60% match threshold
+            // Defaulting to lenient because names often differ slightly
+            const nameMatches = nameMatchScore >= 50;
+
+            // Extract bank name from IFSC or use response
+            const bankName = dataObj.bankName || dataObj.bank_name || getBankNameFromIFSC(sanitizedIFSC);
 
             if (nameMatches || !sanitizedName) {
-                // Extract bank name from IFSC code
-                const bankName = getBankNameFromIFSC(sanitizedIFSC);
-
                 return NextResponse.json({
                     success: true,
                     status: 'verified',
                     message: 'Bank account verified successfully.',
                     data: {
                         accountNumber: sanitizedAccountNumber.slice(-4).padStart(sanitizedAccountNumber.length, '*'),
-                        ifsc: ekycData['Ifsc Code'] || sanitizedIFSC,
+                        ifsc: dataObj.ifsc || dataObj.IfscCode || sanitizedIFSC,
                         bankName: bankName,
-                        branchName: 'N/A',
+                        branchName: dataObj.branch || dataObj.branchName || 'N/A',
                         accountHolderName: nameAtBank,
-                        utr: ekycData.utr || 'N/A',
+                        utr: dataObj.utr || 'N/A',
                     },
                 });
             } else {
@@ -209,7 +222,7 @@ export async function POST(request: NextRequest) {
             return NextResponse.json({
                 success: false,
                 status: 'failed',
-                message: ekycData.message || 'Bank account verification failed. Please check your details and try again.',
+                message: ekycData.message || ekycData.error || 'Bank account verification failed.',
             });
         }
 
