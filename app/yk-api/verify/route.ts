@@ -139,11 +139,14 @@ export async function POST(request: NextRequest) {
         }
 
         let ekycData;
+        // Clone the response to allow reading it multiple times if necessary
+        const responseClone = ekycResponse.clone();
+
         try {
             ekycData = await ekycResponse.json();
         } catch (parseError) {
             console.error('Failed to parse EKYCHub response:', parseError);
-            const responseText = await ekycResponse.text();
+            const responseText = await responseClone.text();
             console.error('Response text:', responseText);
             return NextResponse.json(
                 {
@@ -180,7 +183,7 @@ export async function POST(request: NextRequest) {
             // Extract GST details
             // Support multiple possible field structures just in case
             const gstStatus = dataObj.gst_in_status || dataObj.gst_status || dataObj.status || 'Active';
-            const isActive = gstStatus.toLowerCase() === 'active';
+            const isActive = String(gstStatus).toLowerCase() === 'active';
 
             if (isActive) {
                 return NextResponse.json({
