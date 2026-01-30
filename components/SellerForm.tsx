@@ -98,7 +98,7 @@ export default function SellerForm() {
         setGstVerification({ status: 'verifying', message: 'Verifying GST number...' });
 
         try {
-            const response = await fetch('/api/verify/gst', {
+            const response = await fetch('/api/verify', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ gstNumber: gstInput }),
