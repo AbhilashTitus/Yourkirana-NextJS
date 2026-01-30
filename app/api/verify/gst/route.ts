@@ -93,7 +93,7 @@ export async function POST(request: NextRequest) {
             );
         }
 
-        // Get API credentials from environment variables
+        // Get API credentials from environment variables - strict naming as requested
         const apiUsername = process.env.EKYC_API_USERNAME;
         const apiToken = process.env.EKYC_API_TOKEN;
         const apiBaseUrl = process.env.EKYC_API_BASE_URL;
@@ -110,21 +110,21 @@ export async function POST(request: NextRequest) {
             );
         }
 
-        // Generate unique order ID
-        const orderId = `GST_${Date.now()}_${Math.random().toString(36).substring(7)}`;
+        // Call EKYCHub GST Verification API (POST request)
+        const apiUrl = `${apiBaseUrl}/gst`;
 
-        // Call EKYCHub GST Verification API (GET request with query parameters)
-        const apiUrl = `${apiBaseUrl}/gst_verification?username=${apiUsername}&token=${apiToken}&gst=${sanitizedGST}&orderid=${orderId}`;
-
-        console.log('Calling EKYCHub GST API URL:', apiUrl.replace(apiToken, 'HIDDEN_TOKEN'));
+        console.log('Calling EKYCHub GST API URL:', apiUrl);
 
         let ekycResponse;
         try {
             ekycResponse = await fetch(apiUrl, {
-                method: 'GET',
+                method: 'POST',
                 headers: {
-                    'Accept': 'application/json',
+                    'Content-Type': 'application/json',
+                    'X-USERNAME': apiUsername,
+                    'X-API-KEY': apiToken,
                 },
+                body: JSON.stringify({ gstin: sanitizedGST }),
             });
         } catch (fetchError) {
             console.error('Fetch error:', fetchError);
@@ -159,13 +159,27 @@ export async function POST(request: NextRequest) {
         console.log('EKYCHub GST Response Status:', ekycResponse.status);
         console.log('EKYCHub GST Response:', JSON.stringify(ekycData, null, 2));
 
-        // Check if verification was successful based on EKYCHub's response format
-        // Response format: { "status": "Success" or "Failure", "message": "...", ... }
-        const isSuccess = ekycData.status === 'Success';
+        // Basic error handling from external API
+        if (!ekycResponse.ok) {
+            return NextResponse.json({
+                success: false,
+                status: 'failed',
+                message: ekycData.message || `Verification service error: ${ekycResponse.status}`,
+            });
+        }
 
-        if (isSuccess) {
-            // Extract GST details from response
-            const gstStatus = ekycData.gst_in_status || ekycData.gst_status || 'Active';
+        // Check verification status from API response
+        // Assuming success structure based on user request to use this API
+        // Fallback to checking typical 'status' or 'error' fields if needed.
+        const isSuccess = ekycData.status === 'success' || ekycData.status === 'Success' || ekycData.result?.status === 'active';
+
+        if (isSuccess || ekycData.data) {
+            // Handle cases where data is nested
+            const dataObj = ekycData.data || ekycData;
+
+            // Extract GST details
+            // Support multiple possible field structures just in case
+            const gstStatus = dataObj.gst_in_status || dataObj.gst_status || dataObj.status || 'Active';
             const isActive = gstStatus.toLowerCase() === 'active';
 
             if (isActive) {
@@ -174,29 +188,26 @@ export async function POST(request: NextRequest) {
                     status: 'verified',
                     message: 'GST number verified successfully.',
                     data: {
-                        gstNumber: ekycData.GSTIN || sanitizedGST,
-                        legalName: ekycData.legal_name_of_business || 'N/A',
-                        tradeName: ekycData.trade_name_of_business || ekycData.legal_name_of_business || 'N/A',
-                        businessType: ekycData.constitution_of_business || 'N/A',
-                        registrationDate: ekycData.last_update_date || 'N/A',
+                        gstNumber: dataObj.gstin || dataObj.GSTIN || sanitizedGST,
+                        legalName: dataObj.legal_name_of_business || dataObj.legal_name || 'N/A',
+                        tradeName: dataObj.trade_name_of_business || dataObj.trade_name || dataObj.legal_name_of_business || 'N/A',
+                        businessType: dataObj.constitution_of_business || 'N/A',
+                        registrationDate: dataObj.registration_date || dataObj.last_update_date || 'N/A',
                         state: getStateFromGST(sanitizedGST),
                         stateCode: sanitizedGST.substring(0, 2),
-                        address: ekycData.principal_place_address || 'N/A',
+                        address: dataObj.principal_place_address || dataObj.address || 'N/A',
                         gstStatus: gstStatus,
-                        taxpayerType: ekycData.taxpayer_type || 'N/A',
-                        centerJurisdiction: ekycData.center_jurisdiction || 'N/A',
-                        stateJurisdiction: ekycData.state_jurisdiction || 'N/A',
-                        lastUpdated: ekycData.last_update_date || new Date().toISOString().split('T')[0],
+                        lastUpdated: new Date().toISOString().split('T')[0],
                     },
                 });
             } else {
                 return NextResponse.json({
                     success: false,
                     status: 'failed',
-                    message: `GST number is ${gstStatus}. Only active GST registrations are accepted. data: ${JSON.stringify(ekycData)}`,
+                    message: `GST number is ${gstStatus}. Only active GST registrations are accepted.`,
                     data: {
                         gstNumber: sanitizedGST,
-                        legalName: ekycData.legal_name_of_business || 'N/A',
+                        legalName: dataObj.legal_name_of_business || 'N/A',
                         gstStatus: gstStatus,
                     },
                 });
@@ -206,7 +217,7 @@ export async function POST(request: NextRequest) {
             return NextResponse.json({
                 success: false,
                 status: 'failed',
-                message: ekycData.message || 'GST verification failed. Please check the GST number and try again.',
+                message: ekycData.message || ekycData.error || 'GST verification failed.',
             });
         }
 
