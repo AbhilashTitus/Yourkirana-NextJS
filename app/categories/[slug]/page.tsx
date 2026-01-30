@@ -35,9 +35,11 @@ export default function CategoryPage() {
         const fetchData = async () => {
             try {
                 // Fetch categories to find the current one
-                const catRes = await fetch('/api/categories');
+                const catRes = await fetch('/data/categories.json');
                 const catData = await catRes.json();
-                const currentCategory = catData.categories.find((c: any) => c.id === slug);
+                // Check if the response is an array or object wrapping an array - standardizing on expected format
+                const categoriesList = Array.isArray(catData) ? catData : (catData.categories || []);
+                const currentCategory = categoriesList.find((c: any) => c.id === slug);
 
                 if (!currentCategory) {
                     setCategory(null);
@@ -48,11 +50,14 @@ export default function CategoryPage() {
                 setCategory(currentCategory);
                 setCategoryLoading(false);
 
-                // Fetch products for this category
-                const prodRes = await fetch(`/api/products?category=${slug}`);
+                // Fetch all products and filter by category
+                const prodRes = await fetch('/data/products.json');
                 const prodData = await prodRes.json();
-                setProducts(prodData.products || []);
-                setFilteredProducts(prodData.products || []);
+                const allProducts = Array.isArray(prodData) ? prodData : (prodData.products || []);
+                const filtered = allProducts.filter((p: any) => p.category === slug);
+
+                setProducts(filtered);
+                setFilteredProducts(filtered);
             } catch (error) {
                 console.error('Error fetching data:', error);
             } finally {

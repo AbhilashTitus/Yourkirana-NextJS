@@ -2,8 +2,8 @@ import { NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
 
-const CATEGORIES_FILE = path.join(process.cwd(), 'data', 'categories.json');
-const PRODUCTS_FILE = path.join(process.cwd(), 'data', 'products.json');
+const CATEGORIES_FILE = path.join(process.cwd(), 'public', 'data', 'categories.json');
+const PRODUCTS_FILE = path.join(process.cwd(), 'public', 'data', 'products.json');
 
 export interface Category {
     id: string;

@@ -20,9 +20,11 @@ export default function CategoryGrid() {
 
     const fetchCategories = async () => {
         try {
-            const res = await fetch('/api/categories');
+            const res = await fetch('/data/categories.json');
             const data = await res.json();
-            setCategories(data.categories || []);
+            // Handle both array (direct file access) and object (API response) formats
+            const categoriesList = Array.isArray(data) ? data : (data.categories || []);
+            setCategories(categoriesList);
         } catch (error) {
             console.error('Error fetching categories:', error);
         } finally {

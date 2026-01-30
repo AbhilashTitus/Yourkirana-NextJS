@@ -29,7 +29,7 @@ for (const match of productMatches) {
 
 // Write to JSON file
 fs.writeFileSync(
-    path.join(__dirname, '../data/products.json'),
+    path.join(__dirname, '../public/data/products.json'),
     JSON.stringify(products, null, 2)
 );
 

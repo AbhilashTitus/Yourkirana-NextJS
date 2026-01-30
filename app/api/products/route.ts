@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
 
-const PRODUCTS_FILE = path.join(process.cwd(), 'data', 'products.json');
+const PRODUCTS_FILE = path.join(process.cwd(), 'public', 'data', 'products.json');
 
 export interface Product {
     id: string;
