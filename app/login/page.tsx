@@ -70,9 +70,10 @@ function LoginForm() {
                 <span>{isLoading ? "Logging in..." : "Login"}</span>
                 {!isLoading && <span>→</span>}
             </button>
-            <div style={{ marginTop: '1rem', textAlign: 'center' }}>
-                <Link href={signupLink} className="text-sm text-primary hover:underline">
-                    Don&apos;t have an account? Sign up
+            <div style={{ marginTop: '1.5rem', textAlign: 'center' }}>
+                <span className="text-sm" style={{ color: 'var(--text-secondary)' }}>Don&apos;t have an account? </span>
+                <Link href={signupLink} className="text-sm hover:underline" style={{ color: 'var(--mint)', fontWeight: '700' }}>
+                    Sign up
                 </Link>
             </div>
         </form>
