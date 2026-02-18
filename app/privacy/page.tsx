@@ -144,8 +144,8 @@ export default function PrivacyPage() {
                             In accordance with the Information Technology Act, 2000 and rules made thereunder, we have appointed a Grievance Officer to address your concerns:
                         </p>
                         <p style={{ marginBottom: '20px', lineHeight: '1.8' }}>
-                            <strong>Name:</strong> [To be updated]<br />
-                            <strong>Email:</strong> grievance@yourkirana.in<br />
+                            <strong>Name:</strong> Abhishek Babu<br />
+                            <strong>Email:</strong> aureviat@gmail.com<br />
                             <strong>Address:</strong> Aurevia Technologies Pvt Ltd, Bangalore, Karnataka, India<br />
                             <strong>Response Time:</strong> Within 30 days of receiving the complaint
                         </p>

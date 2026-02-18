@@ -44,7 +44,7 @@ export default function TermsPage() {
                         <h2 style={{ marginTop: '30px' }}>5. Payment Terms</h2>
                         <h3 style={{ marginTop: '20px', fontSize: '1.1rem' }}>5.1 Accepted Payment Methods</h3>
                         <p style={{ marginBottom: '20px', lineHeight: '1.8' }}>
-                           We accept payments exclusively through UPI (Unified Payments Interface). All transactions are processed via NPCI-authorized UPI applications and compliant payment service providers that adhere to RBI regulations and applicable PCI DSS security standards. By initiating a payment, you agree to use a valid UPI ID or UPI-linked bank account that belongs to you and to provide accurate and complete payment information during checkout.
+                            We accept payments exclusively through UPI (Unified Payments Interface). All transactions are processed via NPCI-authorized UPI applications and compliant payment service providers that adhere to RBI regulations and applicable PCI DSS security standards. By initiating a payment, you agree to use a valid UPI ID or UPI-linked bank account that belongs to you and to provide accurate and complete payment information during checkout.
                         </p>
 
                         <h3 style={{ marginTop: '20px', fontSize: '1.1rem' }}>5.2 Payment Flow and Processing</h3>
@@ -215,7 +215,10 @@ export default function TermsPage() {
                         <p style={{ marginBottom: '20px', lineHeight: '1.8' }}>
                             For any questions regarding these terms, please contact us at:<br />
                             Email: legal@yourkirana.in<br />
-                            Address: Aurevia Technologies Pvt Ltd, Bangalore, Karnataka, India
+                            Address: Aurevia Technologies Pvt Ltd
+                            18/1 4th Cross, 2nd Floor,
+                            Rahmath Nagar, R.T. Nagar, Bangalore, Karnataka
+                            India - 560032
                         </p>
                     </div>
                 </div>
