@@ -146,16 +146,22 @@ export default function PrivacyPage() {
                         <p style={{ marginBottom: '20px', lineHeight: '1.8' }}>
                             <strong>Name:</strong> Abhishek Babu<br />
                             <strong>Email:</strong> aureviat@gmail.com<br />
-                            <strong>Address:</strong> Aurevia Technologies Pvt Ltd, Bangalore, Karnataka, India<br />
+                            <strong>Address:</strong> Aurevia Technologies Pvt Ltd
+                            18/1 4th Cross, 2nd Floor,
+                            Rahmath Nagar, R.T. Nagar, Bangalore, Karnataka
+                            India - 560032<br />
                             <strong>Response Time:</strong> Within 30 days of receiving the complaint
                         </p>
 
                         <h2 style={{ marginTop: '30px' }}>12. Contact Us</h2>
                         <p style={{ marginBottom: '20px', lineHeight: '1.8' }}>
-                            For any questions about this Privacy Policy, please contact us at:<br />
-                            Email: privacy@yourkirana.in<br />
+                            For any questions about this Privacy Policy, please contact us at :<br />
+                            <strong>Email :</strong> privacy@yourkirana.in<br />
                             {/* Phone: +91 99999 99999<br /> */}
-                            Address: Aurevia Technologies Pvt Ltd, Bangalore, Karnataka, India
+                            <strong>Address :</strong> Aurevia Technologies Pvt Ltd
+                            18/1 4th Cross, 2nd Floor,
+                            Rahmath Nagar, R.T. Nagar, Bangalore, Karnataka
+                            India - 560032
                         </p>
                     </div>
                 </div>
