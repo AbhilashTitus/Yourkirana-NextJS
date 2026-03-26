@@ -43,7 +43,12 @@ export default function AboutPage() {
                         <h2 style={{ marginTop: '30px' }}>Company Information</h2>
                         <ul style={{ lineHeight: '2', marginLeft: '20px' }}>
                             <li><strong>Legal Name:</strong> Aurevia Technologies Pvt Ltd</li>
-                            <li><strong>Registered Office:</strong> Bangalore, India</li>
+                            <li>
+                                <strong>Registered Office:</strong> Aurevia Technologies Pvt Ltd<br />
+                                18/1 4th Cross, 2nd Floor,<br />
+                                Rahmath Nagar, R.T. Nagar, Bangalore, Karnataka<br />
+                                India - 560032
+                            </li>
                             {/* <li><strong>Year of Establishment:</strong> 2024</li>
                             <li><strong>GSTIN:</strong> [To be updated]</li>
                             <li><strong>CIN:</strong> [To be updated]</li> */}
