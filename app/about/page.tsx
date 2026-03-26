@@ -40,19 +40,37 @@ export default function AboutPage() {
                             serving communities across the country with reliability and care.
                         </p>
 
-                        <h2 style={{ marginTop: '30px' }}>Company Information</h2>
-                        <ul style={{ lineHeight: '2', marginLeft: '20px' }}>
-                            <li><strong>Legal Name:</strong> Aurevia Technologies Pvt Ltd</li>
-                            <li>
-                                <strong>Registered Office:</strong> Aurevia Technologies Pvt Ltd<br />
-                                18/1 4th Cross, 2nd Floor,<br />
-                                Rahmath Nagar, R.T. Nagar, Bangalore, Karnataka<br />
-                                India - 560032
-                            </li>
-                            {/* <li><strong>Year of Establishment:</strong> 2024</li>
-                            <li><strong>GSTIN:</strong> [To be updated]</li>
-                            <li><strong>CIN:</strong> [To be updated]</li> */}
-                        </ul>
+                        <h2 style={{ marginTop: '30px', marginBottom: '20px' }}>Company Information</h2>
+                        <div style={{
+                            padding: '24px 30px',
+                            background: '#f8fafc',
+                            border: '1px solid #e2e8f0',
+                            borderRadius: '12px',
+                            display: 'flex',
+                            flexDirection: 'column',
+                            gap: '20px'
+                        }}>
+                            <div>
+                                <div style={{ fontSize: '0.875rem', fontWeight: '600', color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '6px' }}>Legal Name</div>
+                                <div style={{ fontSize: '1.125rem', fontWeight: '600', color: '#0f172a' }}>Aurevia Technologies Pvt Ltd</div>
+                            </div>
+                            
+                            <div style={{ height: '1px', background: '#e2e8f0', width: '100%' }}></div>
+
+                            <div>
+                                <div style={{ fontSize: '0.875rem', fontWeight: '600', color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '10px' }}>Registered Office</div>
+                                <div style={{ 
+                                    fontSize: '1.0625rem', 
+                                    color: '#334155', 
+                                    lineHeight: '1.7'
+                                }}>
+                                    <p style={{ fontWeight: '600', color: '#0f172a', margin: '0 0 6px 0' }}>Aurevia Technologies Pvt Ltd</p>
+                                    <p style={{ margin: '0' }}>18/1 4th Cross, 2nd Floor,</p>
+                                    <p style={{ margin: '0' }}>Rahmath Nagar, R.T. Nagar, Bangalore, Karnataka</p>
+                                    <p style={{ margin: '6px 0 0 0', fontWeight: '600', color: '#0f172a' }}>India - 560032</p>
+                                </div>
+                            </div>
+                        </div>
 
                         <h2 style={{ marginTop: '30px' }}>Why Choose Us</h2>
                         <div className="features" style={{ marginTop: '20px' }}>
