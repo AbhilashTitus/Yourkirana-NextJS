@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   description: "Delivering essentials from local stores to your doorstep.",
 };
 
-const IS_MAINTENANCE_MODE = true;
+const IS_MAINTENANCE_MODE = false;
 
 export default function RootLayout({
   children,
